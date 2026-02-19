@@ -9,7 +9,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "会社概要",
   description:
-    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売。OEM受託製造、多言語対応。",
+    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売。多言語対応。",
   alternates: {
     canonical: "https://supplement-sales.vercel.app/company",
   },
@@ -43,7 +43,7 @@ export default function CompanyPage() {
             <SectionHeading tag="ABOUT US" title="会社概要" />
             <p className="text-sm md:text-base leading-relaxed md:leading-[2.4] text-text-muted max-w-3xl mt-4 md:mt-6">
               株式会社サプリ販売は、サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社です。
-              自社製造体制と確かな調達ネットワークを活かし、原料の仕入れからOEM製造まで一貫対応。
+              自社製造体制と確かな調達ネットワークを活かし、原料の仕入れから製造販売まで一貫対応。
               お客様の製品開発をトータルでサポートします。
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function CompanyPage() {
                 { label: "所在地", value: company.address.full },
                 {
                   label: "事業内容",
-                  value: "サプリメント・健康食品・化粧品原材料の輸入販売および製造販売、OEM受託製造",
+                  value: "サプリメント・健康食品・化粧品原材料の輸入販売および製造販売",
                 },
                 { label: "対応言語", value: company.languages.join(" / ") },
                 { label: "営業時間", value: company.businessHours },

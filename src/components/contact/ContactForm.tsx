@@ -70,7 +70,7 @@ export function ContactForm() {
           </option>
           <option>サンプル依頼</option>
           <option>製品情報・お見積もり</option>
-          <option>OEM・受託製造について</option>
+          <option>製品・原料について</option>
           <option>その他</option>
         </select>
       </div>

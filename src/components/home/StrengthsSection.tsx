@@ -13,7 +13,7 @@ export function StrengthsSection() {
         />
         <p className="text-sm md:text-[0.9rem] leading-relaxed md:leading-[2.4] text-cream/70 mb-6 md:mb-10">
           株式会社サプリ販売は、サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社です。
-          自社製造体制と確かな調達ネットワークを活かし、原料の仕入れからOEM製造まで一貫対応。
+          自社製造体制と確かな調達ネットワークを活かし、原料の仕入れから製造販売まで一貫対応。
           お客様の製品開発をトータルでサポートします。
         </p>
         <Link

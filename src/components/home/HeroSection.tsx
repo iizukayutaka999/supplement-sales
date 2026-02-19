@@ -35,7 +35,7 @@ export function HeroSection() {
           </h1>
           <p className="text-sm md:text-[0.85rem] leading-relaxed md:leading-8 text-cream/65 max-w-[380px] mb-8 md:mb-14">
             サプリメント・健康食品の高品質原材料を輸入販売・製造販売。
-            自社製造体制とOEM対応で、お客様の製品開発をトータルサポートいたします。
+            自社製造体制で、お客様の製品開発をトータルサポートいたします。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">
             <Link

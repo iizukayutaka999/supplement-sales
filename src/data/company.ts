@@ -26,18 +26,12 @@ export const company = {
     },
     {
       number: "03",
-      title: "OEM・受託製造",
-      description:
-        "お客様のブランド製品をOEM・受託製造で実現。処方設計から製造、品質検査、包装まで、製品化をトータルでサポートします。",
-    },
-    {
-      number: "04",
       title: "品質管理・認証サポート",
       description:
         "製造・販売に必要な証明書類（COA、HACCP等）を完備。各種規格・認証に対応した品質管理体制で安心をお届けします。",
     },
     {
-      number: "05",
+      number: "04",
       title: "サンプル・小ロット対応",
       description:
         "量産前にサンプルでご確認いただけます。小ロットから対応可能で、品質をしっかりご確認の上でご発注いただけます。",
@@ -60,7 +54,7 @@ export const company = {
       value: "B2B",
       suffix: "",
       label: "専門の法人向けサービス",
-      detail: "製造・OEM・サンプル・品質管理対応",
+      detail: "製造・サンプル・品質管理対応",
     },
   ],
 };
