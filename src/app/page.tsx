@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { StrengthsSection } from "@/components/home/StrengthsSection";
-import { GlobalSection } from "@/components/home/GlobalSection";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -18,7 +17,6 @@ export default function HomePage() {
       <HeroSection />
       <FeaturedProducts />
       <StrengthsSection />
-      <GlobalSection />
       <ScrollReveal />
     </>
   );

@@ -9,7 +9,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "会社概要",
   description:
-    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売。グローバル調達、OEM製造、多言語対応。",
+    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売。OEM受託製造、多言語対応。",
   alternates: {
     canonical: "https://supplement-sales.vercel.app/company",
   },
@@ -43,7 +43,7 @@ export default function CompanyPage() {
             <SectionHeading tag="ABOUT US" title="会社概要" />
             <p className="text-sm md:text-base leading-relaxed md:leading-[2.4] text-text-muted max-w-3xl mt-4 md:mt-6">
               株式会社サプリ販売は、サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社です。
-              グローバルな調達ネットワークと自社製造体制を活かし、原料の輸入からOEM製造まで一貫対応。
+              自社製造体制と確かな調達ネットワークを活かし、原料の仕入れからOEM製造まで一貫対応。
               お客様の製品開発をトータルでサポートします。
             </p>
           </div>
@@ -112,36 +112,6 @@ export default function CompanyPage() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Global Reach */}
-        <section className="py-16 px-4 md:py-28 md:px-16 bg-warm-white text-center">
-          <div className="max-w-[900px] mx-auto">
-            <div className="flex justify-center">
-              <SectionHeading
-                tag="GLOBAL REACH"
-                title="世界10カ国以上への<br>輸出実績"
-              />
-            </div>
-            <p className="text-sm md:text-[0.9rem] leading-relaxed md:leading-[2.2] text-text-muted mb-8 md:mb-16">
-              {company.globalReach.description}
-              <br className="hidden md:block" />
-              ご希望の地域への輸出相談もお気軽にどうぞ。
-            </p>
-            <div className="flex flex-wrap gap-2 md:gap-3 justify-center">
-              {company.globalReach.countries.map((country) => (
-                <span
-                  key={country.name}
-                  className="px-4 md:px-6 py-2 md:py-2.5 border border-border text-[0.7rem] md:text-[0.72rem] tracking-[0.15em] text-forest bg-cream"
-                >
-                  {country.flag} {country.name}
-                </span>
-              ))}
-              <span className="px-4 md:px-6 py-2 md:py-2.5 border border-border text-[0.7rem] md:text-[0.72rem] tracking-[0.15em] text-forest bg-cream">
-                + その他
-              </span>
             </div>
           </div>
         </section>

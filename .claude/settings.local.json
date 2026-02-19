@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(npx --version)",
+      "Bash(git --version:*)",
+      "Bash(vercel --version:*)",
+      "WebSearch",
+      "WebFetch(domain:schema.org)",
+      "WebFetch(domain:supplement-sales.vercel.app)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(git init:*)",
+      "Bash(gh auth:*)",
+      "Bash(choco install:*)",
+      "Bash(\"/c/Program Files/WindowsApps/Microsoft.DesktopAppInstaller_1.19.10173.0_x64__8wekyb3d8bbwe/winget.exe\" --version)",
+      "Bash(winget:*)",
+      "Bash(cmd.exe /c \"winget --version\")",
+      "Bash(cmd.exe /c \"winget install --id GitHub.cli --accept-package-agreements --accept-source-agreements\")",
+      "Bash(cmd.exe /c \"winget install GitHub.cli --accept-package-agreements --accept-source-agreements 2>&1\")",
+      "Bash(powershell.exe -Command:*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI\":*)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth login --web --git-protocol https)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api user --jq '.login,.email')",
+      "Bash(git config:*)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo create supplement-sales --public --source=. --remote=origin --push --description \"株式会社サプリ販売 - B2B supplement raw materials website \\(Next.js 15\\)\")",
+      "Bash(npx vercel:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

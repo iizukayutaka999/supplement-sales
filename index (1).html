@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社サプリ販売 | 高品質原材料の輸入・販売</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #0f1a14;
+      --forest: #1a3328;
+      --moss: #2d5440;
+      --sage: #4a7c5e;
+      --gold: #c9a052;
+      --gold-light: #e8c97a;
+      --cream: #f5f1ea;
+      --warm-white: #faf8f4;
+      --text-muted: #6b7c72;
+      --border: rgba(42, 84, 64, 0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--warm-white);
+      color: var(--ink);
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ─── NOISE TEXTURE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.4;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 4rem;
+      background: rgba(250, 248, 244, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: padding 0.3s;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--forest);
+      text-decoration: none;
+    }
+
+    .nav-logo span {
+      display: block;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0; right: 0;
+      height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--forest); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-left {
+      background: var(--forest);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 8rem 4rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-left::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 70%, rgba(201, 160, 82, 0.15) 0%, transparent 60%);
+    }
+
+    /* botanical SVG decoration */
+    .botanical {
+      position: absolute;
+      top: -2rem;
+      right: -3rem;
+      width: 340px;
+      opacity: 0.08;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 2rem;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-subtitle {
+      font-size: 0.85rem;
+      line-height: 2;
+      color: rgba(245, 241, 234, 0.65);
+      max-width: 380px;
+      margin-bottom: 3.5rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--ink);
+      padding: 0.9rem 2.5rem;
+      text-decoration: none;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--gold-light);
+      transform: translateX(-101%);
+      transition: transform 0.3s;
+    }
+
+    .btn-primary:hover::after { transform: translateX(0); }
+    .btn-primary span { position: relative; z-index: 1; }
+
+    .btn-secondary {
+      color: rgba(245, 241, 234, 0.7);
+      text-decoration: none;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .btn-secondary:hover { color: var(--cream); }
+
+    .hero-right {
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem 4rem;
+      position: relative;
+    }
+
+    .hero-right::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d5440' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 0;
+      position: relative;
+    }
+
+    .stat-item {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      opacity: 0;
+      transform: translateX(30px);
+      animation: fadeSlideIn 0.7s forwards;
+    }
+
+    .stat-item:nth-child(1) { animation-delay: 0.3s; }
+    .stat-item:nth-child(2) { animation-delay: 0.5s; }
+    .stat-item:nth-child(3) { animation-delay: 0.7s; }
+
+    @keyframes fadeSlideIn {
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--sage);
+      line-height: 1;
+      min-width: 5rem;
+    }
+
+    .stat-num sup {
+      font-size: 1.2rem;
+      vertical-align: super;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      line-height: 1.8;
+      padding-top: 0.4rem;
+    }
+
+    .stat-label strong {
+      display: block;
+      color: var(--forest);
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 7rem 4rem; }
+
+    .section-tag {
+      font-size: 0.6rem;
+      letter-spacing: 0.45em;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-tag::before {
+      content: '';
+      width: 30px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 300;
+      color: var(--forest);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ─── PRODUCTS ─── */
+    #products { background: var(--warm-white); }
+
+    .products-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+      align-items: end;
+    }
+
+    .products-desc {
+      font-size: 0.9rem;
+      line-height: 2.2;
+      color: var(--text-muted);
+      padding-top: 1rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .product-card {
+      background: var(--warm-white);
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s;
+      cursor: default;
+    }
+
+    .product-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 2px;
+      width: 0;
+      background: var(--gold);
+      transition: width 0.4s;
+    }
+
+    .product-card:hover {
+      background: var(--cream);
+    }
+
+    .product-card:hover::before { width: 100%; }
+
+    .product-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .product-category {
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--forest);
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+    }
+
+    .product-desc {
+      font-size: 0.78rem;
+      line-height: 1.9;
+      color: var(--text-muted);
+    }
+
+    /* ─── ABOUT / STRENGTHS ─── */
+    #about {
+      background: var(--forest);
+      color: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    #about .section-title { color: var(--cream); }
+
+    .about-text {
+      font-size: 0.9rem;
+      line-height: 2.4;
+      color: rgba(245, 241, 234, 0.7);
+      margin-bottom: 2.5rem;
+    }
+
+    .strengths-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .strength-item {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(245, 241, 234, 0.1);
+      align-items: flex-start;
+    }
+
+    .strength-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      opacity: 0.6;
+      min-width: 3rem;
+      line-height: 1;
+    }
+
+    .strength-content h4 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .strength-content p {
+      font-size: 0.78rem;
+      line-height: 1.9;
+      color: rgba(245, 241, 234, 0.55);
+    }
+
+    /* ─── GLOBAL / MAP SECTION ─── */
+    #global {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .global-inner { max-width: 900px; margin: 0 auto; }
+
+    .global-desc {
+      font-size: 0.9rem;
+      line-height: 2.2;
+      color: var(--text-muted);
+      margin-bottom: 4rem;
+    }
+
+    .country-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    .country-tag {
+      padding: 0.6rem 1.5rem;
+      border: 1px solid var(--border);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      color: var(--forest);
+      background: var(--warm-white);
+      transition: all 0.3s;
+    }
+
+    .country-tag:hover {
+      background: var(--forest);
+      color: var(--cream);
+      border-color: var(--forest);
+    }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      background: var(--warm-white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .contact-info p {
+      font-size: 0.85rem;
+      line-height: 2.4;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .detail-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      min-width: 5rem;
+      padding-top: 0.15rem;
+    }
+
+    .detail-value {
+      font-size: 0.82rem;
+      color: var(--forest);
+      line-height: 1.7;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: var(--text-muted);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      padding: 0.7rem 0;
+      font-size: 0.85rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.3s;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--gold);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .submit-btn {
+      background: var(--forest);
+      color: var(--cream);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      font-family: 'Noto Sans JP', sans-serif;
+      cursor: pointer;
+      transition: background 0.3s;
+      align-self: flex-start;
+    }
+
+    .submit-btn:hover { background: var(--moss); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--ink);
+      padding: 3rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: rgba(245, 241, 234, 0.6);
+      font-weight: 300;
+    }
+
+    .footer-copy {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: rgba(245, 241, 234, 0.3);
+    }
+
+    /* ─── SCROLL ANIMATION ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s, transform 0.8s;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 2rem; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 7rem 2rem 3rem; }
+      .hero-right { padding: 3rem 2rem; }
+      .products-header { grid-template-columns: 1fr; gap: 1.5rem; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      #about { grid-template-columns: 1fr; padding: 4rem 2rem; gap: 3rem; }
+      #contact { grid-template-columns: 1fr; padding: 4rem 2rem; gap: 3rem; }
+      section { padding: 4rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">
+      株式会社サプリ販売
+      <span>SUPPLEMENT SALES CO., LTD.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">製品情報</a></li>
+      <li><a href="#about">会社概要</a></li>
+      <li><a href="#global">グローバル</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <!-- Botanical SVG decoration -->
+      <svg class="botanical" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M150 400 C150 400 80 300 80 200 C80 100 150 0 150 0 C150 0 220 100 220 200 C220 300 150 400 150 400Z" fill="#f5f1ea"/>
+        <path d="M150 350 C100 280 60 200 80 120" stroke="#f5f1ea" stroke-width="1.5" fill="none"/>
+        <path d="M150 350 C200 280 240 200 220 120" stroke="#f5f1ea" stroke-width="1.5" fill="none"/>
+        <ellipse cx="100" cy="180" rx="40" ry="20" transform="rotate(-30 100 180)" fill="#f5f1ea"/>
+        <ellipse cx="200" cy="160" rx="35" ry="18" transform="rotate(30 200 160)" fill="#f5f1ea"/>
+        <ellipse cx="90" cy="250" rx="30" ry="15" transform="rotate(-15 90 250)" fill="#f5f1ea"/>
+        <ellipse cx="210" cy="230" rx="28" ry="14" transform="rotate(15 210 230)" fill="#f5f1ea"/>
+      </svg>
+
+      <p class="hero-eyebrow">SINCE 2024 · TAKASAKI, JAPAN</p>
+      <h1 class="hero-title">
+        美と健康を<br>
+        支える<br>
+        <em>原材料</em>の力
+      </h1>
+      <p class="hero-subtitle">
+        世界中から厳選したコスメ・健康食品の原材料を日本品質でお届けします。
+        お客様の製品開発をトータルサポートいたします。
+      </p>
+      <div class="hero-cta">
+        <a href="#products" class="btn-primary"><span>製品を見る</span></a>
+        <a href="#contact" class="btn-secondary">お問い合わせ →</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">10<sup>+</sup></div>
+          <div class="stat-label">
+            <strong>輸出対象国</strong>
+            USA・UAE・EU・CIS・他
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20<sup>+</sup></div>
+          <div class="stat-label">
+            <strong>取扱製品カテゴリ</strong>
+            コラーゲン・プロバイオティクス・他
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">B2B</div>
+          <div class="stat-label">
+            <strong>専門の法人向けサービス</strong>
+            サンプル・認証・規制書類対応
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="products-header reveal">
+      <div>
+        <p class="section-tag">PRODUCTS</p>
+        <h2 class="section-title">厳選された<br>原材料ラインナップ</h2>
+      </div>
+      <p class="products-desc">
+        健康食品・化粧品・機能性食品の原材料を幅広く取り扱っています。
+        各製品は日本の品質基準に基づき厳格に管理・輸入しています。
+      </p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <span class="product-icon">🧬</span>
+        <p class="product-category">BEAUTY INGREDIENT</p>
+        <h3 class="product-name">コラーゲン<br>エラスチン</h3>
+        <p class="product-desc">魚由来・豚由来など多様なコラーゲン原料。高吸収・低分子タイプも対応可能。</p>
+      </div>
+      <div class="product-card reveal">
+        <span class="product-icon">🌿</span>
+        <p class="product-category">PROBIOTIC</p>
+        <h3 class="product-name">プロバイオ<br>ティクス</h3>
+        <p class="product-desc">腸内環境をサポートする乳酸菌・ビフィズス菌原料。各種規格・菌数対応。</p>
+      </div>
+      <div class="product-card reveal">
+        <span class="product-icon">🍯</span>
+        <p class="product-category">ROYAL JELLY</p>
+        <h3 class="product-name">ローヤル<br>ゼリー</h3>
+        <p class="product-desc">高品質なローヤルゼリー原料。フリーズドライ・生タイプ、10-HDA含有量の異なるグレードを取り揃え。</p>
+      </div>
+      <div class="product-card reveal">
+        <span class="product-icon">🦪</span>
+        <p class="product-category">COSMETIC INGREDIENT</p>
+        <h3 class="product-name">パールパウダー<br>プラセンタ</h3>
+        <p class="product-desc">高純度パールパウダーと馬・豚・魚由来プラセンタ。美容成分として世界的に需要が高い原料。</p>
+      </div>
+      <div class="product-card reveal">
+        <span class="product-icon">🍵</span>
+        <p class="product-category">FUNCTIONAL FOOD</p>
+        <h3 class="product-name">抹茶<br>Matcha</h3>
+        <p class="product-desc">国産高品質抹茶を世界へ。食品グレードから化粧品グレードまで対応。EU・USA輸出実績あり。</p>
+      </div>
+      <div class="product-card reveal">
+        <span class="product-icon">☕</span>
+        <p class="product-category">FERMENTED</p>
+        <h3 class="product-name">発酵コーヒー<br>Fermented Coffee</h3>
+        <p class="product-desc">腸活ブームに注目の発酵コーヒー原料。独自の発酵プロセスで機能性を高めた革新的素材。</p>
+      </div>
+      <div class="product-card reveal">
+        <span class="product-icon">💊</span>
+        <p class="product-category">SUPPLEMENT</p>
+        <h3 class="product-name">その他<br>機能性原料</h3>
+        <p class="product-desc">ヒアルロン酸・CoQ10・ビタミン類など。お客様のニーズに合わせた原料調達を承ります。</p>
+      </div>
+      <div class="product-card reveal" style="background: var(--forest); cursor: pointer;" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        <span class="product-icon" style="font-size:1.5rem;margin-bottom:2rem;">→</span>
+        <p class="product-category" style="color:var(--gold)">INQUIRY</p>
+        <h3 class="product-name" style="color:var(--cream)">お探しの<br>原料がある方</h3>
+        <p class="product-desc" style="color:rgba(245,241,234,0.6)">取扱いのない原料もご相談ください。世界中のネットワークで調達いたします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal">
+      <p class="section-tag" style="color:var(--gold)">ABOUT US</p>
+      <h2 class="section-title">日本から世界へ、<br>高品質原材料を</h2>
+      <p class="about-text">
+        株式会社サプリ販売は、コスメおよび健康食品の原材料を世界中から輸入・販売する専門商社です。
+        日本の厳しい品質基準のもと、お客様の製品開発・OEMを支援いたします。
+        サンプル手配から輸出入書類、各国の規制対応まで、トータルでサポートします。
+      </p>
+      <a href="#contact" class="btn-primary"><span>お問い合わせ</span></a>
+    </div>
+
+    <div class="strengths-list reveal">
+      <div class="strength-item">
+        <span class="strength-num">01</span>
+        <div class="strength-content">
+          <h4>グローバル調達ネットワーク</h4>
+          <p>日本・中国・ヨーロッパなど世界各地のサプライヤーと直接取引。最適な原料を競争力ある価格でご提供します。</p>
+        </div>
+      </div>
+      <div class="strength-item">
+        <span class="strength-num">02</span>
+        <div class="strength-content">
+          <h4>多言語・多国間対応</h4>
+          <p>日本語・英語・ロシア語での対応が可能。USA・UAE・CIS諸国・EU・アフリカなど多様な地域のクライアントと実績があります。</p>
+        </div>
+      </div>
+      <div class="strength-item">
+        <span class="strength-num">03</span>
+        <div class="strength-content">
+          <h4>書類・認証サポート</h4>
+          <p>輸出入に必要な証明書類（COA、HACCP、Halal等）の取得支援。各国の規制に合わせた書類準備をサポートします。</p>
+        </div>
+      </div>
+      <div class="strength-item">
+        <span class="strength-num">04</span>
+        <div class="strength-content">
+          <h4>サンプル対応</h4>
+          <p>量産前にサンプルでご確認いただけます。小ロットから対応可能で、品質をしっかりご確認の上でご発注いただけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL -->
+  <section id="global">
+    <div class="global-inner reveal">
+      <p class="section-tag" style="justify-content:center">GLOBAL REACH</p>
+      <h2 class="section-title">世界10カ国以上への<br>輸出実績</h2>
+      <p class="global-desc">
+        アジア・中東・東欧・アフリカ・アメリカ・オセアニアまで、幅広い地域のB2Bクライアントと取引しています。<br>
+        ご希望の地域への輸出相談もお気軽にどうぞ。
+      </p>
+      <div class="country-grid">
+        <span class="country-tag">🇺🇸 USA</span>
+        <span class="country-tag">🇦🇪 UAE</span>
+        <span class="country-tag">🇰🇿 Kazakhstan</span>
+        <span class="country-tag">🇨🇿 Czech Republic</span>
+        <span class="country-tag">🇳🇬 Nigeria</span>
+        <span class="country-tag">🇬🇹 Guatemala</span>
+        <span class="country-tag">🇦🇺 Australia</span>
+        <span class="country-tag">+ その他</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-info reveal">
+      <p class="section-tag">CONTACT</p>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p>サンプルのご依頼・製品に関するご相談・お見積もりなど、お気軽にお問い合わせください。通常2営業日以内にご返答いたします。</p>
+      <div class="contact-details">
+        <div class="contact-detail">
+          <span class="detail-label">会社名</span>
+          <span class="detail-value">株式会社サプリ販売</span>
+        </div>
+        <div class="contact-detail">
+          <span class="detail-label">住所</span>
+          <span class="detail-value">〒370-2303<br>群馬県富岡市蕨1004番地1</span>
+        </div>
+        <div class="contact-detail">
+          <span class="detail-label">対応言語</span>
+          <span class="detail-value">日本語 / English / Русский</span>
+        </div>
+        <div class="contact-detail">
+          <span class="detail-label">受付</span>
+          <span class="detail-value">平日 9:00〜18:00 (JST)</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label>会社名 / COMPANY</label>
+        <input type="text" placeholder="株式会社〇〇" required>
+      </div>
+      <div class="form-group">
+        <label>お名前 / NAME</label>
+        <input type="text" placeholder="山田 太郎" required>
+      </div>
+      <div class="form-group">
+        <label>メールアドレス / EMAIL</label>
+        <input type="email" placeholder="info@example.com" required>
+      </div>
+      <div class="form-group">
+        <label>お問い合わせ内容 / INQUIRY TYPE</label>
+        <select>
+          <option value="">選択してください</option>
+          <option>サンプル依頼</option>
+          <option>製品情報・お見積もり</option>
+          <option>輸出入・書類について</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>メッセージ / MESSAGE</label>
+        <textarea placeholder="ご質問・ご要望をご記入ください"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">送信する →</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">株式会社サプリ販売</div>
+    <div class="footer-copy">© 2024 Supplement Sales Co., Ltd. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Nav scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.style.padding = '1rem 4rem';
+      } else {
+        nav.style.padding = '1.5rem 4rem';
+      }
+    });
+
+    // Form submit placeholder
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('お問い合わせありがとうございます。\n担当者より折り返しご連絡いたします。');
+    }
+  </script>
+</body>
+</html>

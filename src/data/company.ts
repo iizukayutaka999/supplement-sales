@@ -14,15 +14,15 @@ export const company = {
   strengths: [
     {
       number: "01",
-      title: "自社製造 & グローバル調達",
+      title: "自社製造 & 原料調達",
       description:
-        "自社工場での製造体制に加え、日本・中国・ヨーロッパなど世界各地のサプライヤーと直接取引。原料の調達から製造まで一貫した品質管理を実現します。",
+        "自社工場での製造体制に加え、国内外のサプライヤーと直接取引。原料の調達から製造まで一貫した品質管理を実現します。",
     },
     {
       number: "02",
-      title: "多言語・多国間対応",
+      title: "多言語対応",
       description:
-        "日本語・英語・ロシア語での対応が可能。USA・UAE・CIS諸国・EU・アフリカなど多様な地域のクライアントと実績があります。",
+        "日本語・英語・ロシア語での対応が可能。海外サプライヤーとの交渉や海外原料の調達もスムーズに対応します。",
     },
     {
       number: "03",
@@ -32,9 +32,9 @@ export const company = {
     },
     {
       number: "04",
-      title: "書類・認証サポート",
+      title: "品質管理・認証サポート",
       description:
-        "輸出入に必要な証明書類（COA、HACCP、Halal等）の取得支援。各国の規制に合わせた書類準備をサポートします。",
+        "製造・販売に必要な証明書類（COA、HACCP等）を完備。各種規格・認証に対応した品質管理体制で安心をお届けします。",
     },
     {
       number: "05",
@@ -43,37 +43,24 @@ export const company = {
         "量産前にサンプルでご確認いただけます。小ロットから対応可能で、品質をしっかりご確認の上でご発注いただけます。",
     },
   ],
-  globalReach: {
-    description:
-      "アジア・中東・東欧・アフリカ・アメリカ・オセアニアまで、幅広い地域のB2Bクライアントと取引しています。",
-    countries: [
-      { flag: "🇺🇸", name: "USA" },
-      { flag: "🇦🇪", name: "UAE" },
-      { flag: "🇰🇿", name: "Kazakhstan" },
-      { flag: "🇨🇿", name: "Czech Republic" },
-      { flag: "🇳🇬", name: "Nigeria" },
-      { flag: "🇬🇹", name: "Guatemala" },
-      { flag: "🇦🇺", name: "Australia" },
-    ],
-  },
   stats: [
     {
-      value: "10",
+      value: "7",
       suffix: "+",
-      label: "輸出対象国",
-      detail: "USA・UAE・EU・CIS・他",
+      label: "主要製品カテゴリ",
+      detail: "コラーゲン・プロバイオティクス・他",
     },
     {
       value: "20",
       suffix: "+",
-      label: "取扱製品カテゴリ",
-      detail: "コラーゲン・プロバイオティクス・他",
+      label: "取扱原料数",
+      detail: "健康食品・化粧品・機能性食品向け",
     },
     {
       value: "B2B",
       suffix: "",
       label: "専門の法人向けサービス",
-      detail: "製造・サンプル・認証・規制書類対応",
+      detail: "製造・OEM・サンプル・品質管理対応",
     },
   ],
 };

@@ -34,7 +34,7 @@ export function HeroSection() {
             <em className="italic text-gold-light">原材料</em>の力
           </h1>
           <p className="text-sm md:text-[0.85rem] leading-relaxed md:leading-8 text-cream/65 max-w-[380px] mb-8 md:mb-14">
-            世界中から厳選したサプリメント・健康食品の原材料を輸入販売。
+            サプリメント・健康食品の高品質原材料を輸入販売・製造販売。
             自社製造体制とOEM対応で、お客様の製品開発をトータルサポートいたします。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">

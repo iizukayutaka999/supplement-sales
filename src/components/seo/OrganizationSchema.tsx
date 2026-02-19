@@ -19,11 +19,10 @@ export function OrganizationSchema() {
       addressCountry: "JP",
     },
     knowsLanguage: ["ja", "en", "ru"],
-    areaServed: [
-      { "@type": "Country", name: "Japan" },
-      { "@type": "Country", name: "United States" },
-      { "@type": "Country", name: "United Arab Emirates" },
-    ],
+    areaServed: {
+      "@type": "Country",
+      name: "Japan",
+    },
   };
 
   const website = {
