@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #0f1a14;
+  --color-forest: #1a3328;
+  --color-moss: #2d5440;
+  --color-sage: #4a7c5e;
+  --color-gold: #c9a052;
+  --color-gold-light: #e8c97a;
+  --color-cream: #f5f1ea;
+  --color-warm-white: #faf8f4;
+  --color-text-muted: #6b7c72;
+  --color-border: rgba(42, 84, 64, 0.15);
+
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-noto-sans-jp);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+  background: var(--color-warm-white);
+  color: var(--color-ink);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.4;
+}
+
+/* Button animation */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-gold-light);
+  transform: translateX(-101%);
+  transition: transform 0.3s;
+}
+.btn-primary:hover::after {
+  transform: translateX(0);
+}
+
+/* Nav link underline animation */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Product card bottom line */
+.product-card-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--color-gold);
+  transition: width 0.4s;
+}
+.product-card-line:hover::before {
+  width: 100%;
+}
+
+/* Section tag line */
+.section-tag::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+/* Hero eyebrow line */
+.hero-eyebrow::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stat animation */
+.stat-fade {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeSlideIn 0.7s forwards;
+}
+.stat-fade:nth-child(1) { animation-delay: 0.3s; }
+.stat-fade:nth-child(2) { animation-delay: 0.5s; }
+.stat-fade:nth-child(3) { animation-delay: 0.7s; }
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Form elements */
+.form-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.7rem 0;
+  font-size: 0.85rem;
+  font-family: var(--font-sans), sans-serif;
+  color: var(--color-ink);
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+.form-input:focus {
+  border-color: var(--color-gold);
+}
+
+/* Hero background pattern */
+.hero-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d5440' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}

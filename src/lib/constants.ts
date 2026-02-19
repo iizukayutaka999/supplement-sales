@@ -1,0 +1,11 @@
+export const SITE_URL = "https://supplement-sales.vercel.app";
+export const COMPANY_NAME = "株式会社サプリ販売";
+export const COMPANY_NAME_EN = "Supplement Sales Co., Ltd.";
+export const COMPANY_ADDRESS = "〒370-2303 群馬県富岡市蕨1004番地1";
+export const COMPANY_POSTAL = "370-2303";
+export const COMPANY_REGION = "群馬県";
+export const COMPANY_CITY = "富岡市";
+export const COMPANY_STREET = "蕨1004番地1";
+export const COMPANY_COUNTRY = "JP";
+export const BUSINESS_HOURS = "平日 9:00〜18:00 (JST)";
+export const LANGUAGES = ["日本語", "English", "Русский"];
