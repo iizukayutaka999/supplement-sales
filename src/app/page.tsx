@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <PageSchema
         name="株式会社サプリ販売 - トップページ"
-        description="コスメ・健康食品の高品質原材料を世界中から輸入・販売する専門商社。コラーゲン、プロバイオティクス、ローヤルゼリー等のB2B原材料供給。"
+        description="サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社。コラーゲン、プロバイオティクス、ローヤルゼリー等のB2B原材料供給とOEM製造。"
         path="/"
       />
       <BreadcrumbSchema items={[]} />

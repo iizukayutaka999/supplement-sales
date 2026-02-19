@@ -12,9 +12,9 @@ export function StrengthsSection() {
           titleColor="text-cream"
         />
         <p className="text-sm md:text-[0.9rem] leading-relaxed md:leading-[2.4] text-cream/70 mb-6 md:mb-10">
-          株式会社サプリ販売は、コスメおよび健康食品の原材料を世界中から輸入・販売する専門商社です。
-          日本の厳しい品質基準のもと、お客様の製品開発・OEMを支援いたします。
-          サンプル手配から輸出入書類、各国の規制対応まで、トータルでサポートします。
+          株式会社サプリ販売は、サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社です。
+          自社製造体制とグローバル調達ネットワークを活かし、原料の輸入からOEM製造まで一貫対応。
+          お客様の製品開発をトータルでサポートします。
         </p>
         <Link
           href="/contact"

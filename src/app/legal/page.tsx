@@ -38,7 +38,7 @@ export default function LegalPage() {
 
             <div className="mt-8 md:mt-12 space-y-4 md:space-y-6">
               {[
-                { label: "販売業者", value: "株式会社サプリ販売" },
+                { label: "販売業者 / 製造業者", value: "株式会社サプリ販売" },
                 {
                   label: "所在地",
                   value: "〒370-2303 群馬県富岡市蕨1004番地1",

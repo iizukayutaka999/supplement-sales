@@ -9,7 +9,7 @@ export function OrganizationSchema() {
     alternateName: COMPANY_NAME_EN,
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
-    description: "コスメおよび健康食品の原材料を世界中から輸入・販売する専門商社",
+    description: "サプリメント・健康食品・化粧品の原材料の輸入販売および製造販売を行う専門商社",
     address: {
       "@type": "PostalAddress",
       postalCode: "370-2303",

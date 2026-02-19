@@ -9,14 +9,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "お問い合わせ",
   description:
-    "株式会社サプリ販売へのお問い合わせ。サンプルのご依頼、製品情報、お見積もりなど。日本語・英語・ロシア語対応。通常2営業日以内にご返答。",
+    "株式会社サプリ販売へのお問い合わせ。原料のご相談、OEM製造、サンプルのご依頼、お見積もりなど。日本語・英語・ロシア語対応。通常2営業日以内にご返答。",
   alternates: {
     canonical: "https://supplement-sales.vercel.app/contact",
   },
   openGraph: {
     title: "お問い合わせ | 株式会社サプリ販売",
     description:
-      "サンプルのご依頼、製品情報、お見積もりなど。日本語・英語・ロシア語対応。",
+      "原料のご相談、OEM製造、サンプルのご依頼など。日本語・英語・ロシア語対応。",
     url: "https://supplement-sales.vercel.app/contact",
   },
 };
@@ -29,7 +29,7 @@ export default function ContactPage() {
       <PageSchema
         type="ContactPage"
         name="お問い合わせ"
-        description="株式会社サプリ販売へのお問い合わせ。サンプルのご依頼、製品情報、お見積もりなど。"
+        description="株式会社サプリ販売へのお問い合わせ。原料のご相談、OEM製造、サンプルのご依頼など。"
         path="/contact"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
@@ -43,7 +43,7 @@ export default function ContactPage() {
             <div>
               <SectionHeading tag="CONTACT" title="お問い合わせ" />
               <p className="text-sm md:text-[0.85rem] leading-relaxed md:leading-[2.4] text-text-muted mb-6 md:mb-10">
-                サンプルのご依頼・製品に関するご相談・お見積もりなど、お気軽にお問い合わせください。通常2営業日以内にご返答いたします。
+                原料のご相談・OEM製造のご依頼・サンプルのご依頼・お見積もりなど、お気軽にお問い合わせください。通常2営業日以内にご返答いたします。
               </p>
               <div className="flex flex-col gap-4 md:gap-5">
                 {[

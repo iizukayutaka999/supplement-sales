@@ -10,7 +10,7 @@ import { ItemListSchema } from "@/components/seo/ItemListSchema";
 export const metadata: Metadata = {
   title: "製品情報",
   description:
-    "コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など高品質原材料のラインナップ。健康食品・化粧品のB2B原料をご紹介。",
+    "コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など高品質原材料のラインナップ。輸入販売から製造販売・OEM対応まで。",
   alternates: {
     canonical: "https://supplement-sales.vercel.app/products",
   },
@@ -44,8 +44,8 @@ export default function ProductsPage() {
               title="製品情報"
             />
             <p className="text-sm md:text-[0.9rem] leading-relaxed md:leading-[2.2] text-text-muted max-w-2xl mt-4">
-              健康食品・化粧品・機能性食品の原材料を幅広く取り扱っています。
-              各製品は日本の品質基準に基づき厳格に管理・輸入しています。
+              サプリメント・健康食品・化粧品の原材料を幅広く取り扱っています。
+              輸入販売から自社製造・OEM受託まで、日本の品質基準に基づき厳格に管理しています。
             </p>
           </div>
           <ProductGrid products={products} />

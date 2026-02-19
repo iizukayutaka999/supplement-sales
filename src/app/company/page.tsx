@@ -9,14 +9,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "会社概要",
   description:
-    "株式会社サプリ販売の会社概要。コスメ・健康食品原材料の輸入販売。グローバル調達ネットワーク、多言語対応、書類・認証サポート。",
+    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売。グローバル調達、OEM製造、多言語対応。",
   alternates: {
     canonical: "https://supplement-sales.vercel.app/company",
   },
   openGraph: {
     title: "会社概要 | 株式会社サプリ販売",
     description:
-      "株式会社サプリ販売の会社概要。コスメ・健康食品原材料の輸入販売専門商社。",
+      "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売・製造販売の専門商社。",
     url: "https://supplement-sales.vercel.app/company",
   },
 };
@@ -29,7 +29,7 @@ export default function CompanyPage() {
       <PageSchema
         type="AboutPage"
         name="会社概要"
-        description="株式会社サプリ販売の会社概要。コスメ・健康食品原材料の輸入販売専門商社。"
+        description="株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売・製造販売の専門商社。"
         path="/company"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
@@ -42,9 +42,9 @@ export default function CompanyPage() {
           <div className="max-w-4xl">
             <SectionHeading tag="ABOUT US" title="会社概要" />
             <p className="text-sm md:text-base leading-relaxed md:leading-[2.4] text-text-muted max-w-3xl mt-4 md:mt-6">
-              株式会社サプリ販売は、コスメおよび健康食品の原材料を世界中から輸入・販売する専門商社です。
-              日本の厳しい品質基準のもと、お客様の製品開発・OEMを支援いたします。
-              サンプル手配から輸出入書類、各国の規制対応まで、トータルでサポートします。
+              株式会社サプリ販売は、サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社です。
+              グローバルな調達ネットワークと自社製造体制を活かし、原料の輸入からOEM製造まで一貫対応。
+              お客様の製品開発をトータルでサポートします。
             </p>
           </div>
         </section>
@@ -62,7 +62,7 @@ export default function CompanyPage() {
                 { label: "所在地", value: company.address.full },
                 {
                   label: "事業内容",
-                  value: "コスメ・健康食品原材料の輸入・販売",
+                  value: "サプリメント・健康食品・化粧品原材料の輸入販売および製造販売、OEM受託製造",
                 },
                 { label: "対応言語", value: company.languages.join(" / ") },
                 { label: "営業時間", value: company.businessHours },
