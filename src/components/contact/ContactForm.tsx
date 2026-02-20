@@ -42,7 +42,8 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="bg-cream/50 p-8 md:p-12 text-center">
+      <div className="bg-cream/50 p-10 md:p-16 text-center relative">
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent" />
         <p className="font-serif text-2xl md:text-3xl text-forest mb-4">
           お問い合わせありがとうございます
         </p>
@@ -56,7 +57,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-5 md:gap-6">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-6 md:gap-8">
       {error && (
         <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 text-sm">
           {error}
@@ -125,7 +126,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="bg-forest text-cream border-none py-3 md:py-4 px-8 md:px-10 text-[0.72rem] tracking-[0.2em] font-sans cursor-pointer hover:bg-moss transition-colors self-start disabled:opacity-50 disabled:cursor-not-allowed"
+        className="bg-forest text-cream border-none py-3.5 md:py-4 px-10 md:px-12 text-[0.72rem] tracking-[0.2em] font-sans cursor-pointer hover:bg-moss transition-all duration-400 self-start disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_4px_16px_rgba(26,51,40,0.15)] hover:-translate-y-0.5"
       >
         {loading ? "送信中..." : "送信する →"}
       </button>

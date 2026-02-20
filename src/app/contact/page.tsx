@@ -62,8 +62,8 @@ export default function ContactPage() {
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />
 
-        <section className="py-12 md:py-20 px-4 md:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start max-w-6xl mx-auto">
+        <section className="py-16 md:py-24 px-4 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 items-start max-w-6xl mx-auto">
             {/* Contact Info */}
             <div>
               <SectionHeading tag="CONTACT" title="お問い合わせ" />

@@ -69,7 +69,8 @@ export default function CompanyPage() {
         </section>
 
         {/* Company Info */}
-        <section className="py-12 md:py-16 px-4 md:px-16 bg-cream">
+        <section className="py-12 md:py-16 px-4 md:px-16 bg-cream relative">
+          <div className="absolute top-0 left-4 right-4 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
           <div className="max-w-4xl">
             <h2 className="text-[0.65rem] tracking-[0.3em] text-gold mb-6 md:mb-10">
               COMPANY INFORMATION
@@ -88,7 +89,7 @@ export default function CompanyPage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="flex flex-col sm:flex-row gap-1 sm:gap-4 py-3 md:py-4 border-b border-border"
+                  className="flex flex-col sm:flex-row gap-1 sm:gap-4 py-4 md:py-5 border-b border-border transition-colors duration-300 hover:bg-gold/[0.02]"
                 >
                   <span className="text-[0.65rem] tracking-[0.25em] text-gold min-w-[6rem] md:min-w-[8rem] shrink-0">
                     {item.label}
@@ -103,8 +104,10 @@ export default function CompanyPage() {
         </section>
 
         {/* Strengths */}
-        <section className="bg-forest text-cream py-16 px-4 md:py-28 md:px-16">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24">
+        <section className="bg-forest text-cream py-20 px-4 md:py-32 md:px-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_80%,rgba(201,160,82,0.08)_0%,transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_90%_10%,rgba(74,124,94,0.12)_0%,transparent_50%)]" />
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 relative z-10">
             <div>
               <SectionHeading
                 tag="OUR STRENGTHS"
@@ -136,8 +139,9 @@ export default function CompanyPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-cream py-16 px-4 md:py-20 md:px-16 text-center">
-          <p className="font-serif text-2xl md:text-3xl text-forest mb-3 md:mb-4 font-light">
+        <section className="bg-cream py-20 px-4 md:py-28 md:px-16 text-center relative">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+          <p className="font-serif text-[1.75rem] md:text-[2.25rem] text-forest mb-3 md:mb-4 font-light tracking-[-0.01em]">
             お気軽にお問い合わせください
           </p>
           <p className="text-sm text-text-muted mb-6 md:mb-8">

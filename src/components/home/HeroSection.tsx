@@ -7,7 +7,8 @@ export function HeroSection() {
       {/* Left - Dark section */}
       <div className="bg-forest flex flex-col justify-end px-6 pt-28 pb-12 md:px-16 md:pt-32 md:pb-20 relative overflow-hidden">
         {/* Radial gradient overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_70%,rgba(201,160,82,0.15)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_70%,rgba(201,160,82,0.12)_0%,transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(74,124,94,0.15)_0%,transparent_50%)]" />
 
         {/* Botanical SVG */}
         <svg
@@ -25,15 +26,15 @@ export function HeroSection() {
         </svg>
 
         <div className="relative z-10">
-          <p className="hero-eyebrow flex items-center gap-4 text-[0.6rem] md:text-[0.65rem] tracking-[0.4em] text-gold mb-6 md:mb-8">
+          <p className="hero-eyebrow flex items-center gap-5 text-[0.6rem] md:text-[0.65rem] tracking-[0.45em] text-gold mb-8 md:mb-10">
             SINCE 2024 · GUNMA, JAPAN
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-[4.5rem] font-light leading-[1.15] text-cream mb-6 md:mb-8">
+          <h1 className="font-serif text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] font-light leading-[1.1] text-cream mb-8 md:mb-10 tracking-[-0.01em]">
             美と健康を<br />
             支える<br />
-            <em className="italic text-gold-light">原材料</em>の力
+            <em className="italic text-gold-light [text-shadow:0_0_30px_rgba(232,201,122,0.2)]">原材料</em>の力
           </h1>
-          <p className="text-sm md:text-[0.85rem] leading-relaxed md:leading-8 text-cream/65 max-w-[380px] mb-8 md:mb-14">
+          <p className="text-sm md:text-[0.85rem] leading-relaxed md:leading-8 text-cream/65 max-w-[380px] mb-10 md:mb-16">
             サプリメント・健康食品の高品質原材料を輸入販売・製造販売。
             自社製造体制で、お客様の製品開発をトータルサポートいたします。
           </p>
@@ -55,14 +56,15 @@ export function HeroSection() {
       </div>
 
       {/* Right - Light section with stats */}
-      <div className="bg-cream flex flex-col justify-center px-6 py-12 md:px-16 md:py-32 relative hero-pattern">
+      <div className="bg-cream flex flex-col justify-center px-6 py-12 md:px-16 md:py-32 relative hero-pattern overflow-hidden">
+        <div className="absolute top-0 right-0 w-40 h-40 bg-[radial-gradient(circle,rgba(201,160,82,0.06)_0%,transparent_70%)]" />
         <div className="grid grid-rows-3 gap-0 relative">
           {company.stats.map((stat) => (
             <div
               key={stat.label}
               className="stat-fade py-6 md:py-10 border-b border-border flex items-start gap-4 md:gap-6"
             >
-              <div className="font-serif text-4xl md:text-[3.5rem] font-light text-sage leading-none min-w-[4rem] md:min-w-[5rem]">
+              <div className="font-serif text-[2.75rem] md:text-[4rem] font-light text-sage leading-none min-w-[4rem] md:min-w-[5rem]">
                 {stat.value}
                 {stat.suffix && (
                   <sup className="text-base md:text-xl align-super">{stat.suffix}</sup>

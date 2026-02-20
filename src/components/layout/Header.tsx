@@ -17,8 +17,8 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-warm-white/92 backdrop-blur-[12px] border-b border-border transition-all duration-300 ${
-        isScrolled ? "py-2 px-4 md:py-3 md:px-16" : "py-3 px-4 md:py-6 md:px-16"
+      className={`fixed top-0 left-0 right-0 z-50 bg-warm-white/90 backdrop-blur-[16px] backdrop-saturate-[1.2] border-b border-border transition-all duration-500 ease-out ${
+        isScrolled ? "py-2 px-4 md:py-3 md:px-16 shadow-[0_2px_20px_rgba(26,51,40,0.04)]" : "py-3 px-4 md:py-6 md:px-16"
       }`}
     >
       <div className="flex justify-between items-center">
@@ -32,7 +32,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-12">
+        <nav className="hidden md:flex gap-14">
           {navigation.map((item) => (
             <Link
               key={item.href}

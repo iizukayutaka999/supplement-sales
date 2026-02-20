@@ -9,7 +9,12 @@ export function ScrollReveal() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            const el = entry.target as HTMLElement;
+            const delay = el.dataset.delay;
+            if (delay) {
+              el.style.transitionDelay = `${delay}ms`;
+            }
+            el.classList.add("visible");
           }
         });
       },

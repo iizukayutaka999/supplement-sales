@@ -81,13 +81,13 @@ export default async function ProductDetailPage({ params }: Props) {
           <div className="max-w-4xl mx-auto">
             {/* Header */}
             <div className="mb-10 md:mb-16">
-              <span className="text-4xl md:text-5xl block mb-4 md:mb-6">
+              <span className="text-5xl md:text-6xl block mb-5 md:mb-7">
                 {product.icon}
               </span>
               <p className="text-[0.6rem] tracking-[0.3em] text-gold mb-3">
                 {product.category}
               </p>
-              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-light text-forest leading-tight mb-2">
+              <h1 className="font-serif text-[2rem] md:text-[2.75rem] lg:text-[3.5rem] font-light text-forest leading-tight mb-2 tracking-[-0.01em]">
                 {product.nameJa}
               </h1>
               <p className="text-sm tracking-wider text-text-muted">
@@ -114,7 +114,7 @@ export default async function ProductDetailPage({ params }: Props) {
                       key={feature}
                       className="flex items-start gap-3 text-sm md:text-[0.85rem] leading-relaxed text-text-muted"
                     >
-                      <span className="text-sage mt-0.5 shrink-0">—</span>
+                      <span className="text-gold mt-0.5 shrink-0">—</span>
                       {feature}
                     </li>
                   ))}
@@ -129,7 +129,7 @@ export default async function ProductDetailPage({ params }: Props) {
                   {product.applications.map((app) => (
                     <span
                       key={app}
-                      className="px-4 md:px-5 py-2 border border-border text-[0.72rem] tracking-[0.1em] text-forest bg-cream"
+                      className="px-5 md:px-6 py-2.5 border border-border text-[0.72rem] tracking-[0.1em] text-forest bg-cream transition-all duration-300 hover:border-gold/40 hover:bg-gold/[0.04]"
                     >
                       {app}
                     </span>
@@ -145,7 +145,7 @@ export default async function ProductDetailPage({ params }: Props) {
                       {product.origins.map((origin) => (
                         <span
                           key={origin}
-                          className="px-4 md:px-5 py-2 border border-border text-[0.72rem] tracking-[0.1em] text-forest bg-warm-white"
+                          className="px-5 md:px-6 py-2.5 border border-border text-[0.72rem] tracking-[0.1em] text-forest bg-warm-white transition-all duration-300 hover:border-gold/40 hover:bg-gold/[0.04]"
                         >
                           {origin}
                         </span>
@@ -157,16 +157,17 @@ export default async function ProductDetailPage({ params }: Props) {
             </div>
 
             {/* CTA */}
-            <div className="bg-forest p-8 md:p-12 text-center">
-              <p className="font-serif text-xl md:text-2xl text-cream mb-2 md:mb-3 font-light">
+            <div className="bg-forest p-10 md:p-16 text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(201,160,82,0.08)_0%,transparent_60%)]" />
+              <p className="font-serif text-xl md:text-2xl text-cream mb-2 md:mb-3 font-light relative z-10">
                 この製品についてのお問い合わせ
               </p>
-              <p className="text-[0.78rem] text-cream/60 mb-6 md:mb-8">
+              <p className="text-[0.78rem] text-cream/60 mb-6 md:mb-8 relative z-10">
                 サンプルのご依頼・詳細情報・お見積もりなど、お気軽にご相談ください。
               </p>
               <Link
                 href="/contact"
-                className="btn-primary bg-gold text-ink px-8 md:px-10 py-3 md:py-4 text-[0.72rem] tracking-[0.2em] font-medium no-underline inline-block"
+                className="btn-primary bg-gold text-ink px-8 md:px-10 py-3 md:py-4 text-[0.72rem] tracking-[0.2em] font-medium no-underline inline-block relative z-10"
               >
                 <span className="relative z-10">お問い合わせ</span>
               </Link>

@@ -14,6 +14,10 @@
 
   --font-serif: var(--font-cormorant);
   --font-sans: var(--font-noto-sans-jp);
+
+  --shadow-soft: 0 4px 20px rgba(26, 51, 40, 0.06);
+  --shadow-elevated: 0 8px 40px rgba(26, 51, 40, 0.1);
+  --shadow-gold: 0 4px 24px rgba(201, 160, 82, 0.15);
 }
 
 html {
@@ -26,6 +30,7 @@ body {
   color: var(--color-ink);
   font-weight: 300;
   overflow-x: hidden;
+  letter-spacing: 0.02em;
 }
 
 /* Noise texture overlay */
@@ -39,24 +44,30 @@ body::before {
   opacity: 0.4;
 }
 
-/* Button animation */
+/* Button animation — gold gradient slide + floating shadow */
 .btn-primary {
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 12px rgba(201, 160, 82, 0.2);
 }
 .btn-primary::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--color-gold-light);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
   transform: translateX(-101%);
-  transition: transform 0.3s;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-primary:hover::after {
   transform: translateX(0);
 }
+.btn-primary:hover {
+  box-shadow: 0 6px 24px rgba(201, 160, 82, 0.35);
+  transform: translateY(-1px);
+}
 
-/* Nav link underline animation */
+/* Nav link underline animation — gold gradient */
 .nav-link {
   position: relative;
 }
@@ -66,17 +77,17 @@ body::before {
   bottom: -4px;
   left: 0;
   right: 0;
-  height: 1px;
-  background: var(--color-gold);
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover::after {
   transform: scaleX(1);
 }
 
-/* Product card bottom line */
+/* Product card bottom line — gold gradient */
 .product-card-line::before {
   content: "";
   position: absolute;
@@ -84,50 +95,50 @@ body::before {
   left: 0;
   height: 2px;
   width: 0;
-  background: var(--color-gold);
-  transition: width 0.4s;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-card-line:hover::before {
   width: 100%;
 }
 
-/* Section tag line */
+/* Section tag line — gold gradient */
 .section-tag::before {
   content: "";
-  width: 30px;
+  width: 40px;
   height: 1px;
-  background: var(--color-gold);
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
 }
 
-/* Hero eyebrow line */
+/* Hero eyebrow line — gold gradient */
 .hero-eyebrow::before {
   content: "";
   display: block;
-  width: 40px;
+  width: 50px;
   height: 1px;
-  background: var(--color-gold);
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
 }
 
-/* Scroll reveal animation */
+/* Scroll reveal animation — smoother easing */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s, transform 0.8s;
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Stat animation */
+/* Stat animation — wider stagger */
 .stat-fade {
   opacity: 0;
   transform: translateX(30px);
-  animation: fadeSlideIn 0.7s forwards;
+  animation: fadeSlideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
-.stat-fade:nth-child(1) { animation-delay: 0.3s; }
-.stat-fade:nth-child(2) { animation-delay: 0.5s; }
-.stat-fade:nth-child(3) { animation-delay: 0.7s; }
+.stat-fade:nth-child(1) { animation-delay: 0.4s; }
+.stat-fade:nth-child(2) { animation-delay: 0.7s; }
+.stat-fade:nth-child(3) { animation-delay: 1.0s; }
 
 @keyframes fadeSlideIn {
   to {
@@ -136,7 +147,16 @@ body::before {
   }
 }
 
-/* Form elements */
+/* Card lift — hover elevation */
+.card-lift {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(26, 51, 40, 0.08);
+}
+
+/* Form elements — gold glow on focus */
 .form-input {
   background: transparent;
   border: none;
@@ -146,11 +166,12 @@ body::before {
   font-family: var(--font-sans), sans-serif;
   color: var(--color-ink);
   outline: none;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
   width: 100%;
 }
 .form-input:focus {
   border-color: var(--color-gold);
+  box-shadow: 0 2px 8px rgba(201, 160, 82, 0.12);
 }
 
 /* Hero background pattern */
