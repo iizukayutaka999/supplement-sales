@@ -6,9 +6,16 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
-  description: "株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。",
+  description:
+    "株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。個人情報の取得、利用目的、第三者への提供、管理方法について。",
   alternates: {
-    canonical: "https://supplement-sales.vercel.app/privacy",
+    canonical: "https://supplement-sales.jp/privacy",
+  },
+  openGraph: {
+    title: "プライバシーポリシー | 株式会社サプリ販売",
+    description:
+      "株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。",
+    url: "https://supplement-sales.jp/privacy",
   },
 };
 

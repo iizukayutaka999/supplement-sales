@@ -21,16 +21,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = products.find((p) => p.slug === slug);
   if (!product) return {};
 
+  const title = `${product.nameJa}（${product.nameEn}）| サプリメント原材料`;
+  const description = `${product.description} 株式会社サプリ販売が輸入販売・製造販売する高品質${product.nameJa}原料。サンプル・小ロットから対応可能。`;
+
   return {
-    title: `${product.nameJa}（${product.nameEn}）`,
-    description: product.description,
+    title,
+    description,
     alternates: {
-      canonical: `https://supplement-sales.vercel.app/products/${slug}`,
+      canonical: `https://supplement-sales.jp/products/${slug}`,
     },
     openGraph: {
       title: `${product.nameJa} | 株式会社サプリ販売`,
       description: product.shortDescription,
-      url: `https://supplement-sales.vercel.app/products/${slug}`,
+      url: `https://supplement-sales.jp/products/${slug}`,
+      type: "website",
     },
   };
 }

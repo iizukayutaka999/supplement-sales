@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "submit-urls": "node scripts/submit-to-google.mjs"
   },
   "dependencies": {
     "next": "16.1.6",

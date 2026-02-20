@@ -5,34 +5,53 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "会社概要",
+  title: "会社概要 | サプリメント原材料の輸入販売・製造販売の専門商社",
   description:
-    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売。多言語対応。",
+    "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売および製造販売を行う専門商社。自社製造体制、多言語対応（日本語・英語・ロシア語）、品質管理体制を備えています。",
   alternates: {
-    canonical: "https://supplement-sales.vercel.app/company",
+    canonical: "https://supplement-sales.jp/company",
   },
   openGraph: {
     title: "会社概要 | 株式会社サプリ販売",
     description:
-      "株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売・製造販売の専門商社。",
-    url: "https://supplement-sales.vercel.app/company",
+      "サプリメント・健康食品・化粧品原材料の輸入販売・製造販売の専門商社。自社製造体制と多言語対応で、お客様の原料調達をトータルサポート。",
+    url: "https://supplement-sales.jp/company",
   },
 };
 
 const breadcrumbItems = [{ name: "会社概要", href: "/company" }];
+
+const companyFaqItems = [
+  {
+    question: "株式会社サプリ販売はいつ設立されましたか？",
+    answer: "2024年に設立されました。群馬県富岡市に本社を構えています。",
+  },
+  {
+    question: "自社製造は可能ですか？",
+    answer:
+      "はい、自社工場での製造体制を備えており、原料の調達から製造まで一貫した品質管理を実現しています。",
+  },
+  {
+    question: "品質管理体制はどうなっていますか？",
+    answer:
+      "COA（分析証明書）、HACCP等の証明書類を完備しており、各種規格・認証に対応した品質管理体制を整えています。",
+  },
+];
 
 export default function CompanyPage() {
   return (
     <>
       <PageSchema
         type="AboutPage"
-        name="会社概要"
-        description="株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売・製造販売の専門商社。"
+        name="会社概要 - 株式会社サプリ販売"
+        description="株式会社サプリ販売の会社概要。サプリメント・健康食品・化粧品原材料の輸入販売・製造販売の専門商社。自社製造体制、多言語対応、品質管理体制を備えた原材料供給パートナー。"
         path="/company"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQSchema items={companyFaqItems} />
 
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />

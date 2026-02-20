@@ -6,9 +6,16 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "特定商取引法に基づく表記",
-  description: "株式会社サプリ販売の特定商取引法に基づく表記。",
+  description:
+    "株式会社サプリ販売の特定商取引法に基づく表記。販売業者情報、支払方法、返品・交換ポリシー等をご確認いただけます。",
   alternates: {
-    canonical: "https://supplement-sales.vercel.app/legal",
+    canonical: "https://supplement-sales.jp/legal",
+  },
+  openGraph: {
+    title: "特定商取引法に基づく表記 | 株式会社サプリ販売",
+    description:
+      "株式会社サプリ販売の特定商取引法に基づく表記。販売業者情報、支払方法、返品・交換ポリシー。",
+    url: "https://supplement-sales.jp/legal",
   },
 };
 

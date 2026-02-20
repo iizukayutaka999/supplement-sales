@@ -8,17 +8,17 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { ItemListSchema } from "@/components/seo/ItemListSchema";
 
 export const metadata: Metadata = {
-  title: "製品情報",
+  title: "製品情報 | サプリメント・健康食品・化粧品原材料ラインナップ",
   description:
-    "コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など高品質原材料のラインナップ。輸入販売から製造販売まで。",
+    "コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶、発酵コーヒーなど高品質サプリメント原材料の一覧。輸入販売から自社製造販売まで対応。サンプル・小ロットからご相談可能。",
   alternates: {
-    canonical: "https://supplement-sales.vercel.app/products",
+    canonical: "https://supplement-sales.jp/products",
   },
   openGraph: {
     title: "製品情報 | 株式会社サプリ販売",
     description:
-      "コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など高品質原材料のラインナップ。",
-    url: "https://supplement-sales.vercel.app/products",
+      "コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など高品質サプリメント原材料のラインナップ。輸入販売から自社製造まで対応。",
+    url: "https://supplement-sales.jp/products",
   },
 };
 
@@ -28,8 +28,9 @@ export default function ProductsPage() {
   return (
     <>
       <PageSchema
-        name="製品情報"
-        description="コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など高品質原材料のラインナップ。"
+        type="CollectionPage"
+        name="製品情報 - サプリメント原材料一覧"
+        description="株式会社サプリ販売が取り扱うサプリメント・健康食品・化粧品原材料の製品一覧。コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶など。"
         path="/products"
       />
       <BreadcrumbSchema items={breadcrumbItems} />

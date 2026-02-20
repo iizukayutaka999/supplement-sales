@@ -1,4 +1,4 @@
-export const SITE_URL = "https://supplement-sales.vercel.app";
+export const SITE_URL = "https://supplement-sales.jp";
 export const COMPANY_NAME = "株式会社サプリ販売";
 export const COMPANY_NAME_EN = "Supplement Sales Co., Ltd.";
 export const COMPANY_ADDRESS = "〒370-2303 群馬県富岡市蕨1004番地1";

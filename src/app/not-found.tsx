@@ -2,7 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ページが見つかりません | 株式会社サプリ販売",
+  title: "ページが見つかりません",
+  description:
+    "お探しのページは存在しないか、移動した可能性があります。株式会社サプリ販売のトップページへお戻りください。",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function NotFound() {

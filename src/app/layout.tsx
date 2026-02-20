@@ -21,41 +21,50 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://supplement-sales.vercel.app"),
+  metadataBase: new URL("https://supplement-sales.jp"),
   title: {
     default: "株式会社サプリ販売 | サプリメント原材料の輸入販売・製造販売",
     template: "%s | 株式会社サプリ販売",
   },
   description:
-    "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売。コラーゲン、プロバイオティクス、ローヤルゼリー等のB2B原材料供給。日本語・英語・ロシア語対応。",
+    "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社。赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン、アンセリン等の高品質B2B原材料を供給。日本語・英語・ロシア語対応。",
   keywords: [
     "サプリメント原材料",
     "健康食品原料",
     "化粧品原料",
-    "コラーゲン",
-    "プロバイオティクス",
-    "ローヤルゼリー",
-    "B2B",
+    "赤ビーツ粉末",
+    "ボスウェリアセラータ",
+    "植物性コラーゲン",
+    "アンセリン",
+    "B2B原料販売",
     "輸入販売",
     "製造販売",
-    "製造販売",
     "原料販売",
+    "機能性原料",
   ],
   authors: [{ name: "株式会社サプリ販売" }],
+  creator: "株式会社サプリ販売",
+  publisher: "株式会社サプリ販売",
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://supplement-sales.vercel.app",
+    url: "https://supplement-sales.jp",
     siteName: "株式会社サプリ販売",
     title: "株式会社サプリ販売 | サプリメント原材料の輸入販売・製造販売",
     description:
-      "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売。コラーゲン、プロバイオティクス、ローヤルゼリー等のB2B原材料供給。",
+      "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社。赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン、アンセリン等の高品質B2B原材料を供給。",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "株式会社サプリ販売",
+        alt: "株式会社サプリ販売 - サプリメント原材料の輸入販売・製造販売",
+        type: "image/png",
       },
     ],
   },
@@ -67,11 +76,23 @@ export const metadata: Metadata = {
     images: ["/images/og-image.png"],
   },
   alternates: {
-    canonical: "https://supplement-sales.vercel.app",
+    canonical: "https://supplement-sales.jp",
   },
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
+  category: "business",
 };
 
 export default function RootLayout({

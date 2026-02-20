@@ -5,23 +5,47 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "お問い合わせ",
+  title: "お問い合わせ | サプリメント原材料のご相談・サンプル・お見積もり",
   description:
-    "株式会社サプリ販売へのお問い合わせ。原料のご相談、サンプルのご依頼、お見積もりなど。日本語・英語・ロシア語対応。通常2営業日以内にご返答。",
+    "株式会社サプリ販売へのお問い合わせ。サプリメント・健康食品・化粧品原料のご相談、サンプルのご依頼、お見積もりなど。日本語・英語・ロシア語対応。通常2営業日以内にご返答いたします。",
   alternates: {
-    canonical: "https://supplement-sales.vercel.app/contact",
+    canonical: "https://supplement-sales.jp/contact",
   },
   openGraph: {
     title: "お問い合わせ | 株式会社サプリ販売",
     description:
-      "原料のご相談、サンプルのご依頼など。日本語・英語・ロシア語対応。",
-    url: "https://supplement-sales.vercel.app/contact",
+      "サプリメント原料のご相談、サンプルのご依頼、お見積もりなど。日本語・英語・ロシア語対応。通常2営業日以内にご返答。",
+    url: "https://supplement-sales.jp/contact",
   },
 };
 
 const breadcrumbItems = [{ name: "お問い合わせ", href: "/contact" }];
+
+const faqItems = [
+  {
+    question: "サンプルの提供は可能ですか？",
+    answer:
+      "はい、多くの製品でサンプルのご提供が可能です。お問い合わせフォームよりご希望の製品をお知らせください。",
+  },
+  {
+    question: "小ロットでの注文は可能ですか？",
+    answer:
+      "はい、小ロットからの対応が可能です。製品によって最小ロットが異なりますので、お気軽にご相談ください。",
+  },
+  {
+    question: "対応言語は何ですか？",
+    answer:
+      "日本語、英語、ロシア語の3言語に対応しています。海外サプライヤーとの交渉もスムーズに対応可能です。",
+  },
+  {
+    question: "お問い合わせからの返答にどれくらいかかりますか？",
+    answer:
+      "通常2営業日以内にご返答いたします。お急ぎの場合はその旨をお問い合わせ内容にご記載ください。",
+  },
+];
 
 export default function ContactPage() {
   return (
@@ -29,10 +53,11 @@ export default function ContactPage() {
       <PageSchema
         type="ContactPage"
         name="お問い合わせ"
-        description="株式会社サプリ販売へのお問い合わせ。原料のご相談、サンプルのご依頼など。"
+        description="株式会社サプリ販売へのお問い合わせ。サプリメント原料のご相談、サンプルのご依頼など。"
         path="/contact"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQSchema items={faqItems} />
 
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />
