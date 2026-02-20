@@ -5,6 +5,7 @@ import { products } from "@/data/products";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ProductSchema } from "@/components/seo/ProductSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -52,10 +53,26 @@ export default async function ProductDetailPage({ params }: Props) {
     { name: product.nameJa, href: `/products/${product.slug}` },
   ];
 
+  const productFaqItems = [
+    {
+      question: `${product.nameJa}とはどのような原材料ですか？`,
+      answer: product.description,
+    },
+    {
+      question: `${product.nameJa}のサンプルは入手できますか？`,
+      answer: `はい、${product.nameJa}のサンプルをご提供可能です。お問い合わせフォームより「${product.nameJa}サンプル希望」とご記入の上、お気軽にご依頼ください。`,
+    },
+    {
+      question: `${product.nameJa}はどのような製品に使用できますか？`,
+      answer: `${product.nameJa}は${product.applications.join("、")}などの用途にご使用いただけます。`,
+    },
+  ];
+
   return (
     <>
       <ProductSchema product={product} />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQSchema items={productFaqItems} />
 
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />

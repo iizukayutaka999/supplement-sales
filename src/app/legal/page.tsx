@@ -3,6 +3,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 
 export const metadata: Metadata = {
   title: "特定商取引法に基づく表記",
@@ -19,6 +20,23 @@ export const metadata: Metadata = {
   },
 };
 
+const legalFaqItems = [
+  {
+    question: "支払方法は何がありますか？",
+    answer: "銀行振込でのお支払いとなります。振込手数料はお客様ご負担となります。",
+  },
+  {
+    question: "返品・交換は可能ですか？",
+    answer:
+      "商品の性質上、お客様都合による返品はお受けできません。不良品・誤配送の場合は商品到着後7日以内にご連絡いただければ対応いたします。",
+  },
+  {
+    question: "納品までどのくらいかかりますか？",
+    answer:
+      "在庫品はご入金確認後7営業日以内に発送いたします。受注生産品については別途ご案内いたします。",
+  },
+];
+
 const breadcrumbItems = [
   { name: "特定商取引法に基づく表記", href: "/legal" },
 ];
@@ -28,10 +46,11 @@ export default function LegalPage() {
     <>
       <PageSchema
         name="特定商取引法に基づく表記"
-        description="株式会社サプリ販売の特定商取引法に基づく表記。"
+        description="株式会社サプリ販売の特定商取引法に基づく表記。販売業者情報、支払方法、返品・交換ポリシー。"
         path="/legal"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQSchema items={legalFaqItems} />
 
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />

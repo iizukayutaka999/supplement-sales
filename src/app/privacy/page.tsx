@@ -3,6 +3,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
@@ -14,10 +15,28 @@ export const metadata: Metadata = {
   openGraph: {
     title: "プライバシーポリシー | 株式会社サプリ販売",
     description:
-      "株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。",
+      "株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。個人情報の取得・利用目的・第三者提供・管理方法。",
     url: "https://supplement-sales.jp/privacy",
   },
 };
+
+const privacyFaqItems = [
+  {
+    question: "どのような個人情報を取得していますか？",
+    answer:
+      "お問い合わせフォームを通じて、会社名、氏名、メールアドレス等の情報を取得しています。",
+  },
+  {
+    question: "個人情報は第三者に提供されますか？",
+    answer:
+      "法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供することはありません。",
+  },
+  {
+    question: "個人情報の取り扱いについて問い合わせるには？",
+    answer:
+      "当サイトのお問い合わせフォーム（https://supplement-sales.jp/contact）よりご連絡ください。",
+  },
+];
 
 const breadcrumbItems = [
   { name: "プライバシーポリシー", href: "/privacy" },
@@ -28,10 +47,11 @@ export default function PrivacyPage() {
     <>
       <PageSchema
         name="プライバシーポリシー"
-        description="株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。"
+        description="株式会社サプリ販売のプライバシーポリシー（個人情報保護方針）。個人情報の取得・利用目的・第三者提供・管理方法。"
         path="/privacy"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQSchema items={privacyFaqItems} />
 
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />
