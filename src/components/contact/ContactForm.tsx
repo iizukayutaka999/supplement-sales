@@ -4,10 +4,40 @@ import { useState } from "react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          company: formData.get("company"),
+          name: formData.get("name"),
+          email: formData.get("email"),
+          inquiryType: formData.get("inquiryType"),
+          message: formData.get("message"),
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("送信に失敗しました");
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError("送信に失敗しました。時間をおいて再度お試しください。");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -27,12 +57,18 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5 md:gap-6">
+      {error && (
+        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 text-sm">
+          {error}
+        </div>
+      )}
       <div className="flex flex-col gap-2">
         <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
           会社名 / COMPANY
         </label>
         <input
           type="text"
+          name="company"
           placeholder="株式会社〇〇"
           required
           className="form-input"
@@ -44,6 +80,7 @@ export function ContactForm() {
         </label>
         <input
           type="text"
+          name="name"
           placeholder="山田 太郎"
           required
           className="form-input"
@@ -55,6 +92,7 @@ export function ContactForm() {
         </label>
         <input
           type="email"
+          name="email"
           placeholder="info@example.com"
           required
           className="form-input"
@@ -64,7 +102,7 @@ export function ContactForm() {
         <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
           お問い合わせ内容 / INQUIRY TYPE
         </label>
-        <select className="form-input" defaultValue="">
+        <select name="inquiryType" className="form-input" defaultValue="">
           <option value="" disabled>
             選択してください
           </option>
@@ -79,15 +117,17 @@ export function ContactForm() {
           メッセージ / MESSAGE
         </label>
         <textarea
+          name="message"
           placeholder="ご質問・ご要望をご記入ください"
           className="form-input resize-y min-h-[120px]"
         />
       </div>
       <button
         type="submit"
-        className="bg-forest text-cream border-none py-3 md:py-4 px-8 md:px-10 text-[0.72rem] tracking-[0.2em] font-sans cursor-pointer hover:bg-moss transition-colors self-start"
+        disabled={loading}
+        className="bg-forest text-cream border-none py-3 md:py-4 px-8 md:px-10 text-[0.72rem] tracking-[0.2em] font-sans cursor-pointer hover:bg-moss transition-colors self-start disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        送信する →
+        {loading ? "送信中..." : "送信する →"}
       </button>
     </form>
   );

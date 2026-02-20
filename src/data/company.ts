@@ -1,3 +1,9 @@
+import { products } from "./products";
+
+// products データから自動計算
+const productCount = products.length;
+const categoryCount = new Set(products.map((p) => p.category)).size;
+
 export const company = {
   name: "株式会社サプリ販売",
   nameEn: "Supplement Sales Co., Ltd.",
@@ -39,14 +45,14 @@ export const company = {
   ],
   stats: [
     {
-      value: "7",
-      suffix: "+",
+      value: String(categoryCount),
+      suffix: "",
       label: "主要製品カテゴリ",
-      detail: "コラーゲン・プロバイオティクス・他",
+      detail: products.map((p) => p.nameJa).join("・"),
     },
     {
-      value: "20",
-      suffix: "+",
+      value: String(productCount),
+      suffix: "",
       label: "取扱原料数",
       detail: "健康食品・化粧品・機能性食品向け",
     },
