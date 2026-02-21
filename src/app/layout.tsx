@@ -105,7 +105,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <head>
+      <body
+        className={`${cormorant.variable} ${notoSansJP.variable} antialiased`}
+      >
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
@@ -118,10 +120,6 @@ export default function RootLayout({
             gtag('config', '${GA_ID}');
           `}
         </Script>
-      </head>
-      <body
-        className={`${cormorant.variable} ${notoSansJP.variable} antialiased`}
-      >
         <OrganizationSchema />
         <Header />
         <main>{children}</main>
