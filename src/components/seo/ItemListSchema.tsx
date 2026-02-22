@@ -1,5 +1,5 @@
 import { JsonLd } from "./JsonLd";
-import { SITE_URL, COMPANY_NAME } from "@/lib/constants";
+import { SITE_URL } from "@/lib/constants";
 import { Product } from "@/types/product";
 
 export function ItemListSchema({ products }: { products: Product[] }) {
@@ -14,31 +14,7 @@ export function ItemListSchema({ products }: { products: Product[] }) {
       "@type": "ListItem",
       position: index + 1,
       name: `${product.nameJa} (${product.nameEn})`,
-      description: product.shortDescription,
       url: `${SITE_URL}/products/${product.slug}`,
-      item: {
-        "@type": "Product",
-        name: `${product.nameJa} (${product.nameEn})`,
-        description: product.shortDescription,
-        category: product.category,
-        url: `${SITE_URL}/products/${product.slug}`,
-        brand: {
-          "@type": "Brand",
-          name: COMPANY_NAME,
-        },
-        offers: {
-          "@type": "Offer",
-          availability: "https://schema.org/InStock",
-          priceCurrency: "JPY",
-          price: "0",
-          priceValidUntil: "2027-12-31",
-          url: `${SITE_URL}/contact`,
-          seller: {
-            "@type": "Organization",
-            name: COMPANY_NAME,
-          },
-        },
-      },
     })),
   };
 
