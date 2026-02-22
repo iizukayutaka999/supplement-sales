@@ -136,20 +136,24 @@ export function OrganizationSchema() {
       name: "サプリメント原材料カタログ",
       itemListElement: [
         {
-          "@type": "Offer",
-          itemOffered: { "@type": "Product", name: "赤ビーツ粉末 (Red Beet Powder)", description: "天然色素・抗酸化の機能性原料" },
+          "@type": "OfferCatalog",
+          name: "赤ビーツ粉末 (Red Beet Powder)",
+          description: "天然色素・抗酸化の機能性原料",
         },
         {
-          "@type": "Offer",
-          itemOffered: { "@type": "Product", name: "ボスウェリアセラータ (Boswellia Serrata)", description: "アーユルヴェーダ由来の抗炎症・関節サポート原料" },
+          "@type": "OfferCatalog",
+          name: "ボスウェリアセラータ (Boswellia Serrata)",
+          description: "アーユルヴェーダ由来の抗炎症・関節サポート原料",
         },
         {
-          "@type": "Offer",
-          itemOffered: { "@type": "Product", name: "植物性コラーゲン粉末 (Plant-Based Collagen)", description: "100%植物由来のヴィーガン対応美容原料" },
+          "@type": "OfferCatalog",
+          name: "植物性コラーゲン粉末 (Plant-Based Collagen)",
+          description: "100%植物由来のヴィーガン対応美容原料",
         },
         {
-          "@type": "Offer",
-          itemOffered: { "@type": "Product", name: "アンセリン (Anserine)", description: "鮭由来の高抗酸化天然ジペプチド" },
+          "@type": "OfferCatalog",
+          name: "アンセリン (Anserine)",
+          description: "鮭由来の高抗酸化天然ジペプチド",
         },
       ],
     },
