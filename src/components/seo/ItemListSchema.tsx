@@ -26,6 +26,18 @@ export function ItemListSchema({ products }: { products: Product[] }) {
           "@type": "Brand",
           name: COMPANY_NAME,
         },
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+          priceCurrency: "JPY",
+          price: "0",
+          priceValidUntil: "2027-12-31",
+          url: `${SITE_URL}/contact`,
+          seller: {
+            "@type": "Organization",
+            name: COMPANY_NAME,
+          },
+        },
       },
     })),
   };

@@ -21,14 +21,8 @@ export function ProductSchema({ product }: { product: Product }) {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
       priceCurrency: "JPY",
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        priceCurrency: "JPY",
-        eligibleQuantity: {
-          "@type": "QuantitativeValue",
-          unitText: "B2Bお見積もり",
-        },
-      },
+      price: "0",
+      priceValidUntil: "2027-12-31",
       url: `${SITE_URL}/contact`,
       seller: {
         "@type": "Organization",
@@ -40,6 +34,7 @@ export function ProductSchema({ product }: { product: Product }) {
         "@type": "Country",
         name: "JP",
       },
+      description: "B2Bお見積もり - お問い合わせください",
     },
     manufacturer: {
       "@type": "Organization",
