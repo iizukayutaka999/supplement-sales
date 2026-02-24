@@ -12,7 +12,7 @@
 - ウェブサイト: https://supplement-sales.jp
 - お問い合わせ: https://supplement-sales.jp/contact
 
-## 取扱製品（全4製品）
+## 取扱製品（全8製品）
 
 ### 赤ビーツ粉末 (Red Beet Powder)
 カテゴリ: サプリメント原材料
@@ -50,6 +50,42 @@ USP: 1つの原料で3つの市場を狙える
 原産地: 日本
 詳細: https://supplement-sales.jp/products/anserine
 
+### ギムネマ・シルベスタエキス (Gymnema Sylvestre Extract)
+カテゴリ: ハーブエキス
+USP: 2,000年のアーユルヴェーダが証明した糖質ケア市場の最有力原料
+「グルマール（砂糖を壊すもの）」としてインドで2,000年以上使用されてきたギムネマ・シルベスタ。ギムネマ酸含有量25%以上を規格保証。糖質ケア・血糖値サポート市場で伝統と科学の両方に裏付けられた原料。
+特徴: ギムネマ酸25%以上保証（重量法）、非照射・非ETO処理、GMOフリー・BSE/TSEフリー、COA完備、重金属・微生物検査USP準拠
+用途: 糖質ケアサプリメント、ダイエットサプリメント、血糖値サポート食品、機能性飲料、健康茶、機能性食品
+原産地: インド
+詳細: https://supplement-sales.jp/products/gymnema-sylvestre
+
+### アシュワガンダエキス (Ashwagandha Extract)
+カテゴリ: アダプトゲン
+USP: 世界で最も注目されるアダプトゲン、ストレス社会が求める癒しの原料
+インド伝統医学アーユルヴェーダの王様的ハーブ。ウィタノリド含有量5%以上をHPLC法で保証。コルチゾール低減・睡眠の質改善・運動パフォーマンス向上に関する豊富な臨床データ。全草使用による幅広い有効成分プロファイル。
+特徴: ウィタノリド5%以上保証（HPLC法）、全草使用、非照射・非ETO処理、GMOフリー・BSE/TSEフリー、COA・MSDS完備
+用途: ストレスケアサプリメント、睡眠サポート製品、スポーツニュートリション、認知機能サポート、男性向け活力サプリメント、アンチエイジング製品
+原産地: インド
+詳細: https://supplement-sales.jp/products/ashwagandha
+
+### ガルシニア・カンボジアエキス (Garcinia Cambogia Extract)
+カテゴリ: ウェイトマネジメント
+USP: HCA含有量60%超、脂肪合成のブロックと食欲コントロール
+果実由来のヒドロキシクエン酸（HCA）含有量60%以上を保証。脂肪合成酵素の阻害と満腹感の促進という2つのメカニズムで、世界のダイエットサプリメント市場で長年トップクラスの人気を維持する定番原料。
+特徴: HCA60%以上保証（HPLC法）、天然果実由来、非照射・非ETO処理、GMOフリー・BSE/TSEフリー、重金属検査USP/ICP-OES準拠
+用途: ダイエットサプリメント、食欲コントロール製品、メタボリックサポート、機能性食品、スポーツニュートリション、健康飲料
+原産地: インド
+詳細: https://supplement-sales.jp/products/garcinia-cambogia
+
+### ブロメラインエキス (Bromelain Extract)
+カテゴリ: 酵素エキス
+USP: パイナップル由来の強力タンパク質分解酵素、消化・抗炎症・リカバリーの3市場対応
+パイナップル茎由来のタンパク質分解酵素。2500GDU以上の高い酵素活性を保証。消化吸収サポート、炎症反応の調節、スポーツ後の筋肉リカバリーに科学的根拠あり。白色粉末で水溶性に優れ幅広い剤形に配合可能。
+特徴: 酵素活性2500GDU以上保証、パイナップル茎由来天然酵素、白色粉末・水溶性、非照射・非ETO処理、GMOフリー・重金属検査USP準拠
+用途: 消化酵素サプリメント、抗炎症サポート製品、スポーツリカバリー、関節ケア製品、機能性食品、化粧品原料
+原産地: インド
+詳細: https://supplement-sales.jp/products/bromelain
+
 ## 強み
 1. 自社製造 & 原料調達: 自社工場での製造体制に加え、国内外のサプライヤーと直接取引。原料の調達から製造まで一貫した品質管理。
 2. 多言語対応: 日本語・英語・ロシア語での対応が可能。海外サプライヤーとの交渉もスムーズに対応。
@@ -59,7 +95,7 @@ USP: 1つの原料で3つの市場を狙える
 ## よくある質問
 
 Q: どのような原材料を取り扱っていますか？
-A: 赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン粉末、アンセリンの4製品を取り扱っています。サプリメント・健康食品・化粧品向けのB2B原材料です。
+A: 赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン粉末、アンセリン、ギムネマ・シルベスタエキス、アシュワガンダエキス、ガルシニア・カンボジアエキス、ブロメラインエキスの8製品を取り扱っています。サプリメント・健康食品・化粧品向けのB2B原材料です。
 
 Q: サンプルの提供は可能ですか？
 A: はい、全製品でサンプルのご提供が可能です。お問い合わせフォームよりお気軽にご依頼ください。
@@ -89,6 +125,10 @@ A: 在庫品はご入金確認後7営業日以内に発送。受注生産品は�
 - ボスウェリアセラータ: https://supplement-sales.jp/products/boswellia-serrata
 - 植物性コラーゲン粉末: https://supplement-sales.jp/products/plant-based-collagen
 - アンセリン: https://supplement-sales.jp/products/anserine
+- ギムネマ・シルベスタエキス: https://supplement-sales.jp/products/gymnema-sylvestre
+- アシュワガンダエキス: https://supplement-sales.jp/products/ashwagandha
+- ガルシニア・カンボジアエキス: https://supplement-sales.jp/products/garcinia-cambogia
+- ブロメラインエキス: https://supplement-sales.jp/products/bromelain
 - 会社概要: https://supplement-sales.jp/company
 - お問い合わせ: https://supplement-sales.jp/contact
 - 特定商取引法に基づく表記: https://supplement-sales.jp/legal
