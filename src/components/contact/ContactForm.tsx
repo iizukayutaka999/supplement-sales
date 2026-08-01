@@ -42,9 +42,22 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="bg-cream/50 p-10 md:p-16 text-center relative">
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent" />
-        <p className="font-serif text-2xl md:text-3xl text-forest mb-4">
+      <div className="bg-cream/60 px-8 py-14 md:px-12 md:py-20 text-center relative">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+        <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-8 rounded-full border border-gold/30 flex items-center justify-center">
+          <svg
+            viewBox="0 0 32 32"
+            className="w-7 h-7 md:w-8 md:h-8 text-gold"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M8 16l6 6 12-14" />
+          </svg>
+        </div>
+        <p className="font-serif text-xl md:text-[1.75rem] text-forest mb-4 font-light">
           お問い合わせありがとうございます
         </p>
         <p className="text-sm text-text-muted leading-relaxed">
@@ -57,51 +70,33 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-6 md:gap-8">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-7 md:gap-9">
       {error && (
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 text-sm">
+        <div className="border-l-2 border-red-400 bg-red-50/60 text-red-700 px-4 py-3 text-sm">
           {error}
         </div>
       )}
-      <div className="flex flex-col gap-2">
-        <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
-          会社名 / COMPANY
-        </label>
-        <input
-          type="text"
-          name="company"
-          placeholder="株式会社〇〇"
-          required
-          className="form-input"
-        />
-      </div>
-      <div className="flex flex-col gap-2">
-        <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
-          お名前 / NAME
-        </label>
-        <input
-          type="text"
-          name="name"
-          placeholder="山田 太郎"
-          required
-          className="form-input"
-        />
-      </div>
-      <div className="flex flex-col gap-2">
-        <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
-          メールアドレス / EMAIL
-        </label>
-        <input
-          type="email"
-          name="email"
-          placeholder="info@example.com"
-          required
-          className="form-input"
-        />
-      </div>
-      <div className="flex flex-col gap-2">
-        <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
-          お問い合わせ内容 / INQUIRY TYPE
+      {[
+        { name: "company", label: "会社名 / Company", type: "text", placeholder: "株式会社〇〇", required: true },
+        { name: "name", label: "お名前 / Name", type: "text", placeholder: "山田 太郎", required: true },
+        { name: "email", label: "メールアドレス / Email", type: "email", placeholder: "info@example.com", required: true },
+      ].map((field) => (
+        <div key={field.name} className="flex flex-col gap-2.5">
+          <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
+            {field.label}
+          </label>
+          <input
+            type={field.type}
+            name={field.name}
+            placeholder={field.placeholder}
+            required={field.required}
+            className="form-input"
+          />
+        </div>
+      ))}
+      <div className="flex flex-col gap-2.5">
+        <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
+          お問い合わせ内容 / Inquiry Type
         </label>
         <select name="inquiryType" className="form-input" defaultValue="">
           <option value="" disabled>
@@ -113,20 +108,20 @@ export function ContactForm() {
           <option>その他</option>
         </select>
       </div>
-      <div className="flex flex-col gap-2">
-        <label className="text-[0.65rem] tracking-[0.25em] text-text-muted">
-          メッセージ / MESSAGE
+      <div className="flex flex-col gap-2.5">
+        <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
+          メッセージ / Message
         </label>
         <textarea
           name="message"
           placeholder="ご質問・ご要望をご記入ください"
-          className="form-input resize-y min-h-[120px]"
+          className="form-input resize-y min-h-[140px]"
         />
       </div>
       <button
         type="submit"
         disabled={loading}
-        className="bg-forest text-cream border-none py-3.5 md:py-4 px-10 md:px-12 text-[0.72rem] tracking-[0.2em] font-sans cursor-pointer hover:bg-moss transition-all duration-400 self-start disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_4px_16px_rgba(26,51,40,0.15)] hover:-translate-y-0.5"
+        className="bg-forest text-cream border-none py-4 md:py-4 px-12 md:px-14 text-[0.7rem] tracking-[0.28em] font-sans cursor-pointer hover:bg-moss transition-all duration-500 self-start disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_6px_20px_rgba(26,51,40,0.18)] hover:-translate-y-0.5 uppercase font-medium"
       >
         {loading ? "送信中..." : "送信する →"}
       </button>

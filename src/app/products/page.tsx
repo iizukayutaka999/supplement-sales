@@ -62,13 +62,10 @@ export default function ProductsPage() {
 
       <div className="pt-20 md:pt-24">
         <Breadcrumb items={breadcrumbItems} />
-        <section className="py-12 md:py-20 px-4 md:px-16">
-          <div className="mb-8 md:mb-16">
-            <SectionHeading
-              tag="PRODUCTS"
-              title="製品情報"
-            />
-            <p className="text-sm md:text-[0.9rem] leading-relaxed md:leading-[2.2] text-text-muted max-w-2xl mt-4">
+        <section className="py-16 md:py-24 px-4 md:px-16">
+          <div className="mb-12 md:mb-20 max-w-7xl mx-auto">
+            <SectionHeading tag="Products" title="製品情報" />
+            <p className="text-sm md:text-[0.92rem] leading-relaxed md:leading-[2.3] text-text-muted max-w-2xl mt-6 md:mt-8 font-light">
               サプリメント・健康食品・化粧品の原材料を幅広く取り扱っています。
               輸入販売から自社製造まで、日本の品質基準に基づき厳格に管理しています。
             </p>

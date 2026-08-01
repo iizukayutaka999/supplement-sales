@@ -13,11 +13,13 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div>
-      <p className={`section-tag flex items-center gap-4 text-[0.6rem] tracking-[0.5em] ${tagColor} mb-5 md:mb-8`}>
+      <p
+        className={`section-tag flex items-center gap-5 text-[0.6rem] tracking-[0.55em] ${tagColor} mb-6 md:mb-9 uppercase font-medium`}
+      >
         {tag}
       </p>
       <h2
-        className={`font-serif text-[2rem] md:text-[2.5rem] lg:text-[3.25rem] font-light ${titleColor} leading-tight mb-4 md:mb-6 tracking-[-0.01em]`}
+        className={`font-serif text-[2rem] md:text-[2.75rem] lg:text-[3.5rem] font-light ${titleColor} leading-[1.15] mb-4 md:mb-6 tracking-[-0.015em]`}
         dangerouslySetInnerHTML={{ __html: title }}
       />
     </div>
