@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/home/HeroSection";
+import { ManifestoSection } from "@/components/home/ManifestoSection";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { StrengthsSection } from "@/components/home/StrengthsSection";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
@@ -57,6 +58,7 @@ export default function HomePage() {
       <BreadcrumbSchema items={[]} />
       <FAQSchema items={homeFaqItems} />
       <HeroSection />
+      <ManifestoSection />
       <FeaturedProducts />
       <StrengthsSection />
       <ScrollReveal />

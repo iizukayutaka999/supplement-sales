@@ -59,7 +59,7 @@ export default function ContactPage() {
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema items={faqItems} />
 
-      <div className="pt-20 md:pt-24">
+      <div className="pt-24 md:pt-28">
         <Breadcrumb items={breadcrumbItems} />
 
         <section className="py-16 md:py-28 px-4 md:px-16">

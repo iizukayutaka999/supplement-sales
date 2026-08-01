@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { ProductGrid } from "@/components/products/ProductGrid";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -60,15 +59,28 @@ export default function ProductsPage() {
       <ItemListSchema products={products} />
       <FAQSchema items={productsFaqItems} />
 
-      <div className="pt-20 md:pt-24">
+      <div className="pt-24 md:pt-28">
         <Breadcrumb items={breadcrumbItems} />
-        <section className="py-16 md:py-24 px-4 md:px-16">
-          <div className="mb-12 md:mb-20 max-w-7xl mx-auto">
-            <SectionHeading tag="Products" title="製品情報" />
-            <p className="text-sm md:text-[0.92rem] leading-relaxed md:leading-[2.3] text-text-muted max-w-2xl mt-6 md:mt-8 font-light">
-              サプリメント・健康食品・化粧品の原材料を幅広く取り扱っています。
-              輸入販売から自社製造まで、日本の品質基準に基づき厳格に管理しています。
-            </p>
+        <section className="py-16 md:py-28 px-4 md:px-16">
+          <div className="max-w-7xl mx-auto mb-16 md:mb-28 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
+            <div className="md:col-span-6">
+              <p className="eyebrow eyebrow-line text-gold mb-8 md:mb-10">
+                <span>Products — {products.length} Ingredients</span>
+              </p>
+              <h1 className="display-serif text-[2.75rem] md:text-[4rem] lg:text-[5.5rem] text-forest">
+                A curated<br />
+                <em className="italic text-sage">library.</em>
+              </h1>
+            </div>
+            <div className="md:col-span-5 md:col-start-8 md:pt-6">
+              <p className="font-serif italic text-lg md:text-2xl text-forest mb-6 md:mb-8 leading-tight">
+                厳選された、原材料のライブラリ。
+              </p>
+              <p className="text-[0.85rem] md:text-[0.9rem] leading-[2.1] text-text-muted font-light max-w-md">
+                サプリメント・健康食品・化粧品の原材料を幅広く取り扱っています。
+                輸入販売から自社製造まで、日本の品質基準に基づき厳格に管理しています。
+              </p>
+            </div>
           </div>
           <ProductGrid products={products} />
         </section>

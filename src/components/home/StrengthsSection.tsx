@@ -1,51 +1,90 @@
 import Link from "next/link";
-import { company } from "@/data/company";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+
+const strengths = [
+  {
+    no: "01",
+    titleEn: "Source & Craft",
+    titleJa: "自社製造 × 原料調達",
+    body: "自社工場での製造体制と、国内外サプライヤーとの直接取引。原料の仕入れから製造まで、一貫した品質管理を実現します。",
+  },
+  {
+    no: "02",
+    titleEn: "Trilingual Table",
+    titleJa: "多言語対応",
+    body: "日本語・英語・ロシア語で対応。海外サプライヤーとの交渉や海外原料の調達も、ネイティブレベルでスムーズに。",
+  },
+  {
+    no: "03",
+    titleEn: "Certified Quality",
+    titleJa: "品質管理・認証サポート",
+    body: "COA・HACCP・第三者検査を完備。各種規格・認証に対応した品質管理体制で、御社の製品を確かに支えます。",
+  },
+  {
+    no: "04",
+    titleEn: "Sample First",
+    titleJa: "サンプル・小ロット対応",
+    body: "量産前にサンプルでご確認いただけます。小ロットからの対応で、品質を確認しながら段階的にご発注いただけます。",
+  },
+];
 
 export function StrengthsSection() {
   return (
-    <section className="bg-forest text-cream relative overflow-hidden py-24 px-4 md:py-36 md:px-16">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_15%_85%,rgba(201,160,82,0.1)_0%,transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_95%_5%,rgba(74,124,94,0.15)_0%,transparent_50%)]" />
+    <section className="bg-forest text-cream relative overflow-hidden py-28 px-4 md:py-44 md:px-16">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_15%_85%,rgba(184,147,90,0.12)_0%,transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_95%_5%,rgba(90,125,104,0.18)_0%,transparent_50%)]" />
 
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-[1fr_1.15fr] gap-12 md:gap-24 items-start max-w-7xl mx-auto">
-        <div className="md:sticky md:top-32">
-          <SectionHeading
-            tag="About Us"
-            title="日本から世界へ、<br>高品質原材料を"
-            titleColor="text-cream"
-          />
-          <p className="text-sm md:text-[0.92rem] leading-relaxed md:leading-[2.3] text-cream/65 mb-10 md:mb-14 font-light">
-            株式会社サプリ販売は、サプリメント・健康食品・化粧品の原材料を
-            輸入販売・製造販売する専門商社です。
-            自社製造体制と確かな調達ネットワークを活かし、
-            原料の仕入れから製造販売まで一貫対応いたします。
-          </p>
-          <Link
-            href="/contact"
-            className="btn-primary bg-gold text-ink px-10 md:px-12 py-3.5 md:py-4 text-[0.7rem] tracking-[0.25em] font-medium no-underline inline-block uppercase"
-          >
-            <span className="relative z-10">お問い合わせ</span>
-          </Link>
+      <div className="relative z-10 max-w-7xl mx-auto">
+        {/* Editorial header */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 mb-20 md:mb-32">
+          <div className="md:col-span-5">
+            <p className="eyebrow eyebrow-line text-gold mb-8 md:mb-10">
+              <span>Our Approach</span>
+            </p>
+            <h2 className="display-serif text-[2.5rem] md:text-[4rem] lg:text-[5rem] text-cream leading-[1.02]">
+              Ingredients<br />
+              <em className="italic text-gold-light">deserve</em><br />
+              a partner.
+            </h2>
+          </div>
+          <div className="md:col-span-6 md:col-start-7 md:pt-8">
+            <p className="font-serif italic text-lg md:text-2xl text-gold-light/85 mb-6 md:mb-8 leading-tight">
+              原料には、ふさわしいパートナーがいる。
+            </p>
+            <p className="text-[0.85rem] md:text-[0.9rem] leading-[2.1] text-cream/60 font-light max-w-md mb-10 md:mb-14">
+              私たちが提供するのは、単なる原料ではありません。
+              調達・品質・供給までを一貫して支える、
+              製品開発の伴走者としての機能です。
+            </p>
+            <Link
+              href="/contact"
+              className="btn-primary bg-gold text-ink px-12 md:px-14 py-4 text-[0.68rem] tracking-[0.32em] font-medium no-underline inline-block uppercase"
+            >
+              <span className="relative z-10">Begin the Conversation</span>
+            </Link>
+          </div>
         </div>
 
-        <div className="flex flex-col">
-          {company.strengths.map((strength, idx) => (
+        {/* Strengths grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+          {strengths.map((s, idx) => (
             <div
-              key={strength.number}
-              className={`group flex gap-5 md:gap-10 py-7 md:py-10 items-start transition-colors duration-500 ${
-                idx !== 0 ? "border-t border-cream/[0.08]" : ""
+              key={s.no}
+              className={`group flex flex-col md:flex-row gap-6 md:gap-10 py-10 md:py-14 px-2 md:px-4 border-t border-cream/[0.08] ${
+                idx === 1 || idx === 3 ? "md:border-l md:pl-14 lg:pl-20" : ""
               }`}
             >
-              <span className="font-serif text-3xl md:text-[2.5rem] font-light text-gold/70 min-w-[2.5rem] md:min-w-[3rem] leading-none pt-1 transition-colors duration-500 group-hover:text-gold-light">
-                {strength.number}
-              </span>
+              <div className="flex md:flex-col items-baseline md:items-start gap-4 md:gap-3 md:min-w-[6rem]">
+                <span className="display-serif text-4xl md:text-[3rem] text-gold/70 leading-none transition-colors duration-500 group-hover:text-gold-light">
+                  {s.no}
+                </span>
+                <span className="eyebrow text-cream/40">{s.titleEn}</span>
+              </div>
               <div className="flex-1">
-                <h4 className="text-sm md:text-[0.95rem] font-medium text-cream mb-2 md:mb-3 tracking-[0.05em]">
-                  {strength.title}
-                </h4>
-                <p className="text-[0.76rem] md:text-[0.8rem] leading-relaxed md:leading-[1.95] text-cream/55 font-light">
-                  {strength.description}
+                <h3 className="display-serif text-[1.5rem] md:text-[1.9rem] text-cream mb-4 md:mb-5 leading-[1.15]">
+                  {s.titleJa}
+                </h3>
+                <p className="text-[0.82rem] md:text-[0.85rem] leading-[2] text-cream/60 font-light max-w-lg">
+                  {s.body}
                 </p>
               </div>
             </div>

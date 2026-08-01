@@ -53,7 +53,7 @@ export default function CompanyPage() {
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema items={companyFaqItems} />
 
-      <div className="pt-20 md:pt-24">
+      <div className="pt-24 md:pt-28">
         <Breadcrumb items={breadcrumbItems} />
 
         {/* Company Overview */}

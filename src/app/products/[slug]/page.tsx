@@ -75,30 +75,35 @@ export default async function ProductDetailPage({ params }: Props) {
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema items={productFaqItems} />
 
-      <div className="pt-20 md:pt-24">
+      <div className="pt-24 md:pt-28">
         <Breadcrumb items={breadcrumbItems} />
 
-        <article className="py-16 md:py-24 px-4 md:px-16">
-          <div className="max-w-4xl mx-auto">
-            {/* Header */}
-            <div className="mb-14 md:mb-20">
-              <div className="text-sage/80 mb-8 md:mb-10">
-                <ProductIcon slug={product.slug} className="w-14 h-14 md:w-16 md:h-16" />
+        <article className="py-16 md:py-28 px-4 md:px-16">
+          <div className="max-w-5xl mx-auto">
+            {/* Header — editorial */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16 md:mb-24 items-start">
+              <div className="md:col-span-8">
+                <p className="eyebrow eyebrow-line text-gold mb-8 md:mb-10">
+                  <span>{product.category}</span>
+                </p>
+                <h1 className="display-serif text-[2.5rem] md:text-[3.75rem] lg:text-[5rem] text-forest mb-5 md:mb-6">
+                  {product.nameJa}
+                </h1>
+                <p className="font-serif italic text-lg md:text-2xl text-sage tracking-wide">
+                  {product.nameEn}
+                </p>
               </div>
-              <p className="text-[0.6rem] tracking-[0.4em] text-gold mb-4 md:mb-5 uppercase">
-                {product.category}
-              </p>
-              <h1 className="font-serif text-[2.25rem] md:text-[3rem] lg:text-[3.75rem] font-light text-forest leading-[1.1] mb-3 tracking-[-0.015em]">
-                {product.nameJa}
-              </h1>
-              <p className="font-serif italic text-base md:text-lg text-sage/80 tracking-wide">
-                {product.nameEn}
-              </p>
+              <div className="md:col-span-4 md:pt-4 flex md:justify-end">
+                <div className="text-sage/60">
+                  <ProductIcon slug={product.slug} className="w-20 h-20 md:w-24 md:h-24" />
+                </div>
+              </div>
             </div>
 
             {/* Description */}
-            <div className="mb-14 md:mb-20 pb-14 md:pb-20 border-b border-border">
-              <p className="text-sm md:text-base leading-relaxed md:leading-[2.4] text-text-muted">
+            <div className="mb-16 md:mb-24 pb-16 md:pb-24 border-b border-border">
+              <p className="eyebrow text-gold/90 mb-6">Description</p>
+              <p className="text-sm md:text-[1rem] leading-[2.4] md:leading-[2.5] text-forest/85 font-light">
                 {product.description}
               </p>
             </div>
@@ -158,23 +163,26 @@ export default async function ProductDetailPage({ params }: Props) {
             </div>
 
             {/* CTA */}
-            <div className="bg-forest px-8 py-14 md:px-16 md:py-20 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(201,160,82,0.09)_0%,transparent_60%)]" />
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
-              <p className="text-[0.6rem] tracking-[0.4em] text-gold mb-5 relative z-10">
-                CONTACT
+            <div className="bg-forest px-8 py-20 md:px-16 md:py-28 text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(184,147,90,0.1)_0%,transparent_60%)]" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+              <p className="eyebrow text-gold mb-8 relative z-10">
+                Inquiry
               </p>
-              <p className="font-serif text-xl md:text-[1.75rem] text-cream mb-3 md:mb-4 font-light relative z-10 leading-snug">
-                この製品についてのお問い合わせ
+              <p className="display-serif text-[1.75rem] md:text-[2.75rem] text-cream mb-4 md:mb-6 relative z-10">
+                Interested in <em className="italic text-gold-light">{product.nameEn}</em>?
               </p>
-              <p className="text-[0.78rem] leading-relaxed text-cream/60 mb-8 md:mb-10 relative z-10 max-w-md mx-auto">
-                サンプルのご依頼・詳細情報・お見積もりなど、お気軽にご相談ください。
+              <p className="font-serif italic text-base md:text-lg text-cream/70 mb-4 relative z-10">
+                この原料についてのお問い合わせ。
+              </p>
+              <p className="text-[0.82rem] leading-[2] text-cream/55 mb-10 md:mb-12 relative z-10 max-w-md mx-auto font-light">
+                サンプル・詳細資料・お見積もりなど、お気軽にご相談ください。
               </p>
               <Link
                 href="/contact"
-                className="btn-primary bg-gold text-ink px-10 md:px-12 py-3.5 md:py-4 text-[0.7rem] tracking-[0.25em] font-medium no-underline inline-block relative z-10"
+                className="btn-primary bg-gold text-ink px-12 md:px-14 py-4 text-[0.68rem] tracking-[0.32em] font-medium no-underline inline-block relative z-10 uppercase"
               >
-                <span className="relative z-10">お問い合わせ</span>
+                <span className="relative z-10">Request Sample</span>
               </Link>
             </div>
           </div>

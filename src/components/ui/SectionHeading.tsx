@@ -3,6 +3,7 @@ interface SectionHeadingProps {
   title: string;
   tagColor?: string;
   titleColor?: string;
+  align?: "left" | "center";
 }
 
 export function SectionHeading({
@@ -10,16 +11,19 @@ export function SectionHeading({
   title,
   tagColor = "text-gold",
   titleColor = "text-forest",
+  align = "left",
 }: SectionHeadingProps) {
   return (
-    <div>
+    <div className={align === "center" ? "text-center" : ""}>
       <p
-        className={`section-tag flex items-center gap-5 text-[0.6rem] tracking-[0.55em] ${tagColor} mb-6 md:mb-9 uppercase font-medium`}
+        className={`eyebrow eyebrow-line ${
+          align === "center" ? "justify-center" : ""
+        } ${tagColor} mb-6 md:mb-10`}
       >
-        {tag}
+        <span>{tag}</span>
       </p>
       <h2
-        className={`font-serif text-[2rem] md:text-[2.75rem] lg:text-[3.5rem] font-light ${titleColor} leading-[1.15] mb-4 md:mb-6 tracking-[-0.015em]`}
+        className={`display-serif text-[2.25rem] md:text-[3.25rem] lg:text-[4.5rem] ${titleColor}`}
         dangerouslySetInnerHTML={{ __html: title }}
       />
     </div>
