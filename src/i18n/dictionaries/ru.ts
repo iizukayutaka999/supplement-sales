@@ -11,7 +11,10 @@ const ru: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "Головной офис",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "Завод в Томиоке",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "Пн–Пт, 9:00–18:00 (JST)",
     founded: "2024 г.",
     business: "Импорт, производство и продажа сырья для БАД, функциональных пищевых продуктов и косметики",
@@ -139,7 +142,6 @@ const ru: Dictionary = {
     labels: {
       name: "Название компании",
       founded: "Год основания",
-      address: "Адрес",
       business: "Направление деятельности",
       hours: "Часы работы",
     },
@@ -166,7 +168,7 @@ const ru: Dictionary = {
     faq: [
       {
         question: "Когда была основана компания Supplement Sales Japan Co., Ltd.?",
-        answer: "Компания основана в 2024 году. Головной офис находится в городе Томиока, префектура Гумма.",
+        answer: "Компания основана в 2024 году. Головной офис находится в городе Такасаки, а завод — в городе Томиока (префектура Гумма).",
       },
       {
         question: "Есть ли у вас собственное производство?",
@@ -186,7 +188,6 @@ const ru: Dictionary = {
     lead: "Консультации по сырью, запросы образцов, коммерческие предложения — будем рады Вашему обращению. Обычно мы отвечаем в течение 2 рабочих дней.",
     labels: {
       company: "Компания",
-      address: "Адрес",
       hours: "Часы приёма",
     },
     faq: [

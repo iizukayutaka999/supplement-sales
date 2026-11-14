@@ -24,11 +24,28 @@ export function OrganizationSchema() {
     foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
-      postalCode: "370-2303",
+      postalCode: "370-0865",
       addressRegion: "群馬県",
-      addressLocality: "富岡市",
-      streetAddress: "蕨1004番地1",
+      addressLocality: "高崎市",
+      streetAddress: "寺尾町1285-2",
       addressCountry: "JP",
+    },
+    location: {
+      "@type": "Place",
+      name: "富岡工場",
+      address: {
+        "@type": "PostalAddress",
+        postalCode: "370-2303",
+        addressRegion: "群馬県",
+        addressLocality: "富岡市",
+        streetAddress: "蕨1004-1",
+        addressCountry: "JP",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "36.2594",
+        longitude: "138.8881",
+      },
     },
     contactPoint: {
       "@type": "ContactPoint",
@@ -99,16 +116,11 @@ export function OrganizationSchema() {
       "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社",
     address: {
       "@type": "PostalAddress",
-      postalCode: "370-2303",
+      postalCode: "370-0865",
       addressRegion: "群馬県",
-      addressLocality: "富岡市",
-      streetAddress: "蕨1004番地1",
+      addressLocality: "高崎市",
+      streetAddress: "寺尾町1285-2",
       addressCountry: "JP",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "36.2594",
-      longitude: "138.8881",
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",

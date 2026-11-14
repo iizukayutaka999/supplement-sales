@@ -74,8 +74,12 @@ export default async function LegalPage({ params }: Props) {
               {[
                 { label: "販売業者 / 製造業者", value: "株式会社サプリ販売" },
                 {
-                  label: "所在地",
-                  value: "〒370-2303 群馬県富岡市蕨1004番地1",
+                  label: "所在地（本社）",
+                  value: "〒370-0865 群馬県高崎市寺尾町1285-2",
+                },
+                {
+                  label: "工場所在地",
+                  value: "富岡工場 〒370-2303 群馬県富岡市蕨1004-1",
                 },
                 {
                   label: "商品の販売価格",

@@ -9,12 +9,13 @@ export const company = {
   nameEn: "Supplement Sales Japan Co., Ltd.",
   foundedYear: 2024,
   address: {
-    postal: "370-2303",
+    postal: "370-0865",
     prefecture: "群馬県",
-    city: "富岡市",
-    street: "蕨1004番地1",
-    full: "〒370-2303 群馬県富岡市蕨1004番地1",
+    city: "高崎市",
+    street: "寺尾町1285-2",
+    full: "〒370-0865 群馬県高崎市寺尾町1285-2",
   },
+  factoryAddress: "〒370-2303 群馬県富岡市蕨1004-1",
   businessHours: "平日 9:00〜18:00 (JST)",
   strengths: [
     {

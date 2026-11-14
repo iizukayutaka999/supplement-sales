@@ -11,7 +11,10 @@ const en: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "Head Office",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "Tomioka Factory",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "Weekdays, 9:00 AM – 6:00 PM (JST)",
     founded: "2024",
     business: "Import, manufacturing and sale of raw materials for supplements, health foods and cosmetics",
@@ -139,7 +142,6 @@ const en: Dictionary = {
     labels: {
       name: "Company Name",
       founded: "Established",
-      address: "Address",
       business: "Business",
       hours: "Business Hours",
     },
@@ -166,7 +168,7 @@ const en: Dictionary = {
     faq: [
       {
         question: "When was Supplement Sales Japan Co., Ltd. established?",
-        answer: "The company was established in 2024 and is headquartered in Tomioka, Gunma, Japan.",
+        answer: "The company was established in 2024. Our head office is in Takasaki, Gunma, and our factory is in Tomioka, Gunma, Japan.",
       },
       {
         question: "Do you have in-house manufacturing?",
@@ -186,7 +188,6 @@ const en: Dictionary = {
     lead: "Feel free to contact us about ingredients, sample requests, quotations and more. We usually reply within 2 business days.",
     labels: {
       company: "Company",
-      address: "Address",
       hours: "Hours",
     },
     faq: [

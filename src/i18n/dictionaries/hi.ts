@@ -11,7 +11,10 @@ const hi: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "मुख्य कार्यालय",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "तोमिओका कारखाना",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "सोमवार से शुक्रवार, 9:00–18:00 (JST)",
     founded: "2024",
     business: "सप्लीमेंट, स्वास्थ्य खाद्य और सौंदर्य प्रसाधनों के कच्चे माल का आयात-विक्रय तथा निर्माण-विक्रय",
@@ -139,7 +142,6 @@ const hi: Dictionary = {
     labels: {
       name: "कंपनी का नाम",
       founded: "स्थापना",
-      address: "पता",
       business: "व्यवसाय",
       hours: "कार्य समय",
     },
@@ -166,7 +168,7 @@ const hi: Dictionary = {
     faq: [
       {
         question: "Supplement Sales Japan Co., Ltd. की स्थापना कब हुई?",
-        answer: "कंपनी की स्थापना 2024 में हुई। हमारा मुख्यालय जापान के गुनमा प्रांत के तोमिओका शहर में है।",
+        answer: "कंपनी की स्थापना 2024 में हुई। हमारा मुख्यालय जापान के गुनमा प्रांत के ताकासाकी शहर में और कारखाना तोमिओका शहर में है।",
       },
       {
         question: "क्या आपका स्वयं का निर्माण है?",
@@ -186,7 +188,6 @@ const hi: Dictionary = {
     lead: "कच्चे माल पर परामर्श, नमूनों के अनुरोध, कोटेशन आदि के लिए निःसंकोच संपर्क करें। सामान्यतः 2 कार्यदिवसों के भीतर उत्तर दिया जाता है।",
     labels: {
       company: "कंपनी का नाम",
-      address: "पता",
       hours: "कार्य समय",
     },
     faq: [

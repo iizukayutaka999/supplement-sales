@@ -60,7 +60,8 @@ export default async function ContactPage({ params }: Props) {
               <div className="flex flex-col gap-5 md:gap-6 pt-6 md:pt-8 border-t border-border">
                 {[
                   { label: t.labels.company, value: dict.company.name },
-                  { label: t.labels.address, value: dict.company.address },
+                  { label: dict.company.headOfficeLabel, value: dict.company.headOffice },
+                  { label: dict.company.factoryLabel, value: dict.company.factory },
                   { label: t.labels.hours, value: dict.company.businessHours },
                 ].map((detail) => (
                   <div key={detail.label} className="flex gap-4 md:gap-6 items-start">

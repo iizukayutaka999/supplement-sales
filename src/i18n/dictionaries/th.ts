@@ -11,7 +11,10 @@ const th: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "สำนักงานใหญ่",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "โรงงานโทมิโอกะ",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "วันจันทร์–ศุกร์ 9:00–18:00 น. (เวลาญี่ปุ่น JST)",
     founded: "2024",
     business: "นำเข้าและผลิตจำหน่ายวัตถุดิบสำหรับอาหารเสริม อาหารเพื่อสุขภาพ และเครื่องสำอาง",
@@ -139,7 +142,6 @@ const th: Dictionary = {
     labels: {
       name: "ชื่อบริษัท",
       founded: "ก่อตั้ง",
-      address: "ที่ตั้ง",
       business: "ธุรกิจ",
       hours: "เวลาทำการ",
     },
@@ -166,7 +168,7 @@ const th: Dictionary = {
     faq: [
       {
         question: "Supplement Sales Japan Co., Ltd. ก่อตั้งเมื่อใด?",
-        answer: "บริษัทก่อตั้งในปี 2024 โดยมีสำนักงานใหญ่ตั้งอยู่ที่เมืองโทมิโอกะ จังหวัดกุมมะ",
+        answer: "บริษัทก่อตั้งในปี 2024 โดยมีสำนักงานใหญ่ตั้งอยู่ที่เมืองทากาซากิ และโรงงานตั้งอยู่ที่เมืองโทมิโอกะ จังหวัดกุมมะ",
       },
       {
         question: "บริษัทมีการผลิตเองหรือไม่?",
@@ -186,7 +188,6 @@ const th: Dictionary = {
     lead: "ติดต่อเราได้ตามสะดวกเพื่อปรึกษาเรื่องวัตถุดิบ ขอตัวอย่าง หรือขอใบเสนอราคา โดยปกติเราจะตอบกลับภายใน 2 วันทำการ",
     labels: {
       company: "ชื่อบริษัท",
-      address: "ที่อยู่",
       hours: "เวลารับเรื่อง",
     },
     faq: [

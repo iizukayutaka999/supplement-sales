@@ -11,7 +11,10 @@ const ar: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "المقر الرئيسي",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "مصنع توميوكا",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "أيام العمل: من 9:00 إلى 18:00 (بتوقيت اليابان JST)",
     founded: "2024",
     business: "استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل",
@@ -139,7 +142,6 @@ const ar: Dictionary = {
     labels: {
       name: "اسم الشركة",
       founded: "سنة التأسيس",
-      address: "العنوان",
       business: "مجال النشاط",
       hours: "ساعات العمل",
     },
@@ -166,7 +168,7 @@ const ar: Dictionary = {
     faq: [
       {
         question: "متى تأسست شركة Supplement Sales Japan Co., Ltd.؟",
-        answer: "تأسست الشركة عام 2024، ويقع مقرها الرئيسي في مدينة توميوكا بمحافظة غونما في اليابان.",
+        answer: "تأسست الشركة عام 2024، ويقع مقرها الرئيسي في مدينة تاكاساكي ومصنعها في مدينة توميوكا بمحافظة غونما في اليابان.",
       },
       {
         question: "هل لديكم تصنيع ذاتي؟",
@@ -186,7 +188,6 @@ const ar: Dictionary = {
     lead: "لا تترددوا في التواصل معنا للاستشارات حول المواد الخام، أو طلبات العينات، أو عروض الأسعار. نرد عادةً خلال يومي عمل.",
     labels: {
       company: "اسم الشركة",
-      address: "العنوان",
       hours: "ساعات الاستقبال",
     },
     faq: [

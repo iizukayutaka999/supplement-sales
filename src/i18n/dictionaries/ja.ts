@@ -47,7 +47,10 @@ const ja = {
   company: {
     name: "株式会社サプリ販売",
     subName: "Supplement Sales Japan Co., Ltd.",
-    address: "〒370-2303 群馬県富岡市蕨1004番地1",
+    headOfficeLabel: "本社",
+    headOffice: "〒370-0865 群馬県高崎市寺尾町1285-2",
+    factoryLabel: "富岡工場",
+    factory: "〒370-2303 群馬県富岡市蕨1004-1",
     businessHours: "平日 9:00〜18:00 (JST)",
     founded: "2024年",
     business: "サプリメント・健康食品・化粧品原材料の輸入販売および製造販売",
@@ -184,7 +187,6 @@ const ja = {
     labels: {
       name: "会社名",
       founded: "設立",
-      address: "所在地",
       business: "事業内容",
       hours: "営業時間",
     },
@@ -214,7 +216,7 @@ const ja = {
     faq: [
       {
         question: "株式会社サプリ販売はいつ設立されましたか？",
-        answer: "2024年に設立されました。群馬県富岡市に本社を構えています。",
+        answer: "2024年に設立されました。本社は群馬県高崎市、工場は群馬県富岡市にあります。",
       },
       {
         question: "自社製造は可能ですか？",
@@ -237,7 +239,6 @@ const ja = {
     lead: "原料のご相談・サンプルのご依頼・お見積もりなど、お気軽にお問い合わせください。通常2営業日以内にご返答いたします。",
     labels: {
       company: "会社名",
-      address: "住所",
       hours: "受付",
     },
     faq: [

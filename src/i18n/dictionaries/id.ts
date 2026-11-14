@@ -11,7 +11,10 @@ const id: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "Kantor Pusat",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "Pabrik Tomioka",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "Senin–Jumat, 09.00–18.00 (JST)",
     founded: "2024",
     business: "Impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik",
@@ -139,7 +142,6 @@ const id: Dictionary = {
     labels: {
       name: "Nama Perusahaan",
       founded: "Didirikan",
-      address: "Alamat",
       business: "Bidang Usaha",
       hours: "Jam Operasional",
     },
@@ -166,7 +168,7 @@ const id: Dictionary = {
     faq: [
       {
         question: "Kapan Supplement Sales Japan Co., Ltd. didirikan?",
-        answer: "Kami didirikan pada tahun 2024. Kantor pusat kami berada di Kota Tomioka, Prefektur Gunma.",
+        answer: "Kami didirikan pada tahun 2024. Kantor pusat kami berada di Kota Takasaki dan pabrik kami di Kota Tomioka, Prefektur Gunma.",
       },
       {
         question: "Apakah Anda memiliki produksi sendiri?",
@@ -186,7 +188,6 @@ const id: Dictionary = {
     lead: "Silakan hubungi kami untuk konsultasi bahan baku, permintaan sampel, penawaran harga, dan lainnya. Kami biasanya membalas dalam 2 hari kerja.",
     labels: {
       company: "Nama Perusahaan",
-      address: "Alamat",
       hours: "Jam Layanan",
     },
     faq: [

@@ -11,7 +11,10 @@ const vi: Dictionary = {
   company: {
     name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
-    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    headOfficeLabel: "Trụ sở chính",
+    headOffice: "1285-2 TERAOMACHI, TAKASAKISHI, GUNMA, JAPAN",
+    factoryLabel: "Nhà máy Tomioka",
+    factory: "1004-1 WARABI, TOMIOKASHI, GUNMA, JAPAN",
     businessHours: "Thứ Hai – Thứ Sáu, 9:00–18:00 (giờ Nhật Bản, JST)",
     founded: "Năm 2024",
     business: "Nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm",
@@ -139,7 +142,6 @@ const vi: Dictionary = {
     labels: {
       name: "Tên công ty",
       founded: "Thành lập",
-      address: "Địa chỉ",
       business: "Lĩnh vực kinh doanh",
       hours: "Giờ làm việc",
     },
@@ -166,7 +168,7 @@ const vi: Dictionary = {
     faq: [
       {
         question: "Supplement Sales Japan Co., Ltd. được thành lập khi nào?",
-        answer: "Công ty được thành lập năm 2024, có trụ sở chính tại thành phố Tomioka, tỉnh Gunma.",
+        answer: "Công ty được thành lập năm 2024, có trụ sở chính tại thành phố Takasaki và nhà máy tại thành phố Tomioka, tỉnh Gunma.",
       },
       {
         question: "Công ty có tự sản xuất không?",
@@ -186,7 +188,6 @@ const vi: Dictionary = {
     lead: "Vui lòng liên hệ với chúng tôi để được tư vấn về nguyên liệu, yêu cầu mẫu thử hoặc báo giá. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",
     labels: {
       company: "Tên công ty",
-      address: "Địa chỉ",
       hours: "Giờ tiếp nhận",
     },
     faq: [

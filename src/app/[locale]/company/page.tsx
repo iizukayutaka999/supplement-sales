@@ -69,7 +69,8 @@ export default async function CompanyPage({ params }: Props) {
               {[
                 { label: t.labels.name, value: `${dict.company.name}（${dict.company.subName}）` },
                 { label: t.labels.founded, value: dict.company.founded },
-                { label: t.labels.address, value: dict.company.address },
+                { label: dict.company.headOfficeLabel, value: dict.company.headOffice },
+                { label: dict.company.factoryLabel, value: dict.company.factory },
                 { label: t.labels.business, value: dict.company.business },
                 { label: t.labels.hours, value: dict.company.businessHours },
               ].map((item) => (
