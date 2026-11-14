@@ -1,6 +1,6 @@
 import { Product } from "@/types/product";
 
-export const products: Product[] = [
+const catalog: Product[] = [
   {
     slug: "red-beet-powder",
     icon: "🔴",
@@ -212,6 +212,8 @@ export const products: Product[] = [
   },
   {
     slug: "eye-lift",
+    // Unpublished until the reservation site is ready
+    hidden: true,
     icon: "💧",
     category: "OPHTHALMIC PRODUCT",
     nameJa: "アイリフト（EYE LIFT）点眼液",
@@ -231,3 +233,6 @@ export const products: Product[] = [
     origins: ["日本"],
   },
 ];
+
+/** Products published on the site (entries with `hidden: true` are excluded) */
+export const products = catalog.filter((p) => !p.hidden);

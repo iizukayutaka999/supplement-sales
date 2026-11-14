@@ -9,4 +9,6 @@ export interface Product {
   features: string[];
   applications: string[];
   origins?: string[];
+  /** true = kept in data but not published on the site */
+  hidden?: boolean;
 }
