@@ -61,7 +61,6 @@ export default async function ContactPage({ params }: Props) {
                 {[
                   { label: t.labels.company, value: dict.company.name },
                   { label: t.labels.address, value: dict.company.address },
-                  { label: t.labels.languages, value: dict.company.supportLanguages },
                   { label: t.labels.hours, value: dict.company.businessHours },
                 ].map((detail) => (
                   <div key={detail.label} className="flex gap-4 md:gap-6 items-start">

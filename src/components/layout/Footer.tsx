@@ -50,7 +50,6 @@ export function Footer({ locale, t, company, nav }: FooterProps) {
             <p className="text-[0.8rem] font-medium text-forest mb-4">{t.infoHeading}</p>
             <ul className="flex flex-col gap-2.5 text-[0.85rem] text-text-muted">
               <li>{company.address}</li>
-              <li>{company.supportLanguages}</li>
               <li>{company.businessHours}</li>
             </ul>
           </div>

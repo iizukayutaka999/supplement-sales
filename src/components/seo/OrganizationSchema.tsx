@@ -20,7 +20,7 @@ export function OrganizationSchema() {
     },
     image: `${SITE_URL}/images/og-image.png`,
     description:
-      "サプリメント・健康食品・化粧品の原材料の輸入販売および製造販売を行うB2B専門商社。コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶等の高品質原材料を取扱い。日本語・英語・ロシア語対応。",
+      "サプリメント・健康食品・化粧品の原材料の輸入販売および製造販売を行うB2B専門商社。コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶等の高品質原材料を取扱い。",
     foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
@@ -33,11 +33,9 @@ export function OrganizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      availableLanguage: ["Japanese", "English", "Russian"],
       url: `${SITE_URL}/contact`,
       areaServed: "JP",
     },
-    knowsLanguage: ["ja", "en", "ru"],
     areaServed: {
       "@type": "Country",
       name: "Japan",

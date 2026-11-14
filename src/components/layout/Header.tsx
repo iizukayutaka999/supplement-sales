@@ -18,10 +18,9 @@ interface HeaderProps {
   t: Dictionary["nav"];
   companyName: string;
   companySubName: string;
-  supportLanguages: string;
 }
 
-export function Header({ locale, t, companyName, companySubName, supportLanguages }: HeaderProps) {
+export function Header({ locale, t, companyName, companySubName }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = stripLocale(usePathname());
@@ -174,7 +173,6 @@ export function Header({ locale, t, companyName, companySubName, supportLanguage
           <span className="text-[0.8rem] text-text-muted">{t.language}</span>
           {languageSelect}
         </div>
-        <p className="mt-6 text-[0.8rem] text-text-muted">{supportLanguages}</p>
       </div>
     </>
   );

@@ -203,7 +203,7 @@ export default async function RootLayout({
           `}
         </Script>
         <OrganizationSchema />
-        <Header locale={locale} t={dict.nav} companyName={dict.company.name} companySubName={dict.company.subName} supportLanguages={dict.company.supportLanguages} />
+        <Header locale={locale} t={dict.nav} companyName={dict.company.name} companySubName={dict.company.subName} />
         <main>{children}</main>
         <Footer locale={locale} t={dict.footer} company={dict.company} nav={dict.nav} />
       </body>

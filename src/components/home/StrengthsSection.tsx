@@ -14,7 +14,7 @@ export function StrengthsSection({ locale, t }: { locale: Locale; t: Dictionary[
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
             {t.strengths.items.map((s, idx) => (
               <div
                 key={s.title}

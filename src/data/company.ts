@@ -15,7 +15,6 @@ export const company = {
     street: "蕨1004番地1",
     full: "〒370-2303 群馬県富岡市蕨1004番地1",
   },
-  languages: ["日本語", "English", "Русский"],
   businessHours: "平日 9:00〜18:00 (JST)",
   strengths: [
     {
@@ -23,12 +22,6 @@ export const company = {
       title: "自社製造 & 原料調達",
       description:
         "自社工場での製造体制に加え、国内外のサプライヤーと直接取引。原料の調達から製造まで一貫した品質管理を実現します。",
-    },
-    {
-      number: "02",
-      title: "多言語対応",
-      description:
-        "日本語・英語・ロシア語での対応が可能。海外サプライヤーとの交渉や海外原料の調達もスムーズに対応します。",
     },
     {
       number: "03",

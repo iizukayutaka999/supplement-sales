@@ -71,7 +71,6 @@ export default async function CompanyPage({ params }: Props) {
                 { label: t.labels.founded, value: dict.company.founded },
                 { label: t.labels.address, value: dict.company.address },
                 { label: t.labels.business, value: dict.company.business },
-                { label: t.labels.languages, value: dict.company.supportLanguages },
                 { label: t.labels.hours, value: dict.company.businessHours },
               ].map((item) => (
                 <div

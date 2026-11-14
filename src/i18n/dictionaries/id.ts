@@ -5,8 +5,7 @@ const id: Dictionary = {
     siteName: "Supplement Sales Co., Ltd.",
     defaultTitle: "Supplement Sales Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
     titleSuffix: "Supplement Sales Co., Ltd.",
-    description:
-      "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Memasok bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, ashwagandha, gymnema, garcinia, dan bromelain. Layanan dalam bahasa Jepang, Inggris, dan Rusia.",
+    description: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Memasok bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, ashwagandha, gymnema, garcinia, dan bromelain.",
     ogImageAlt: "Supplement Sales Co., Ltd. - Impor serta produksi dan penjualan bahan baku suplemen",
   },
   company: {
@@ -14,10 +13,8 @@ const id: Dictionary = {
     subName: "株式会社サプリ販売",
     address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
     businessHours: "Senin–Jumat, 09.00–18.00 (JST)",
-    supportLanguages: "日本語 · English · Русский",
     founded: "2024",
-    business:
-      "Impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik",
+    business: "Impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik",
   },
   nav: {
     home: "Beranda",
@@ -31,8 +28,7 @@ const id: Dictionary = {
   },
   home: {
     metaTitle: "Supplement Sales Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
-    metaDescription:
-      "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Pasokan stabil bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine. Layanan dalam bahasa Jepang, Inggris, dan Rusia.",
+    metaDescription: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Pasokan stabil bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
     hero: {
       eyebrow: "Supplement Sales Co., Ltd.",
       titleLine1: "Kekuatan alam,",
@@ -44,7 +40,6 @@ const id: Dictionary = {
         "COA tersedia",
         "Sampel tersedia",
         "Lot kecil bisa",
-        "Layanan bahasa Jepang · Inggris · Rusia",
       ],
     },
     featured: {
@@ -60,10 +55,6 @@ const id: Dictionary = {
         {
           title: "Produksi Sendiri × Pengadaan Bahan Baku",
           body: "Sistem produksi di pabrik sendiri dan transaksi langsung dengan pemasok dalam dan luar negeri. Kami menerapkan pengendalian mutu yang konsisten mulai dari pengadaan bahan baku hingga produksi.",
-        },
-        {
-          title: "Layanan Multibahasa",
-          body: "Kami melayani dalam bahasa Jepang, Inggris, dan Rusia. Negosiasi dengan pemasok luar negeri dan pengadaan bahan baku impor berjalan lancar dengan kemampuan bahasa setingkat penutur asli.",
         },
         {
           title: "Pengendalian Mutu & Dukungan Sertifikasi",
@@ -83,30 +74,21 @@ const id: Dictionary = {
     faq: [
       {
         question: "Perusahaan seperti apa Supplement Sales Co., Ltd.?",
-        answer:
-          "Kami adalah perusahaan dagang B2B spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Kami menangani bahan baku berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
+        answer: "Kami adalah perusahaan dagang B2B spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Kami menangani bahan baku berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
       },
       {
         question: "Bahan baku apa saja yang Anda tangani?",
-        answer:
-          "Kami menangani bahan baku fungsional yang didukung bukti ilmiah, seperti bubuk bit merah (pewarna alami, antioksidan), Boswellia serrata (sendi, antiinflamasi), kolagen nabati (bahan kecantikan ramah vegan), dan anserine (dipeptida antioksidan tinggi dari ikan salmon).",
-      },
-      {
-        question: "Bahasa apa saja yang dilayani?",
-        answer:
-          "Kami melayani dalam tiga bahasa: Jepang, Inggris, dan Rusia. Negosiasi dengan pemasok luar negeri pun dapat kami tangani dengan lancar.",
+        answer: "Kami menangani bahan baku fungsional yang didukung bukti ilmiah, seperti bubuk bit merah (pewarna alami, antioksidan), Boswellia serrata (sendi, antiinflamasi), kolagen nabati (bahan kecantikan ramah vegan), dan anserine (dipeptida antioksidan tinggi dari ikan salmon).",
       },
       {
         question: "Apakah bisa memesan sampel atau lot kecil?",
-        answer:
-          "Ya, sampel tersedia untuk semua produk. Kami juga melayani pesanan mulai dari lot kecil. Silakan hubungi kami melalui formulir kontak.",
+        answer: "Ya, sampel tersedia untuk semua produk. Kami juga melayani pesanan mulai dari lot kecil. Silakan hubungi kami melalui formulir kontak.",
       },
     ],
   },
   productsPage: {
     metaTitle: "Produk | Rangkaian Bahan Baku Suplemen, Makanan Kesehatan & Kosmetik",
-    metaDescription:
-      "Daftar bahan baku suplemen berkualitas tinggi. Melayani impor hingga produksi dan penjualan sendiri. Konsultasi mulai dari sampel dan lot kecil.",
+    metaDescription: "Daftar bahan baku suplemen berkualitas tinggi. Melayani impor hingga produksi dan penjualan sendiri. Konsultasi mulai dari sampel dan lot kecil.",
     eyebrow: "Products",
     title: "Produk",
     subtitle: "Koleksi bahan baku pilihan.",
@@ -115,18 +97,15 @@ const id: Dictionary = {
     faq: [
       {
         question: "Apakah sampel tersedia?",
-        answer:
-          "Ya, sampel tersedia untuk semua produk. Silakan ajukan permintaan melalui formulir kontak dengan menyebutkan nama produk.",
+        answer: "Ya, sampel tersedia untuk semua produk. Silakan ajukan permintaan melalui formulir kontak dengan menyebutkan nama produk.",
       },
       {
         question: "Apakah bisa memesan dalam lot kecil?",
-        answer:
-          "Ya, kami melayani pesanan mulai dari lot kecil. Jumlah pesanan minimum berbeda untuk setiap produk, jadi silakan hubungi kami untuk detailnya.",
+        answer: "Ya, kami melayani pesanan mulai dari lot kecil. Jumlah pesanan minimum berbeda untuk setiap produk, jadi silakan hubungi kami untuk detailnya.",
       },
       {
         question: "Apakah sertifikat analisis (COA) disediakan?",
-        answer:
-          "Ya, sertifikat analisis (COA) tersedia untuk setiap lot di semua produk. Kami juga mendukung berbagai sertifikasi seperti HACCP.",
+        answer: "Ya, sertifikat analisis (COA) tersedia untuk setiap lot di semua produk. Kami juga mendukung berbagai sertifikasi seperti HACCP.",
       },
     ],
   },
@@ -135,8 +114,7 @@ const id: Dictionary = {
   },
   productDetail: {
     metaTitle: "{name} ({subName}) | Bahan Baku Suplemen",
-    metaDescriptionSuffix:
-      "{name} dari Supplement Sales Co., Ltd. Tersedia mulai dari sampel dan lot kecil.",
+    metaDescriptionSuffix: "{name} dari Supplement Sales Co., Ltd. Tersedia mulai dari sampel dan lot kecil.",
     descriptionHeading: "Ringkasan Produk",
     featuresHeading: "Keunggulan",
     applicationsHeading: "Aplikasi",
@@ -146,27 +124,23 @@ const id: Dictionary = {
     ctaButton: "Minta Sampel",
     faqWhat: "Apa itu {name}?",
     faqSampleQ: "Apakah sampel {name} tersedia?",
-    faqSampleA:
-      "Ya, sampel {name} tersedia. Silakan ajukan permintaan melalui formulir kontak dengan menyebutkan nama produk.",
+    faqSampleA: "Ya, sampel {name} tersedia. Silakan ajukan permintaan melalui formulir kontak dengan menyebutkan nama produk.",
     faqUseQ: "Untuk produk apa saja {name} dapat digunakan?",
     faqUseA: "{name} dapat digunakan untuk aplikasi seperti {applications}.",
     listSeparator: ", ",
   },
   companyPage: {
     metaTitle: "Tentang Kami | Perusahaan Dagang Spesialis Impor & Produksi Bahan Baku Suplemen",
-    metaDescription:
-      "Profil Supplement Sales Co., Ltd., perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dilengkapi sistem produksi sendiri, layanan multibahasa (Jepang, Inggris, Rusia), dan sistem pengendalian mutu.",
+    metaDescription: "Profil Supplement Sales Co., Ltd., perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dilengkapi sistem produksi sendiri dan sistem pengendalian mutu.",
     eyebrow: "About Us",
     title: "Tentang Kami",
-    intro:
-      "Supplement Sales Co., Ltd. adalah perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dengan memanfaatkan sistem produksi sendiri dan jaringan pengadaan yang andal, kami menangani seluruh proses mulai dari pembelian bahan baku hingga produksi dan penjualan, serta mendukung pengembangan produk pelanggan secara menyeluruh.",
+    intro: "Supplement Sales Co., Ltd. adalah perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dengan memanfaatkan sistem produksi sendiri dan jaringan pengadaan yang andal, kami menangani seluruh proses mulai dari pembelian bahan baku hingga produksi dan penjualan, serta mendukung pengembangan produk pelanggan secara menyeluruh.",
     infoHeading: "Company Information",
     labels: {
       name: "Nama Perusahaan",
       founded: "Didirikan",
       address: "Alamat",
       business: "Bidang Usaha",
-      languages: "Bahasa Layanan",
       hours: "Jam Operasional",
     },
     strengthsEyebrow: "Our Strengths",
@@ -174,23 +148,15 @@ const id: Dictionary = {
     strengths: [
       {
         title: "Produksi Sendiri & Pengadaan Bahan Baku",
-        description:
-          "Selain sistem produksi di pabrik sendiri, kami bertransaksi langsung dengan pemasok dalam dan luar negeri. Kami menerapkan pengendalian mutu yang konsisten mulai dari pengadaan bahan baku hingga produksi.",
-      },
-      {
-        title: "Layanan Multibahasa",
-        description:
-          "Kami dapat melayani dalam bahasa Jepang, Inggris, dan Rusia. Negosiasi dengan pemasok luar negeri dan pengadaan bahan baku impor kami tangani dengan lancar.",
+        description: "Selain sistem produksi di pabrik sendiri, kami bertransaksi langsung dengan pemasok dalam dan luar negeri. Kami menerapkan pengendalian mutu yang konsisten mulai dari pengadaan bahan baku hingga produksi.",
       },
       {
         title: "Pengendalian Mutu & Dukungan Sertifikasi",
-        description:
-          "Dokumen sertifikasi yang diperlukan untuk produksi dan penjualan (COA, HACCP, dll.) tersedia lengkap. Sistem pengendalian mutu kami yang memenuhi berbagai standar dan sertifikasi memberikan rasa aman.",
+        description: "Dokumen sertifikasi yang diperlukan untuk produksi dan penjualan (COA, HACCP, dll.) tersedia lengkap. Sistem pengendalian mutu kami yang memenuhi berbagai standar dan sertifikasi memberikan rasa aman.",
       },
       {
         title: "Sampel & Lot Kecil",
-        description:
-          "Anda dapat memeriksa sampel sebelum produksi massal. Kami melayani mulai dari lot kecil sehingga Anda dapat memesan setelah memastikan kualitas dengan saksama.",
+        description: "Anda dapat memeriksa sampel sebelum produksi massal. Kami melayani mulai dari lot kecil sehingga Anda dapat memesan setelah memastikan kualitas dengan saksama.",
       },
     ],
     ctaEyebrow: "Contact",
@@ -204,49 +170,37 @@ const id: Dictionary = {
       },
       {
         question: "Apakah Anda memiliki produksi sendiri?",
-        answer:
-          "Ya, kami memiliki sistem produksi di pabrik sendiri dan menerapkan pengendalian mutu yang konsisten mulai dari pengadaan bahan baku hingga produksi.",
+        answer: "Ya, kami memiliki sistem produksi di pabrik sendiri dan menerapkan pengendalian mutu yang konsisten mulai dari pengadaan bahan baku hingga produksi.",
       },
       {
         question: "Bagaimana sistem pengendalian mutu Anda?",
-        answer:
-          "Dokumen sertifikasi seperti COA (sertifikat analisis) dan HACCP tersedia lengkap, dan kami memiliki sistem pengendalian mutu yang memenuhi berbagai standar dan sertifikasi.",
+        answer: "Dokumen sertifikasi seperti COA (sertifikat analisis) dan HACCP tersedia lengkap, dan kami memiliki sistem pengendalian mutu yang memenuhi berbagai standar dan sertifikasi.",
       },
     ],
   },
   contactPage: {
     metaTitle: "Kontak | Konsultasi, Sampel & Penawaran Harga Bahan Baku Suplemen",
-    metaDescription:
-      "Hubungi Supplement Sales Co., Ltd. untuk konsultasi bahan baku suplemen, makanan kesehatan, dan kosmetik, permintaan sampel, penawaran harga, dan lainnya. Layanan dalam bahasa Jepang, Inggris, dan Rusia. Kami biasanya membalas dalam 2 hari kerja.",
+    metaDescription: "Hubungi Supplement Sales Co., Ltd. untuk konsultasi bahan baku suplemen, makanan kesehatan, dan kosmetik, permintaan sampel, penawaran harga, dan lainnya. Kami biasanya membalas dalam 2 hari kerja.",
     eyebrow: "Contact",
     title: "Kontak",
     lead: "Silakan hubungi kami untuk konsultasi bahan baku, permintaan sampel, penawaran harga, dan lainnya. Kami biasanya membalas dalam 2 hari kerja.",
     labels: {
       company: "Nama Perusahaan",
       address: "Alamat",
-      languages: "Bahasa Layanan",
       hours: "Jam Layanan",
     },
     faq: [
       {
         question: "Apakah sampel tersedia?",
-        answer:
-          "Ya, sampel tersedia untuk banyak produk. Silakan beri tahu kami produk yang Anda inginkan melalui formulir kontak.",
+        answer: "Ya, sampel tersedia untuk banyak produk. Silakan beri tahu kami produk yang Anda inginkan melalui formulir kontak.",
       },
       {
         question: "Apakah bisa memesan dalam lot kecil?",
-        answer:
-          "Ya, kami melayani pesanan mulai dari lot kecil. Jumlah pesanan minimum berbeda untuk setiap produk, jadi jangan ragu untuk berkonsultasi dengan kami.",
-      },
-      {
-        question: "Bahasa apa saja yang dilayani?",
-        answer:
-          "Kami melayani dalam tiga bahasa: Jepang, Inggris, dan Rusia. Negosiasi dengan pemasok luar negeri pun dapat kami tangani dengan lancar.",
+        answer: "Ya, kami melayani pesanan mulai dari lot kecil. Jumlah pesanan minimum berbeda untuk setiap produk, jadi jangan ragu untuk berkonsultasi dengan kami.",
       },
       {
         question: "Berapa lama waktu yang dibutuhkan untuk mendapat balasan?",
-        answer:
-          "Kami biasanya membalas dalam 2 hari kerja. Jika mendesak, mohon cantumkan hal tersebut dalam pesan Anda.",
+        answer: "Kami biasanya membalas dalam 2 hari kerja. Jika mendesak, mohon cantumkan hal tersebut dalam pesan Anda.",
       },
     ],
     form: {
@@ -274,8 +228,7 @@ const id: Dictionary = {
     },
   },
   footer: {
-    description:
-      "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik.",
+    description: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik.",
     menuHeading: "Menu",
     infoHeading: "Informasi Perusahaan",
     legal: "Pemberitahuan Berdasarkan Undang-Undang Transaksi Komersial Tertentu",
@@ -292,10 +245,8 @@ const id: Dictionary = {
       category: "SUPPLEMENT INGREDIENT",
       name: "Bubuk Bit Merah",
       subName: "Red Beet Powder",
-      shortDescription:
-        "Diproses dalam 24 jam setelah panen. Bahan baku yang membedakan produk Anda dengan warna merah alami yang cerah, tanpa mengandalkan pewarna sintetis.",
-      description:
-        "Dengan \"merah alami\", jadikan produk Anda pilihan yang langsung menarik perhatian. Bubuk bit merah adalah satu-satunya bahan baku yang memadukan warna merah alami yang dalam—yang tidak dapat ditiru oleh pewarna sintetis—dengan nilai gizi asli bit. Melalui pemrosesan suhu rendah dalam 24 jam setelah panen, daya antioksidan betasianin dan komponen pendukung aliran darah dari nitrat dipertahankan semaksimal mungkin. \"Sehat sekaligus indah\"—perpaduan inilah yang memungkinkan pengembangan produk generasi berikutnya yang memikat hati konsumen.",
+      shortDescription: "Diproses dalam 24 jam setelah panen. Bahan baku yang membedakan produk Anda dengan warna merah alami yang cerah, tanpa mengandalkan pewarna sintetis.",
+      description: "Dengan \"merah alami\", jadikan produk Anda pilihan yang langsung menarik perhatian. Bubuk bit merah adalah satu-satunya bahan baku yang memadukan warna merah alami yang dalam—yang tidak dapat ditiru oleh pewarna sintetis—dengan nilai gizi asli bit. Melalui pemrosesan suhu rendah dalam 24 jam setelah panen, daya antioksidan betasianin dan komponen pendukung aliran darah dari nitrat dipertahankan semaksimal mungkin. \"Sehat sekaligus indah\"—perpaduan inilah yang memungkinkan pengembangan produk generasi berikutnya yang memikat hati konsumen.",
       features: [
         "Pemrosesan suhu rendah dalam 24 jam setelah panen untuk mempertahankan nilai gizi semaksimal mungkin",
         "Tanpa pewarna sintetis — warna merah cerah dari pigmen alami betasianin",
@@ -303,17 +254,24 @@ const id: Dictionary = {
         "Sertifikat analisis (COA) tersedia untuk setiap lot",
         "Fleksibel mulai dari lot kecil hingga produksi massal",
       ],
-      applications: ["Minuman fungsional", "Kembang gula & kue", "Suplemen", "Produk susu", "Bumbu"],
-      origins: ["Eropa", "Jepang"],
+      applications: [
+        "Minuman fungsional",
+        "Kembang gula & kue",
+        "Suplemen",
+        "Produk susu",
+        "Bumbu",
+      ],
+      origins: [
+        "Eropa",
+        "Jepang",
+      ],
     },
     "boswellia-serrata": {
       category: "HERBAL EXTRACT",
       name: "Boswellia Serrata",
       subName: "Boswellia Serrata",
-      shortDescription:
-        "Kearifan Ayurveda berusia 5.000 tahun, dihadirkan dengan standar mutu modern. Bahan baku yang menjadi sorotan di bidang sendi dan antiinflamasi.",
-      description:
-        "\"Resin yang melawan peradangan\", yang telah dijaga oleh pengobatan tradisional India selama 5.000 tahun, kini hadir untuk produk Anda dengan standar mutu modern. Boswellia serrata adalah salah satu dari sedikit bahan baku yang dapat dihadirkan dengan percaya diri kepada konsumen di pasar perawatan sendi yang mencari \"bahan alami yang didukung bukti\". Kandungan asam boswellat dijamin minimal 65%, dengan pasokan stabil melalui pemanenan berkelanjutan yang disertifikasi pemerintah India. Daya yakin \"tradisi × sains\" membuat produk Anda selangkah lebih unggul dari pesaing.",
+      shortDescription: "Kearifan Ayurveda berusia 5.000 tahun, dihadirkan dengan standar mutu modern. Bahan baku yang menjadi sorotan di bidang sendi dan antiinflamasi.",
+      description: "\"Resin yang melawan peradangan\", yang telah dijaga oleh pengobatan tradisional India selama 5.000 tahun, kini hadir untuk produk Anda dengan standar mutu modern. Boswellia serrata adalah salah satu dari sedikit bahan baku yang dapat dihadirkan dengan percaya diri kepada konsumen di pasar perawatan sendi yang mencari \"bahan alami yang didukung bukti\". Kandungan asam boswellat dijamin minimal 65%, dengan pasokan stabil melalui pemanenan berkelanjutan yang disertifikasi pemerintah India. Daya yakin \"tradisi × sains\" membuat produk Anda selangkah lebih unggul dari pesaing.",
       features: [
         "Kandungan asam boswellat dijamin minimal 65% sesuai spesifikasi",
         "Pasokan stabil melalui pemanenan berkelanjutan yang disertifikasi pemerintah India",
@@ -329,16 +287,16 @@ const id: Dictionary = {
         "Pendukung pencernaan",
         "Kosmetik antipenuaan",
       ],
-      origins: ["India"],
+      origins: [
+        "India",
+      ],
     },
     "plant-based-collagen": {
       category: "COLLAGEN ALTERNATIVE",
       name: "Bubuk Kolagen Nabati",
       subName: "Plant-Based Collagen Powder",
-      shortDescription:
-        "Nol bahan hewani, kecantikan tanpa pengorbanan. Bahan baku yang membuka jalan di pasar vegan dan etis yang tumbuh pesat.",
-      description:
-        "\"Kolagen tanpa bahan hewani yang benar-benar terasa manfaatnya\"—kolagen nabati hadir sebagai jawaban atas kontradiksi ini. Pasar vegan terus tumbuh dua digit setiap tahun dan bukan lagi pasar ceruk. Bahan baku ini diekstraksi dari tumbuhan seperti hibiskus dengan bioteknologi khusus, dan memiliki data pembuktian peningkatan elastisitas kulit sebesar 22% (uji 12 minggu pada wanita usia 40–60 tahun), memberikan hasil yang terasa setara dengan kolagen hewani konvensional. Dengan \"etis × terasa manfaatnya\", jadikan produk Anda pemimpin di pasar baru.",
+      shortDescription: "Nol bahan hewani, kecantikan tanpa pengorbanan. Bahan baku yang membuka jalan di pasar vegan dan etis yang tumbuh pesat.",
+      description: "\"Kolagen tanpa bahan hewani yang benar-benar terasa manfaatnya\"—kolagen nabati hadir sebagai jawaban atas kontradiksi ini. Pasar vegan terus tumbuh dua digit setiap tahun dan bukan lagi pasar ceruk. Bahan baku ini diekstraksi dari tumbuhan seperti hibiskus dengan bioteknologi khusus, dan memiliki data pembuktian peningkatan elastisitas kulit sebesar 22% (uji 12 minggu pada wanita usia 40–60 tahun), memberikan hasil yang terasa setara dengan kolagen hewani konvensional. Dengan \"etis × terasa manfaatnya\", jadikan produk Anda pemimpin di pasar baru.",
       features: [
         "100% dari tumbuhan — sesuai untuk vegan dan halal",
         "Biokompatibilitas tinggi berkat bioteknologi khusus",
@@ -354,16 +312,17 @@ const id: Dictionary = {
         "Makanan vegan",
         "Makanan kesehatan untuk lansia",
       ],
-      origins: ["Eropa", "Jepang"],
+      origins: [
+        "Eropa",
+        "Jepang",
+      ],
     },
     anserine: {
       category: "AMINO ACID COMPOUND",
       name: "Anserine",
       subName: "Anserine",
-      shortDescription:
-        "Daya antioksidan 2,2 kali vitamin C. Dipeptida alami yang dapat menyasar tiga pasar sekaligus—olahraga, kecantikan, dan kognitif—dengan satu bahan baku.",
-      description:
-        "Bagaimana jika satu bahan baku dapat menjangkau tiga pasar yang sedang tumbuh? Anserine, dipeptida alami dari ikan salmon, adalah bahan baku serbaguna untuk tiga pasar—nutrisi olahraga, kecantikan, dan dukungan fungsi kognitif—dengan keunggulan daya antioksidan luar biasa sebesar 2,2 kali vitamin C. Bubuk berkualitas tinggi dengan kemurnian minimal 98% ini sangat larut dalam air dan dapat diformulasikan ke berbagai bentuk sediaan, mulai dari minuman, suplemen, hingga kosmetik. Sebagai \"bahan fungsional generasi berikutnya yang dibesarkan oleh laut Jepang\", berikan daya saing baru pada lini produk Anda.",
+      shortDescription: "Daya antioksidan 2,2 kali vitamin C. Dipeptida alami yang dapat menyasar tiga pasar sekaligus—olahraga, kecantikan, dan kognitif—dengan satu bahan baku.",
+      description: "Bagaimana jika satu bahan baku dapat menjangkau tiga pasar yang sedang tumbuh? Anserine, dipeptida alami dari ikan salmon, adalah bahan baku serbaguna untuk tiga pasar—nutrisi olahraga, kecantikan, dan dukungan fungsi kognitif—dengan keunggulan daya antioksidan luar biasa sebesar 2,2 kali vitamin C. Bubuk berkualitas tinggi dengan kemurnian minimal 98% ini sangat larut dalam air dan dapat diformulasikan ke berbagai bentuk sediaan, mulai dari minuman, suplemen, hingga kosmetik. Sebagai \"bahan fungsional generasi berikutnya yang dibesarkan oleh laut Jepang\", berikan daya saing baru pada lini produk Anda.",
       features: [
         "Kemurnian minimal 98% — dipeptida alami dari ikan salmon",
         "Daya antioksidan 2,2 kali vitamin C (penangkal radikal bebas)",
@@ -379,16 +338,16 @@ const id: Dictionary = {
         "Makanan fungsional",
         "Makanan hewan peliharaan",
       ],
-      origins: ["Jepang"],
+      origins: [
+        "Jepang",
+      ],
     },
     "gymnema-sylvestre": {
       category: "HERBAL EXTRACT",
       name: "Ekstrak Gymnema Sylvestre",
       subName: "Gymnema Sylvestre Extract",
-      shortDescription:
-        "\"Daun penghancur gula\"—bahan baku terdepan untuk pasar perawatan karbohidrat, dibuktikan oleh Ayurveda selama 2.000 tahun.",
-      description:
-        "Gymnema sylvestre telah disebut \"gurmar\" (penghancur gula) di India selama lebih dari 2.000 tahun. Ekstrak dari daunnya dijamin mengandung asam gymnemat minimal 25% sesuai spesifikasi, dan memiliki daya yakin yang tidak dimiliki bahan lain di pasar perawatan karbohidrat dan pendukung kadar gula darah sebagai \"bahan baku yang didukung oleh tradisi dan sains\". Permintaan bahan baku ini meningkat pesat seiring berkembangnya pasar diet rendah karbohidrat dan penurunan berat badan, dan dapat digunakan dalam berbagai desain produk, mulai dari suplemen hingga makanan fungsional. \"Mengubah cara berdamai dengan makanan manis\"—bahan baku fungsional generasi berikutnya yang menjawab wawasan konsumen ini.",
+      shortDescription: "\"Daun penghancur gula\"—bahan baku terdepan untuk pasar perawatan karbohidrat, dibuktikan oleh Ayurveda selama 2.000 tahun.",
+      description: "Gymnema sylvestre telah disebut \"gurmar\" (penghancur gula) di India selama lebih dari 2.000 tahun. Ekstrak dari daunnya dijamin mengandung asam gymnemat minimal 25% sesuai spesifikasi, dan memiliki daya yakin yang tidak dimiliki bahan lain di pasar perawatan karbohidrat dan pendukung kadar gula darah sebagai \"bahan baku yang didukung oleh tradisi dan sains\". Permintaan bahan baku ini meningkat pesat seiring berkembangnya pasar diet rendah karbohidrat dan penurunan berat badan, dan dapat digunakan dalam berbagai desain produk, mulai dari suplemen hingga makanan fungsional. \"Mengubah cara berdamai dengan makanan manis\"—bahan baku fungsional generasi berikutnya yang menjawab wawasan konsumen ini.",
       features: [
         "Kandungan asam gymnemat dijamin minimal 25% sesuai spesifikasi (metode gravimetri)",
         "Proses sterilisasi yang aman tanpa iradiasi dan tanpa ETO",
@@ -404,16 +363,16 @@ const id: Dictionary = {
         "Teh kesehatan",
         "Makanan fungsional",
       ],
-      origins: ["India"],
+      origins: [
+        "India",
+      ],
     },
     ashwagandha: {
       category: "ADAPTOGEN",
       name: "Ekstrak Ashwagandha",
       subName: "Ashwagandha Extract",
-      shortDescription:
-        "Adaptogen yang paling banyak disorot di dunia. \"Bahan baku penenang yang terbukti secara ilmiah\" yang dicari masyarakat penuh stres.",
-      description:
-        "Stres, tidur, vitalitas—bagaimana jika tiga keluhan utama manusia modern dapat didekati dengan satu bahan baku? Ashwagandha, herba \"raja\" dalam pengobatan tradisional India Ayurveda, adalah bahan baku dengan pertumbuhan tercepat di pasar adaptogen dunia. Ekstrak ini dijamin mengandung withanolida minimal 5% dengan metode HPLC, memiliki data klinis yang melimpah terkait penurunan kortisol, perbaikan kualitas tidur, dan peningkatan performa olahraga, serta sudah menjadi bahan baku arus utama di pasar Eropa dan Amerika. Kini, saat pengenalannya juga meningkat pesat di pasar Jepang, adalah waktu yang tepat untuk menambahkannya ke lini produk Anda.",
+      shortDescription: "Adaptogen yang paling banyak disorot di dunia. \"Bahan baku penenang yang terbukti secara ilmiah\" yang dicari masyarakat penuh stres.",
+      description: "Stres, tidur, vitalitas—bagaimana jika tiga keluhan utama manusia modern dapat didekati dengan satu bahan baku? Ashwagandha, herba \"raja\" dalam pengobatan tradisional India Ayurveda, adalah bahan baku dengan pertumbuhan tercepat di pasar adaptogen dunia. Ekstrak ini dijamin mengandung withanolida minimal 5% dengan metode HPLC, memiliki data klinis yang melimpah terkait penurunan kortisol, perbaikan kualitas tidur, dan peningkatan performa olahraga, serta sudah menjadi bahan baku arus utama di pasar Eropa dan Amerika. Kini, saat pengenalannya juga meningkat pesat di pasar Jepang, adalah waktu yang tepat untuk menambahkannya ke lini produk Anda.",
       features: [
         "Kandungan withanolida dijamin minimal 5% dengan metode HPLC",
         "Menggunakan seluruh bagian tanaman untuk profil komponen aktif yang luas",
@@ -429,16 +388,16 @@ const id: Dictionary = {
         "Suplemen vitalitas pria",
         "Produk antipenuaan",
       ],
-      origins: ["India"],
+      origins: [
+        "India",
+      ],
     },
     "garcinia-cambogia": {
       category: "WEIGHT MANAGEMENT",
       name: "Ekstrak Garcinia Cambogia",
       subName: "Garcinia Cambogia Extract",
-      shortDescription:
-        "Kandungan HCA lebih dari 60%. Bahan baku andalan pasar diet melalui penghambatan sintesis lemak dan pengendalian nafsu makan.",
-      description:
-        "\"Bukan menahan keinginan makan secara paksa, melainkan pendekatan dari mekanisme tubuh\"—Garcinia cambogia adalah bahan baku yang mewujudkan konsep ini secara ilmiah. Ekstrak ini dijamin mengandung asam hidroksisitrat (HCA) dari buah minimal 60%, dan melalui dua mekanisme—penghambatan enzim sintesis lemak dan peningkatan rasa kenyang—telah lama mempertahankan popularitas papan atas di pasar suplemen diet dunia. Di Jepang pun, bahan ini semakin disorot sebagai bahan untuk Makanan untuk Penggunaan Kesehatan Khusus (FOSHU) dan Makanan dengan Klaim Fungsi. Dengan bukti yang kuat dan sistem pasokan yang stabil, hadirkan bahan baku tepercaya untuk produk manajemen berat badan Anda.",
+      shortDescription: "Kandungan HCA lebih dari 60%. Bahan baku andalan pasar diet melalui penghambatan sintesis lemak dan pengendalian nafsu makan.",
+      description: "\"Bukan menahan keinginan makan secara paksa, melainkan pendekatan dari mekanisme tubuh\"—Garcinia cambogia adalah bahan baku yang mewujudkan konsep ini secara ilmiah. Ekstrak ini dijamin mengandung asam hidroksisitrat (HCA) dari buah minimal 60%, dan melalui dua mekanisme—penghambatan enzim sintesis lemak dan peningkatan rasa kenyang—telah lama mempertahankan popularitas papan atas di pasar suplemen diet dunia. Di Jepang pun, bahan ini semakin disorot sebagai bahan untuk Makanan untuk Penggunaan Kesehatan Khusus (FOSHU) dan Makanan dengan Klaim Fungsi. Dengan bukti yang kuat dan sistem pasokan yang stabil, hadirkan bahan baku tepercaya untuk produk manajemen berat badan Anda.",
       features: [
         "Kandungan asam hidroksisitrat (HCA) dijamin minimal 60% (metode HPLC)",
         "Ekstrak alami dari buah — data keamanan melimpah",
@@ -454,16 +413,16 @@ const id: Dictionary = {
         "Nutrisi olahraga",
         "Minuman kesehatan",
       ],
-      origins: ["India"],
+      origins: [
+        "India",
+      ],
     },
     bromelain: {
       category: "ENZYME EXTRACT",
       name: "Ekstrak Bromelain",
       subName: "Bromelain Extract",
-      shortDescription:
-        "Enzim pengurai protein yang kuat dari nanas. Tiga pasar—pencernaan, antiinflamasi, dan pemulihan olahraga—dengan satu bahan baku.",
-      description:
-        "Dukungan pencernaan, antiinflamasi, pemulihan olahraga—masuki tiga pasar yang sedang tumbuh dengan satu bahan baku. Bromelain dari batang nanas adalah enzim pengurai protein dengan aktivitas enzim tinggi minimal 2500 GDU. Selain membantu pencernaan dan penyerapan makanan, bromelain juga memiliki dasar ilmiah dalam pengaturan respons peradangan dan pemulihan otot setelah olahraga, serta digunakan sebagai bahan baku tingkat farmasi di Eropa dan Amerika. Berbentuk bubuk putih yang sangat larut dalam air, dapat diformulasikan ke berbagai bentuk sediaan mulai dari suplemen hingga minuman fungsional. Sebagai \"enzim serbaguna dari bahan alami\", berikan nilai baru pada portofolio produk Anda.",
+      shortDescription: "Enzim pengurai protein yang kuat dari nanas. Tiga pasar—pencernaan, antiinflamasi, dan pemulihan olahraga—dengan satu bahan baku.",
+      description: "Dukungan pencernaan, antiinflamasi, pemulihan olahraga—masuki tiga pasar yang sedang tumbuh dengan satu bahan baku. Bromelain dari batang nanas adalah enzim pengurai protein dengan aktivitas enzim tinggi minimal 2500 GDU. Selain membantu pencernaan dan penyerapan makanan, bromelain juga memiliki dasar ilmiah dalam pengaturan respons peradangan dan pemulihan otot setelah olahraga, serta digunakan sebagai bahan baku tingkat farmasi di Eropa dan Amerika. Berbentuk bubuk putih yang sangat larut dalam air, dapat diformulasikan ke berbagai bentuk sediaan mulai dari suplemen hingga minuman fungsional. Sebagai \"enzim serbaguna dari bahan alami\", berikan nilai baru pada portofolio produk Anda.",
       features: [
         "Aktivitas enzim dijamin minimal 2500 GDU (nilai terukur 2550 GDU)",
         "Enzim pengurai protein alami dari batang nanas",
@@ -479,16 +438,16 @@ const id: Dictionary = {
         "Makanan fungsional",
         "Bahan baku kosmetik",
       ],
-      origins: ["India"],
+      origins: [
+        "India",
+      ],
     },
     "eye-lift": {
       category: "OPHTHALMIC PRODUCT",
       name: "Obat Tetes Mata EYE LIFT",
       subName: "EYE LIFT Eye Drops",
-      shortDescription:
-        "Obat tetes mata buatan Jepang yang berbasis oksimetazolin hidroklorida 0,1% dan nafazolin nitrat 0,05%, dengan tambahan asam hialuronat dan vitamin B12.",
-      description:
-        "EYE LIFT adalah obat tetes mata yang dirancang dengan dua komponen utama, yaitu oksimetazolin hidroklorida 0,1% dan nafazolin nitrat 0,05%. Sebagai bentuk perhatian terhadap permukaan mata, produk ini juga mengandung asam hialuronat dan vitamin B12. Produk ini diproduksi di Jepang dalam botol 5 mL. Untuk syarat penanganan dan dokumen terperinci, silakan hubungi kami.",
+      shortDescription: "Obat tetes mata buatan Jepang yang berbasis oksimetazolin hidroklorida 0,1% dan nafazolin nitrat 0,05%, dengan tambahan asam hialuronat dan vitamin B12.",
+      description: "EYE LIFT adalah obat tetes mata yang dirancang dengan dua komponen utama, yaitu oksimetazolin hidroklorida 0,1% dan nafazolin nitrat 0,05%. Sebagai bentuk perhatian terhadap permukaan mata, produk ini juga mengandung asam hialuronat dan vitamin B12. Produk ini diproduksi di Jepang dalam botol 5 mL. Untuk syarat penanganan dan dokumen terperinci, silakan hubungi kami.",
       features: [
         "Oksimetazolin hidroklorida 0,1%",
         "Nafazolin nitrat 0,05%",
@@ -496,8 +455,12 @@ const id: Dictionary = {
         "Isi 5 mL",
         "Penyimpanan: simpan pada suhu ruang, hindari suhu tinggi, kelembapan tinggi, dan sinar matahari langsung",
       ],
-      applications: ["Produk perawatan mata"],
-      origins: ["Jepang"],
+      applications: [
+        "Produk perawatan mata",
+      ],
+      origins: [
+        "Jepang",
+      ],
     },
   },
 };
