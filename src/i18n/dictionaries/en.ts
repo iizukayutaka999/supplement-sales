@@ -2,14 +2,14 @@ import type { Dictionary } from "./ja";
 
 const en: Dictionary = {
   meta: {
-    siteName: "Supplement Sales Co., Ltd.",
-    defaultTitle: "Supplement Sales Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
-    titleSuffix: "Supplement Sales Co., Ltd.",
+    siteName: "Supplement Sales Japan Co., Ltd.",
+    defaultTitle: "Supplement Sales Japan Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
+    titleSuffix: "Supplement Sales Japan Co., Ltd.",
     description: "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. We supply high-quality B2B ingredients including red beet powder, Boswellia serrata, ashwagandha, gymnema, garcinia and bromelain.",
-    ogImageAlt: "Supplement Sales Co., Ltd. - Import, manufacturing and sale of supplement ingredients",
+    ogImageAlt: "Supplement Sales Japan Co., Ltd. - Import, manufacturing and sale of supplement ingredients",
   },
   company: {
-    name: "Supplement Sales Co., Ltd.",
+    name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
     address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
     businessHours: "Weekdays, 9:00 AM – 6:00 PM (JST)",
@@ -27,10 +27,10 @@ const en: Dictionary = {
     language: "Language",
   },
   home: {
-    metaTitle: "Supplement Sales Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
+    metaTitle: "Supplement Sales Japan Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
     metaDescription: "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Reliable supply of high-quality B2B ingredients including red beet powder, Boswellia serrata, plant-based collagen and anserine.",
     hero: {
-      eyebrow: "Supplement Sales Co., Ltd.",
+      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "The power of nature,",
       titleLine2: "with quality you can trust.",
       lead: "We deliver a reliable supply of raw materials for supplements, health foods and cosmetics through both import and in-house manufacturing.",
@@ -73,7 +73,7 @@ const en: Dictionary = {
     },
     faq: [
       {
-        question: "What kind of company is Supplement Sales Co., Ltd.?",
+        question: "What kind of company is Supplement Sales Japan Co., Ltd.?",
         answer: "We are a B2B specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. We handle high-quality ingredients such as red beet powder, Boswellia serrata, plant-based collagen and anserine.",
       },
       {
@@ -114,7 +114,7 @@ const en: Dictionary = {
   },
   productDetail: {
     metaTitle: "{name} ({subName}) | Supplement Ingredients",
-    metaDescriptionSuffix: "{name} supplied by Supplement Sales Co., Ltd. Samples and small lots available.",
+    metaDescriptionSuffix: "{name} supplied by Supplement Sales Japan Co., Ltd. Samples and small lots available.",
     descriptionHeading: "Overview",
     featuresHeading: "Features",
     applicationsHeading: "Applications",
@@ -131,10 +131,10 @@ const en: Dictionary = {
   },
   companyPage: {
     metaTitle: "About Us | Specialist Importer & Manufacturer of Supplement Ingredients",
-    metaDescription: "Company profile of Supplement Sales Co., Ltd., a specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics, with in-house manufacturing and a robust quality control system.",
+    metaDescription: "Company profile of Supplement Sales Japan Co., Ltd., a specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics, with in-house manufacturing and a robust quality control system.",
     eyebrow: "About Us",
     title: "About Us",
-    intro: "Supplement Sales Co., Ltd. is a specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Drawing on our in-house manufacturing and a reliable sourcing network, we handle everything from raw material procurement to manufacturing and sales, providing end-to-end support for your product development.",
+    intro: "Supplement Sales Japan Co., Ltd. is a specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Drawing on our in-house manufacturing and a reliable sourcing network, we handle everything from raw material procurement to manufacturing and sales, providing end-to-end support for your product development.",
     infoHeading: "Company Information",
     labels: {
       name: "Company Name",
@@ -165,7 +165,7 @@ const en: Dictionary = {
     ctaButton: "Contact Us",
     faq: [
       {
-        question: "When was Supplement Sales Co., Ltd. established?",
+        question: "When was Supplement Sales Japan Co., Ltd. established?",
         answer: "The company was established in 2024 and is headquartered in Tomioka, Gunma, Japan.",
       },
       {
@@ -180,7 +180,7 @@ const en: Dictionary = {
   },
   contactPage: {
     metaTitle: "Contact | Supplement Ingredient Inquiries, Samples & Quotes",
-    metaDescription: "Contact Supplement Sales Co., Ltd. for inquiries about ingredients for supplements, health foods and cosmetics, sample requests and quotations. We usually reply within 2 business days.",
+    metaDescription: "Contact Supplement Sales Japan Co., Ltd. for inquiries about ingredients for supplements, health foods and cosmetics, sample requests and quotations. We usually reply within 2 business days.",
     eyebrow: "Contact",
     title: "Contact Us",
     lead: "Feel free to contact us about ingredients, sample requests, quotations and more. We usually reply within 2 business days.",

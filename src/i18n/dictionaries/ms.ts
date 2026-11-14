@@ -2,14 +2,14 @@ import type { Dictionary } from "./ja";
 
 const ms: Dictionary = {
   meta: {
-    siteName: "Supplement Sales Co., Ltd.",
-    defaultTitle: "Supplement Sales Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
-    titleSuffix: "Supplement Sales Co., Ltd.",
+    siteName: "Supplement Sales Japan Co., Ltd.",
+    defaultTitle: "Supplement Sales Japan Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
+    titleSuffix: "Supplement Sales Japan Co., Ltd.",
     description: "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami membekalkan bahan mentah B2B berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, ashwagandha, gymnema, garcinia dan bromelain.",
-    ogImageAlt: "Supplement Sales Co., Ltd. - Import, pengeluaran dan penjualan bahan mentah suplemen",
+    ogImageAlt: "Supplement Sales Japan Co., Ltd. - Import, pengeluaran dan penjualan bahan mentah suplemen",
   },
   company: {
-    name: "Supplement Sales Co., Ltd.",
+    name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
     address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
     businessHours: "Hari bekerja, 9:00–18:00 (JST)",
@@ -27,10 +27,10 @@ const ms: Dictionary = {
     language: "Bahasa",
   },
   home: {
-    metaTitle: "Supplement Sales Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
+    metaTitle: "Supplement Sales Japan Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
     metaDescription: "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Bekalan stabil bahan mentah B2B berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, kolagen berasaskan tumbuhan dan anserina.",
     hero: {
-      eyebrow: "Supplement Sales Co., Ltd.",
+      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "Kekuatan alam,",
       titleLine2: "dengan kualiti yang terjamin.",
       lead: "Kami membekalkan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik secara stabil melalui import dan penjualan, serta pengeluaran dan penjualan.",
@@ -73,7 +73,7 @@ const ms: Dictionary = {
     },
     faq: [
       {
-        question: "Apakah jenis syarikat Supplement Sales Co., Ltd.?",
+        question: "Apakah jenis syarikat Supplement Sales Japan Co., Ltd.?",
         answer: "Kami ialah syarikat perdagangan pakar B2B yang menjalankan import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami mengendalikan bahan mentah berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, kolagen berasaskan tumbuhan dan anserina.",
       },
       {
@@ -114,7 +114,7 @@ const ms: Dictionary = {
   },
   productDetail: {
     metaTitle: "{name} ({subName}) | Bahan Mentah Suplemen",
-    metaDescriptionSuffix: "{name} yang dibekalkan oleh Supplement Sales Co., Ltd. Sampel dan lot kecil tersedia.",
+    metaDescriptionSuffix: "{name} yang dibekalkan oleh Supplement Sales Japan Co., Ltd. Sampel dan lot kecil tersedia.",
     descriptionHeading: "Gambaran Produk",
     featuresHeading: "Ciri-ciri",
     applicationsHeading: "Kegunaan",
@@ -131,10 +131,10 @@ const ms: Dictionary = {
   },
   companyPage: {
     metaTitle: "Profil Syarikat | Syarikat Perdagangan Pakar Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
-    metaDescription: "Profil syarikat Supplement Sales Co., Ltd. Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami mempunyai sistem pengeluaran sendiri dan sistem kawalan kualiti.",
+    metaDescription: "Profil syarikat Supplement Sales Japan Co., Ltd. Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami mempunyai sistem pengeluaran sendiri dan sistem kawalan kualiti.",
     eyebrow: "About Us",
     title: "Profil Syarikat",
-    intro: "Supplement Sales Co., Ltd. ialah syarikat perdagangan pakar yang menjalankan import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Dengan memanfaatkan sistem pengeluaran sendiri dan rangkaian perolehan yang boleh dipercayai, kami mengendalikan segalanya secara bersepadu, daripada perolehan bahan mentah hingga pengeluaran dan penjualan, serta menyokong pembangunan produk pelanggan secara menyeluruh.",
+    intro: "Supplement Sales Japan Co., Ltd. ialah syarikat perdagangan pakar yang menjalankan import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Dengan memanfaatkan sistem pengeluaran sendiri dan rangkaian perolehan yang boleh dipercayai, kami mengendalikan segalanya secara bersepadu, daripada perolehan bahan mentah hingga pengeluaran dan penjualan, serta menyokong pembangunan produk pelanggan secara menyeluruh.",
     infoHeading: "Company Information",
     labels: {
       name: "Nama Syarikat",
@@ -165,7 +165,7 @@ const ms: Dictionary = {
     ctaButton: "Hubungi Kami",
     faq: [
       {
-        question: "Bilakah Supplement Sales Co., Ltd. ditubuhkan?",
+        question: "Bilakah Supplement Sales Japan Co., Ltd. ditubuhkan?",
         answer: "Syarikat ini ditubuhkan pada tahun 2024. Ibu pejabat kami terletak di Tomioka, Wilayah Gunma.",
       },
       {
@@ -180,7 +180,7 @@ const ms: Dictionary = {
   },
   contactPage: {
     metaTitle: "Hubungi Kami | Pertanyaan, Sampel dan Sebut Harga Bahan Mentah Suplemen",
-    metaDescription: "Hubungi Supplement Sales Co., Ltd. untuk pertanyaan tentang bahan mentah suplemen, makanan kesihatan dan kosmetik, permintaan sampel, sebut harga dan sebagainya. Kami biasanya membalas dalam tempoh 2 hari bekerja.",
+    metaDescription: "Hubungi Supplement Sales Japan Co., Ltd. untuk pertanyaan tentang bahan mentah suplemen, makanan kesihatan dan kosmetik, permintaan sampel, sebut harga dan sebagainya. Kami biasanya membalas dalam tempoh 2 hari bekerja.",
     eyebrow: "Contact",
     title: "Hubungi Kami",
     lead: "Sila hubungi kami untuk pertanyaan tentang bahan mentah, permintaan sampel, sebut harga dan sebagainya. Kami biasanya membalas dalam tempoh 2 hari bekerja.",

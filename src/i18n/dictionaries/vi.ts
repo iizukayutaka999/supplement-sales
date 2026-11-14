@@ -2,14 +2,14 @@ import type { Dictionary } from "./ja";
 
 const vi: Dictionary = {
   meta: {
-    siteName: "Supplement Sales Co., Ltd.",
-    defaultTitle: "Supplement Sales Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
-    titleSuffix: "Supplement Sales Co., Ltd.",
+    siteName: "Supplement Sales Japan Co., Ltd.",
+    defaultTitle: "Supplement Sales Japan Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+    titleSuffix: "Supplement Sales Japan Co., Ltd.",
     description: "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Cung cấp nguyên liệu B2B chất lượng cao như bột củ dền đỏ, Boswellia serrata, Ashwagandha, Gymnema, Garcinia, Bromelain.",
-    ogImageAlt: "Supplement Sales Co., Ltd. - Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+    ogImageAlt: "Supplement Sales Japan Co., Ltd. - Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
   },
   company: {
-    name: "Supplement Sales Co., Ltd.",
+    name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
     address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
     businessHours: "Thứ Hai – Thứ Sáu, 9:00–18:00 (giờ Nhật Bản, JST)",
@@ -27,10 +27,10 @@ const vi: Dictionary = {
     language: "Ngôn ngữ",
   },
   home: {
-    metaTitle: "Supplement Sales Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+    metaTitle: "Supplement Sales Japan Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
     metaDescription: "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Cung cấp ổn định nguyên liệu B2B chất lượng cao như bột củ dền đỏ, Boswellia serrata, collagen thực vật, anserine.",
     hero: {
-      eyebrow: "Supplement Sales Co., Ltd.",
+      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "Sức mạnh của thiên nhiên,",
       titleLine2: "với chất lượng đáng tin cậy.",
       lead: "Chúng tôi cung cấp ổn định nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm thông qua hoạt động nhập khẩu, sản xuất và phân phối.",
@@ -73,7 +73,7 @@ const vi: Dictionary = {
     },
     faq: [
       {
-        question: "Supplement Sales Co., Ltd. là công ty như thế nào?",
+        question: "Supplement Sales Japan Co., Ltd. là công ty như thế nào?",
         answer: "Chúng tôi là công ty thương mại B2B chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Chúng tôi cung cấp các nguyên liệu chất lượng cao như bột củ dền đỏ, Boswellia serrata, collagen thực vật, anserine.",
       },
       {
@@ -114,7 +114,7 @@ const vi: Dictionary = {
   },
   productDetail: {
     metaTitle: "{name} ({subName}) | Nguyên liệu thực phẩm bổ sung",
-    metaDescriptionSuffix: "{name} do Supplement Sales Co., Ltd. cung cấp. Đáp ứng từ mẫu thử và đơn hàng số lượng nhỏ.",
+    metaDescriptionSuffix: "{name} do Supplement Sales Japan Co., Ltd. cung cấp. Đáp ứng từ mẫu thử và đơn hàng số lượng nhỏ.",
     descriptionHeading: "Tổng quan sản phẩm",
     featuresHeading: "Đặc điểm",
     applicationsHeading: "Ứng dụng",
@@ -131,10 +131,10 @@ const vi: Dictionary = {
   },
   companyPage: {
     metaTitle: "Giới thiệu công ty | Công ty chuyên nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
-    metaDescription: "Giới thiệu Supplement Sales Co., Ltd. – công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Có năng lực tự sản xuất và hệ thống quản lý chất lượng.",
+    metaDescription: "Giới thiệu Supplement Sales Japan Co., Ltd. – công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Có năng lực tự sản xuất và hệ thống quản lý chất lượng.",
     eyebrow: "About Us",
     title: "Giới thiệu công ty",
-    intro: "Supplement Sales Co., Ltd. là công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Tận dụng năng lực tự sản xuất và mạng lưới thu mua đáng tin cậy, chúng tôi đáp ứng xuyên suốt từ thu mua nguyên liệu đến sản xuất và phân phối, hỗ trợ toàn diện cho quá trình phát triển sản phẩm của khách hàng.",
+    intro: "Supplement Sales Japan Co., Ltd. là công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Tận dụng năng lực tự sản xuất và mạng lưới thu mua đáng tin cậy, chúng tôi đáp ứng xuyên suốt từ thu mua nguyên liệu đến sản xuất và phân phối, hỗ trợ toàn diện cho quá trình phát triển sản phẩm của khách hàng.",
     infoHeading: "Company Information",
     labels: {
       name: "Tên công ty",
@@ -165,7 +165,7 @@ const vi: Dictionary = {
     ctaButton: "Liên hệ",
     faq: [
       {
-        question: "Supplement Sales Co., Ltd. được thành lập khi nào?",
+        question: "Supplement Sales Japan Co., Ltd. được thành lập khi nào?",
         answer: "Công ty được thành lập năm 2024, có trụ sở chính tại thành phố Tomioka, tỉnh Gunma.",
       },
       {
@@ -180,7 +180,7 @@ const vi: Dictionary = {
   },
   contactPage: {
     metaTitle: "Liên hệ | Tư vấn nguyên liệu thực phẩm bổ sung, mẫu thử và báo giá",
-    metaDescription: "Liên hệ Supplement Sales Co., Ltd. để được tư vấn về nguyên liệu thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm, yêu cầu mẫu thử, báo giá. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",
+    metaDescription: "Liên hệ Supplement Sales Japan Co., Ltd. để được tư vấn về nguyên liệu thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm, yêu cầu mẫu thử, báo giá. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",
     eyebrow: "Contact",
     title: "Liên hệ",
     lead: "Vui lòng liên hệ với chúng tôi để được tư vấn về nguyên liệu, yêu cầu mẫu thử hoặc báo giá. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",

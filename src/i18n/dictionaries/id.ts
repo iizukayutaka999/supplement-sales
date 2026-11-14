@@ -2,14 +2,14 @@ import type { Dictionary } from "./ja";
 
 const id: Dictionary = {
   meta: {
-    siteName: "Supplement Sales Co., Ltd.",
-    defaultTitle: "Supplement Sales Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
-    titleSuffix: "Supplement Sales Co., Ltd.",
+    siteName: "Supplement Sales Japan Co., Ltd.",
+    defaultTitle: "Supplement Sales Japan Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
+    titleSuffix: "Supplement Sales Japan Co., Ltd.",
     description: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Memasok bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, ashwagandha, gymnema, garcinia, dan bromelain.",
-    ogImageAlt: "Supplement Sales Co., Ltd. - Impor serta produksi dan penjualan bahan baku suplemen",
+    ogImageAlt: "Supplement Sales Japan Co., Ltd. - Impor serta produksi dan penjualan bahan baku suplemen",
   },
   company: {
-    name: "Supplement Sales Co., Ltd.",
+    name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
     address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
     businessHours: "Senin–Jumat, 09.00–18.00 (JST)",
@@ -27,10 +27,10 @@ const id: Dictionary = {
     language: "Bahasa",
   },
   home: {
-    metaTitle: "Supplement Sales Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
+    metaTitle: "Supplement Sales Japan Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
     metaDescription: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Pasokan stabil bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
     hero: {
-      eyebrow: "Supplement Sales Co., Ltd.",
+      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "Kekuatan alam,",
       titleLine2: "dengan kualitas terjamin.",
       lead: "Kami memasok bahan baku untuk suplemen, makanan kesehatan, dan kosmetik secara stabil melalui impor serta produksi dan penjualan sendiri.",
@@ -73,7 +73,7 @@ const id: Dictionary = {
     },
     faq: [
       {
-        question: "Perusahaan seperti apa Supplement Sales Co., Ltd.?",
+        question: "Perusahaan seperti apa Supplement Sales Japan Co., Ltd.?",
         answer: "Kami adalah perusahaan dagang B2B spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Kami menangani bahan baku berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
       },
       {
@@ -114,7 +114,7 @@ const id: Dictionary = {
   },
   productDetail: {
     metaTitle: "{name} ({subName}) | Bahan Baku Suplemen",
-    metaDescriptionSuffix: "{name} dari Supplement Sales Co., Ltd. Tersedia mulai dari sampel dan lot kecil.",
+    metaDescriptionSuffix: "{name} dari Supplement Sales Japan Co., Ltd. Tersedia mulai dari sampel dan lot kecil.",
     descriptionHeading: "Ringkasan Produk",
     featuresHeading: "Keunggulan",
     applicationsHeading: "Aplikasi",
@@ -131,10 +131,10 @@ const id: Dictionary = {
   },
   companyPage: {
     metaTitle: "Tentang Kami | Perusahaan Dagang Spesialis Impor & Produksi Bahan Baku Suplemen",
-    metaDescription: "Profil Supplement Sales Co., Ltd., perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dilengkapi sistem produksi sendiri dan sistem pengendalian mutu.",
+    metaDescription: "Profil Supplement Sales Japan Co., Ltd., perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dilengkapi sistem produksi sendiri dan sistem pengendalian mutu.",
     eyebrow: "About Us",
     title: "Tentang Kami",
-    intro: "Supplement Sales Co., Ltd. adalah perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dengan memanfaatkan sistem produksi sendiri dan jaringan pengadaan yang andal, kami menangani seluruh proses mulai dari pembelian bahan baku hingga produksi dan penjualan, serta mendukung pengembangan produk pelanggan secara menyeluruh.",
+    intro: "Supplement Sales Japan Co., Ltd. adalah perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Dengan memanfaatkan sistem produksi sendiri dan jaringan pengadaan yang andal, kami menangani seluruh proses mulai dari pembelian bahan baku hingga produksi dan penjualan, serta mendukung pengembangan produk pelanggan secara menyeluruh.",
     infoHeading: "Company Information",
     labels: {
       name: "Nama Perusahaan",
@@ -165,7 +165,7 @@ const id: Dictionary = {
     ctaButton: "Hubungi Kami",
     faq: [
       {
-        question: "Kapan Supplement Sales Co., Ltd. didirikan?",
+        question: "Kapan Supplement Sales Japan Co., Ltd. didirikan?",
         answer: "Kami didirikan pada tahun 2024. Kantor pusat kami berada di Kota Tomioka, Prefektur Gunma.",
       },
       {
@@ -180,7 +180,7 @@ const id: Dictionary = {
   },
   contactPage: {
     metaTitle: "Kontak | Konsultasi, Sampel & Penawaran Harga Bahan Baku Suplemen",
-    metaDescription: "Hubungi Supplement Sales Co., Ltd. untuk konsultasi bahan baku suplemen, makanan kesehatan, dan kosmetik, permintaan sampel, penawaran harga, dan lainnya. Kami biasanya membalas dalam 2 hari kerja.",
+    metaDescription: "Hubungi Supplement Sales Japan Co., Ltd. untuk konsultasi bahan baku suplemen, makanan kesehatan, dan kosmetik, permintaan sampel, penawaran harga, dan lainnya. Kami biasanya membalas dalam 2 hari kerja.",
     eyebrow: "Contact",
     title: "Kontak",
     lead: "Silakan hubungi kami untuk konsultasi bahan baku, permintaan sampel, penawaran harga, dan lainnya. Kami biasanya membalas dalam 2 hari kerja.",

@@ -46,7 +46,7 @@ const ja = {
   },
   company: {
     name: "株式会社サプリ販売",
-    subName: "Supplement Sales Co., Ltd.",
+    subName: "Supplement Sales Japan Co., Ltd.",
     address: "〒370-2303 群馬県富岡市蕨1004番地1",
     businessHours: "平日 9:00〜18:00 (JST)",
     founded: "2024年",
@@ -67,7 +67,7 @@ const ja = {
     metaDescription:
       "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社。赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン、アンセリン等の高品質B2B原材料を安定供給。",
     hero: {
-      eyebrow: "Supplement Sales Co., Ltd.",
+      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "自然の力を、",
       titleLine2: "確かな品質で。",
       lead: "サプリメント・健康食品・化粧品の原材料を、輸入販売と製造販売で安定してお届けします。",

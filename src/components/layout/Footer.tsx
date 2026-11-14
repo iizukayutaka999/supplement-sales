@@ -56,7 +56,7 @@ export function Footer({ locale, t, company, nav }: FooterProps) {
         </div>
 
         <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-[0.75rem] text-stone">© 2024 Supplement Sales Co., Ltd.</p>
+          <p className="text-[0.75rem] text-stone">© 2024 Supplement Sales Japan Co., Ltd.</p>
           <div className="flex gap-6">
             {[
               { href: "/legal", label: t.legal },

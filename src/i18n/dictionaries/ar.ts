@@ -2,14 +2,14 @@ import type { Dictionary } from "./ja";
 
 const ar: Dictionary = {
   meta: {
-    siteName: "Supplement Sales Co., Ltd.",
-    defaultTitle: "Supplement Sales Co., Ltd. | استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
-    titleSuffix: "Supplement Sales Co., Ltd.",
+    siteName: "Supplement Sales Japan Co., Ltd.",
+    defaultTitle: "Supplement Sales Japan Co., Ltd. | استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
+    titleSuffix: "Supplement Sales Japan Co., Ltd.",
     description: "شركة تجارية متخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. نورّد مواد خام عالية الجودة لقطاع الأعمال (B2B) مثل مسحوق الشمندر الأحمر، والبوسويليا سيراتا، والأشواغاندا، والجيمنيما، والجارسينيا، والبروميلين.",
-    ogImageAlt: "Supplement Sales Co., Ltd. - استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
+    ogImageAlt: "Supplement Sales Japan Co., Ltd. - استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
   },
   company: {
-    name: "Supplement Sales Co., Ltd.",
+    name: "Supplement Sales Japan Co., Ltd.",
     subName: "株式会社サプリ販売",
     address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
     businessHours: "أيام العمل: من 9:00 إلى 18:00 (بتوقيت اليابان JST)",
@@ -27,10 +27,10 @@ const ar: Dictionary = {
     language: "اللغة",
   },
   home: {
-    metaTitle: "Supplement Sales Co., Ltd. | استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
+    metaTitle: "Supplement Sales Japan Co., Ltd. | استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
     metaDescription: "شركة تجارية متخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. توريد مستقر لمواد خام عالية الجودة لقطاع الأعمال (B2B) مثل مسحوق الشمندر الأحمر، والبوسويليا سيراتا، والكولاجين النباتي، والأنسيرين.",
     hero: {
-      eyebrow: "Supplement Sales Co., Ltd.",
+      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "قوة الطبيعة،",
       titleLine2: "بجودة موثوقة.",
       lead: "نوفّر لكم بثبات المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل، من خلال الاستيراد والبيع، والتصنيع والبيع.",
@@ -73,7 +73,7 @@ const ar: Dictionary = {
     },
     faq: [
       {
-        question: "ما هي شركة Supplement Sales Co., Ltd.؟",
+        question: "ما هي شركة Supplement Sales Japan Co., Ltd.؟",
         answer: "شركة تجارية متخصصة في قطاع الأعمال (B2B) تعمل في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. نتعامل في مواد خام عالية الجودة مثل مسحوق الشمندر الأحمر، والبوسويليا سيراتا، والكولاجين النباتي، والأنسيرين.",
       },
       {
@@ -114,7 +114,7 @@ const ar: Dictionary = {
   },
   productDetail: {
     metaTitle: "{name} ({subName}) | مادة خام للمكملات الغذائية",
-    metaDescriptionSuffix: "{name} من Supplement Sales Co., Ltd. متاح بدءًا من العينات والكميات الصغيرة.",
+    metaDescriptionSuffix: "{name} من Supplement Sales Japan Co., Ltd. متاح بدءًا من العينات والكميات الصغيرة.",
     descriptionHeading: "نظرة عامة على المنتج",
     featuresHeading: "المميزات",
     applicationsHeading: "الاستخدامات",
@@ -131,10 +131,10 @@ const ar: Dictionary = {
   },
   companyPage: {
     metaTitle: "عن الشركة | شركة متخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية",
-    metaDescription: "نبذة عن Supplement Sales Co., Ltd.، الشركة التجارية المتخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. نمتلك منظومة تصنيع ذاتي ومنظومة لرقابة الجودة.",
+    metaDescription: "نبذة عن Supplement Sales Japan Co., Ltd.، الشركة التجارية المتخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. نمتلك منظومة تصنيع ذاتي ومنظومة لرقابة الجودة.",
     eyebrow: "About Us",
     title: "عن الشركة",
-    intro: "Supplement Sales Co., Ltd. شركة تجارية متخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. بالاستفادة من منظومة التصنيع الذاتي وشبكة التوريد الموثوقة، نتولى كل المراحل من شراء المواد الخام حتى التصنيع والبيع، وندعم تطوير منتجات عملائنا بشكل شامل.",
+    intro: "Supplement Sales Japan Co., Ltd. شركة تجارية متخصصة في استيراد وتصنيع وبيع المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل. بالاستفادة من منظومة التصنيع الذاتي وشبكة التوريد الموثوقة، نتولى كل المراحل من شراء المواد الخام حتى التصنيع والبيع، وندعم تطوير منتجات عملائنا بشكل شامل.",
     infoHeading: "Company Information",
     labels: {
       name: "اسم الشركة",
@@ -165,7 +165,7 @@ const ar: Dictionary = {
     ctaButton: "اتصل بنا",
     faq: [
       {
-        question: "متى تأسست شركة Supplement Sales Co., Ltd.؟",
+        question: "متى تأسست شركة Supplement Sales Japan Co., Ltd.؟",
         answer: "تأسست الشركة عام 2024، ويقع مقرها الرئيسي في مدينة توميوكا بمحافظة غونما في اليابان.",
       },
       {
@@ -180,7 +180,7 @@ const ar: Dictionary = {
   },
   contactPage: {
     metaTitle: "اتصل بنا | استشارات المواد الخام للمكملات الغذائية والعينات وعروض الأسعار",
-    metaDescription: "تواصلوا مع Supplement Sales Co., Ltd. للاستشارات حول المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل، وطلبات العينات، وعروض الأسعار. نرد عادةً خلال يومي عمل.",
+    metaDescription: "تواصلوا مع Supplement Sales Japan Co., Ltd. للاستشارات حول المواد الخام للمكملات الغذائية والأغذية الصحية ومستحضرات التجميل، وطلبات العينات، وعروض الأسعار. نرد عادةً خلال يومي عمل.",
     eyebrow: "Contact",
     title: "اتصل بنا",
     lead: "لا تترددوا في التواصل معنا للاستشارات حول المواد الخام، أو طلبات العينات، أو عروض الأسعار. نرد عادةً خلال يومي عمل.",

@@ -6,7 +6,7 @@ const categoryCount = new Set(products.map((p) => p.category)).size;
 
 export const company = {
   name: "株式会社サプリ販売",
-  nameEn: "Supplement Sales Co., Ltd.",
+  nameEn: "Supplement Sales Japan Co., Ltd.",
   foundedYear: 2024,
   address: {
     postal: "370-2303",
