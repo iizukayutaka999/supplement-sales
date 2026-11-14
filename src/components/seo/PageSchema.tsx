@@ -1,5 +1,6 @@
 import { JsonLd } from "./JsonLd";
 import { SITE_URL, COMPANY_NAME } from "@/lib/constants";
+import { defaultLocale, localeUrl, type Locale } from "@/i18n/config";
 
 interface PageSchemaProps {
   type?: "WebPage" | "AboutPage" | "ContactPage" | "CollectionPage" | "ItemPage";
@@ -9,6 +10,7 @@ interface PageSchemaProps {
   datePublished?: string;
   dateModified?: string;
   speakable?: boolean;
+  locale?: Locale;
 }
 
 export function PageSchema({
@@ -19,8 +21,9 @@ export function PageSchema({
   datePublished = "2024-01-01",
   dateModified = "2026-02-20",
   speakable = true,
+  locale = defaultLocale,
 }: PageSchemaProps) {
-  const url = `${SITE_URL}${path}`;
+  const url = localeUrl(locale, path);
 
   const data: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -40,7 +43,7 @@ export function PageSchema({
       "@id": `${SITE_URL}/#organization`,
       name: COMPANY_NAME,
     },
-    inLanguage: "ja",
+    inLanguage: locale,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,

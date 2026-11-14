@@ -1,17 +1,27 @@
 import { JsonLd } from "./JsonLd";
 import { SITE_URL, COMPANY_NAME } from "@/lib/constants";
 import { Product } from "@/types/product";
+import { localeUrl, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries/ja";
 
-export function ProductSchema({ product }: { product: Product }) {
-  const productUrl = `${SITE_URL}/products/${product.slug}`;
+interface ProductSchemaProps {
+  product: Product;
+  locale: Locale;
+  dict: Dictionary;
+}
+
+export function ProductSchema({ product, locale, dict }: ProductSchemaProps) {
+  const text = dict.products[product.slug];
+  const t = dict.productDetail;
+  const productUrl = localeUrl(locale, `/products/${product.slug}`);
 
   const data: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `${productUrl}/#product`,
-    name: `${product.nameJa} (${product.nameEn})`,
-    description: product.description,
-    category: product.category,
+    name: `${text.name} (${text.subName})`,
+    description: text.description,
+    category: text.category,
     url: productUrl,
     brand: {
       "@type": "Brand",
@@ -23,7 +33,7 @@ export function ProductSchema({ product }: { product: Product }) {
       priceCurrency: "JPY",
       price: "0",
       priceValidUntil: "2027-12-31",
-      url: `${SITE_URL}/contact`,
+      url: localeUrl(locale, "/contact"),
       seller: {
         "@type": "Organization",
         "@id": `${SITE_URL}/#organization`,
@@ -34,32 +44,32 @@ export function ProductSchema({ product }: { product: Product }) {
         "@type": "Country",
         name: "JP",
       },
-      description: "B2Bお見積もり - お問い合わせください",
+      description: dict.productDetail.ctaLead,
     },
     manufacturer: {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
       name: COMPANY_NAME,
     },
-    isRelatedTo: product.applications.map((app) => ({
+    isRelatedTo: text.applications.map((app) => ({
       "@type": "Product",
       name: app,
     })),
     additionalProperty: [
-      ...product.features.map((feature) => ({
+      ...text.features.map((feature) => ({
         "@type": "PropertyValue",
-        name: "特徴",
+        name: t.featuresHeading,
         value: feature,
       })),
-      ...product.applications.map((app) => ({
+      ...text.applications.map((app) => ({
         "@type": "PropertyValue",
-        name: "用途",
+        name: t.applicationsHeading,
         value: app,
       })),
-      ...(product.origins
-        ? product.origins.map((origin) => ({
+      ...(text.origins
+        ? text.origins.map((origin) => ({
             "@type": "PropertyValue",
-            name: "原産地",
+            name: t.originsHeading,
             value: origin,
           }))
         : []),
@@ -72,8 +82,8 @@ export function ProductSchema({ product }: { product: Product }) {
     "@type": "ItemPage",
     "@id": `${productUrl}/#itempage`,
     url: productUrl,
-    name: `${product.nameJa} | 株式会社サプリ販売`,
-    description: product.shortDescription,
+    name: `${text.name} | ${dict.meta.titleSuffix}`,
+    description: text.shortDescription,
     isPartOf: {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
@@ -84,17 +94,17 @@ export function ProductSchema({ product }: { product: Product }) {
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
+        { "@type": "ListItem", position: 1, name: dict.nav.home, item: localeUrl(locale, "/") },
         {
           "@type": "ListItem",
           position: 2,
-          name: "製品情報",
-          item: `${SITE_URL}/products`,
+          name: dict.nav.products,
+          item: localeUrl(locale, "/products"),
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: product.nameJa,
+          name: text.name,
           item: productUrl,
         },
       ],
@@ -103,7 +113,7 @@ export function ProductSchema({ product }: { product: Product }) {
       "@type": "SpeakableSpecification",
       cssSelector: ["h1", "h2", "article p"],
     },
-    inLanguage: "ja",
+    inLanguage: locale,
   };
 
   return (

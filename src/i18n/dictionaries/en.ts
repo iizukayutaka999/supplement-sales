@@ -1,0 +1,500 @@
+import type { Dictionary } from "./ja";
+
+const en: Dictionary = {
+  meta: {
+    siteName: "Supplement Sales Co., Ltd.",
+    defaultTitle: "Supplement Sales Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
+    titleSuffix: "Supplement Sales Co., Ltd.",
+    description:
+      "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. We supply high-quality B2B ingredients including red beet powder, Boswellia serrata, ashwagandha, gymnema, garcinia and bromelain. Support available in Japanese, English and Russian.",
+    ogImageAlt: "Supplement Sales Co., Ltd. - Import, manufacturing and sale of supplement ingredients",
+  },
+  company: {
+    name: "Supplement Sales Co., Ltd.",
+    subName: "株式会社サプリ販売",
+    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    businessHours: "Weekdays, 9:00 AM – 6:00 PM (JST)",
+    supportLanguages: "日本語 · English · Русский",
+    founded: "2024",
+    business:
+      "Import, manufacturing and sale of raw materials for supplements, health foods and cosmetics",
+  },
+  nav: {
+    home: "Home",
+    products: "Products",
+    company: "About Us",
+    contact: "Contact",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+    breadcrumb: "Breadcrumb",
+    language: "Language",
+  },
+  home: {
+    metaTitle: "Supplement Sales Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
+    metaDescription:
+      "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Reliable supply of high-quality B2B ingredients including red beet powder, Boswellia serrata, plant-based collagen and anserine. Support in Japanese, English and Russian.",
+    hero: {
+      eyebrow: "Supplement Sales Co., Ltd.",
+      titleLine1: "The power of nature,",
+      titleLine2: "with quality you can trust.",
+      lead: "We deliver a reliable supply of raw materials for supplements, health foods and cosmetics through both import and in-house manufacturing.",
+      ctaProducts: "View Products",
+      ctaContact: "Contact Us",
+      highlights: ["Full COA", "Samples available", "Small lots welcome", "JP / EN / RU support"],
+    },
+    featured: {
+      eyebrow: "Products",
+      title: "Our Ingredients",
+      lead: "Carefully selected raw materials for supplements, health foods and cosmetics. We can start with samples and small lots.",
+      viewAll: "View all products →",
+    },
+    strengths: {
+      eyebrow: "Our Strengths",
+      title: "Why Clients Choose Us",
+      items: [
+        {
+          title: "In-house Manufacturing × Ingredient Sourcing",
+          body: "Our own manufacturing facility combined with direct relationships with suppliers in Japan and overseas. We maintain consistent quality control from raw material procurement through to production.",
+        },
+        {
+          title: "Multilingual Support",
+          body: "We work in Japanese, English and Russian, so negotiations with overseas suppliers and sourcing of international ingredients run smoothly at a native level.",
+        },
+        {
+          title: "Quality Control & Certification Support",
+          body: "Full COA, HACCP and third-party testing. Our quality control system meets a range of standards and certifications to reliably support your products.",
+        },
+        {
+          title: "Samples & Small Lots",
+          body: "Evaluate samples before moving to volume production. With small-lot orders, you can scale up step by step while confirming quality.",
+        },
+      ],
+    },
+    cta: {
+      title: "Talk to us about your ingredient needs",
+      lead: "We also source ingredients not listed on this site and handle sample requests.",
+      button: "Contact Us",
+    },
+    faq: [
+      {
+        question: "What kind of company is Supplement Sales Co., Ltd.?",
+        answer:
+          "We are a B2B specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. We handle high-quality ingredients such as red beet powder, Boswellia serrata, plant-based collagen and anserine.",
+      },
+      {
+        question: "What ingredients do you handle?",
+        answer:
+          "We handle evidence-backed functional ingredients such as red beet powder (natural colorant, antioxidant), Boswellia serrata (joints, anti-inflammatory), plant-based collagen (vegan-friendly beauty ingredient) and anserine (a highly antioxidant, salmon-derived dipeptide).",
+      },
+      {
+        question: "Which languages do you support?",
+        answer:
+          "We support three languages: Japanese, English and Russian. This also allows us to negotiate smoothly with overseas suppliers.",
+      },
+      {
+        question: "Can I order samples or small lots?",
+        answer:
+          "Yes, samples are available for all products, and we also accept small-lot orders. Please feel free to reach out via our contact form.",
+      },
+    ],
+  },
+  productsPage: {
+    metaTitle: "Products | Ingredients for Supplements, Health Foods & Cosmetics",
+    metaDescription:
+      "Our range of high-quality supplement ingredients, from imported materials to products we manufacture in-house. Samples and small lots available on request.",
+    eyebrow: "Products",
+    title: "Products",
+    subtitle: "A curated library of ingredients.",
+    lead: "We handle a wide range of raw materials for supplements, health foods and cosmetics. From imported materials to in-house production, everything is strictly controlled to Japanese quality standards.",
+    listName: "Supplement Ingredient Catalog",
+    faq: [
+      {
+        question: "Do you provide samples?",
+        answer:
+          "Yes, samples are available for all products. Please specify the product name in our contact form and send us your request.",
+      },
+      {
+        question: "Can I place a small-lot order?",
+        answer:
+          "Yes, we can accommodate small lots. Minimum order quantities vary by product, so please contact us for details.",
+      },
+      {
+        question: "Do you provide a Certificate of Analysis (COA)?",
+        answer:
+          "Yes, every product comes with a lot-specific Certificate of Analysis (COA). We also support HACCP and other certifications.",
+      },
+    ],
+  },
+  productCard: {
+    readMore: "Learn more",
+  },
+  productDetail: {
+    metaTitle: "{name} ({subName}) | Supplement Ingredients",
+    metaDescriptionSuffix:
+      "{name} supplied by Supplement Sales Co., Ltd. Samples and small lots available.",
+    descriptionHeading: "Overview",
+    featuresHeading: "Features",
+    applicationsHeading: "Applications",
+    originsHeading: "Origin",
+    ctaTitle: "Inquire about {name}",
+    ctaLead: "Contact us for samples, detailed documentation or a quotation.",
+    ctaButton: "Request a Sample",
+    faqWhat: "What is {name}?",
+    faqSampleQ: "Can I get a sample of {name}?",
+    faqSampleA:
+      "Yes, samples of {name} are available. Please enter the product name in our contact form and send us your request.",
+    faqUseQ: "What products can {name} be used in?",
+    faqUseA: "{name} can be used in applications such as {applications}.",
+    listSeparator: ", ",
+  },
+  companyPage: {
+    metaTitle: "About Us | Specialist Importer & Manufacturer of Supplement Ingredients",
+    metaDescription:
+      "Company profile of Supplement Sales Co., Ltd., a specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics, with in-house manufacturing, multilingual support (Japanese, English, Russian) and a robust quality control system.",
+    eyebrow: "About Us",
+    title: "About Us",
+    intro:
+      "Supplement Sales Co., Ltd. is a specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Drawing on our in-house manufacturing and a reliable sourcing network, we handle everything from raw material procurement to manufacturing and sales, providing end-to-end support for your product development.",
+    infoHeading: "Company Information",
+    labels: {
+      name: "Company Name",
+      founded: "Established",
+      address: "Address",
+      business: "Business",
+      languages: "Languages",
+      hours: "Business Hours",
+    },
+    strengthsEyebrow: "Our Strengths",
+    strengthsTitle: "Our Strengths",
+    strengths: [
+      {
+        title: "In-house Manufacturing & Ingredient Sourcing",
+        description:
+          "In addition to our own manufacturing facility, we trade directly with suppliers in Japan and overseas, maintaining consistent quality control from ingredient procurement through to production.",
+      },
+      {
+        title: "Multilingual Support",
+        description:
+          "We can communicate in Japanese, English and Russian, ensuring smooth negotiations with overseas suppliers and efficient sourcing of international ingredients.",
+      },
+      {
+        title: "Quality Control & Certification Support",
+        description:
+          "We provide all documentation required for manufacturing and sales (COA, HACCP, etc.), backed by a quality control system that meets a range of standards and certifications.",
+      },
+      {
+        title: "Samples & Small Lots",
+        description:
+          "Evaluate samples before volume production. Small lots are available, so you can order once you have fully confirmed the quality.",
+      },
+    ],
+    ctaEyebrow: "Contact",
+    ctaTitle: "Get in Touch",
+    ctaLead: "We welcome questions about our products and sample requests.",
+    ctaButton: "Contact Us",
+    faq: [
+      {
+        question: "When was Supplement Sales Co., Ltd. established?",
+        answer: "The company was established in 2024 and is headquartered in Tomioka, Gunma, Japan.",
+      },
+      {
+        question: "Do you have in-house manufacturing?",
+        answer:
+          "Yes, we have our own manufacturing facility and maintain consistent quality control from ingredient procurement through to production.",
+      },
+      {
+        question: "What is your quality control system like?",
+        answer:
+          "We provide full documentation such as COA (Certificate of Analysis) and HACCP, and operate a quality control system that meets a range of standards and certifications.",
+      },
+    ],
+  },
+  contactPage: {
+    metaTitle: "Contact | Supplement Ingredient Inquiries, Samples & Quotes",
+    metaDescription:
+      "Contact Supplement Sales Co., Ltd. for inquiries about ingredients for supplements, health foods and cosmetics, sample requests and quotations. Support in Japanese, English and Russian. We usually reply within 2 business days.",
+    eyebrow: "Contact",
+    title: "Contact Us",
+    lead: "Feel free to contact us about ingredients, sample requests, quotations and more. We usually reply within 2 business days.",
+    labels: {
+      company: "Company",
+      address: "Address",
+      languages: "Languages",
+      hours: "Hours",
+    },
+    faq: [
+      {
+        question: "Do you provide samples?",
+        answer:
+          "Yes, samples are available for most products. Please let us know which products you are interested in via our contact form.",
+      },
+      {
+        question: "Can I place a small-lot order?",
+        answer:
+          "Yes, we can accommodate small lots. Minimum order quantities vary by product, so please feel free to ask.",
+      },
+      {
+        question: "Which languages do you support?",
+        answer:
+          "We support three languages: Japanese, English and Russian. This also allows us to negotiate smoothly with overseas suppliers.",
+      },
+      {
+        question: "How long does it take to receive a reply?",
+        answer:
+          "We usually reply within 2 business days. If your inquiry is urgent, please mention this in your message.",
+      },
+    ],
+    form: {
+      company: "Company Name",
+      companyPlaceholder: "Example Co., Ltd.",
+      name: "Your Name",
+      namePlaceholder: "John Smith",
+      email: "Email Address",
+      emailPlaceholder: "info@example.com",
+      inquiryType: "Inquiry Type",
+      selectPlaceholder: "Please select",
+      inquiryOptions: [
+        "Sample request",
+        "Product information / Quotation",
+        "Questions about products / ingredients",
+        "Other",
+      ],
+      message: "Message",
+      messagePlaceholder: "Please enter your questions or requirements",
+      submit: "Send →",
+      sending: "Sending...",
+      error: "Your message could not be sent. Please try again later.",
+      thanksTitle: "Thank you for your inquiry",
+      thanksBody: "A member of our team will get back to you, usually within 2 business days.",
+    },
+  },
+  footer: {
+    description:
+      "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics.",
+    menuHeading: "Menu",
+    infoHeading: "Company",
+    legal: "Specified Commercial Transactions Act",
+    privacy: "Privacy Policy",
+    japaneseOnlyNote: " (Japanese)",
+  },
+  notFound: {
+    title: "Page not found",
+    body: "The page you are looking for does not exist or may have been moved.",
+    back: "Back to Home",
+  },
+  products: {
+    "red-beet-powder": {
+      category: "SUPPLEMENT INGREDIENT",
+      name: "Red Beet Powder",
+      subName: "赤ビーツ粉末",
+      shortDescription:
+        "Processed within 24 hours of harvest. An ingredient that sets your products apart with a vivid natural red, without relying on synthetic colorants.",
+      description:
+        "Make your products stand out at a glance with a natural red. Red beet powder is the only ingredient that combines a deep, natural red that synthetic colorants cannot reproduce with the inherent nutritional value of beets. Low-temperature processing within 24 hours of harvest preserves as much as possible of the antioxidant power of betacyanins and the nitrates that support blood flow. Healthy yet beautiful: this balance is what makes possible the next generation of products that win over consumers.",
+      features: [
+        "Low-temperature processing within 24 hours of harvest to retain maximum nutritional value",
+        "No synthetic colorants needed: vivid red from the natural pigment betacyanin",
+        "Uniform particle size (100 mesh) with high solubility in water and oil",
+        "Lot-specific Certificate of Analysis (COA) provided",
+        "Flexible supply from small lots to large-scale production",
+      ],
+      applications: ["Functional beverages", "Confectionery", "Supplements", "Dairy products", "Seasonings"],
+      origins: ["Europe", "Japan"],
+    },
+    "boswellia-serrata": {
+      category: "HERBAL EXTRACT",
+      name: "Boswellia Serrata",
+      subName: "ボスウェリアセラータ",
+      shortDescription:
+        "5,000 years of Ayurvedic wisdom, delivered to modern quality standards. A sought-after ingredient in the joint and anti-inflammatory category.",
+      description:
+        "For 5,000 years, India's traditional medicine has treasured this \"resin that fights inflammation\". Now it can go into your products, delivered to modern quality standards. Boswellia serrata is one of the few ingredients you can offer with confidence to consumers in the joint care market who are looking for \"natural materials with evidence\". We guarantee a boswellic acid content of 65% or more and ensure stable supply through sustainable harvesting certified by the Government of India. The persuasive combination of tradition and science helps your products stand out from the competition.",
+      features: [
+        "Boswellic acid content of 65% or more guaranteed by specification",
+        "Stable supply through sustainable harvesting certified by the Government of India",
+        "Traditional refining techniques combined with modern quality control",
+        "Full traceability",
+        "COA (Certificate of Analysis) and safety data provided",
+      ],
+      applications: [
+        "Joint support supplements",
+        "Anti-inflammatory creams",
+        "Respiratory care products",
+        "Sports recovery",
+        "Digestive support",
+        "Anti-aging cosmetics",
+      ],
+      origins: ["India"],
+    },
+    "plant-based-collagen": {
+      category: "COLLAGEN ALTERNATIVE",
+      name: "Plant-Based Collagen Powder",
+      subName: "植物性コラーゲン粉末",
+      shortDescription:
+        "Zero animal-derived ingredients, no compromise on beauty. An ingredient for breaking into the fast-growing vegan and ethical market.",
+      description:
+        "\"Collagen with zero animal-derived ingredients that delivers results you can actually feel\": plant-based collagen resolves this contradiction. The vegan market continues to grow by double digits every year and is no longer a niche. Extracted from plants such as hibiscus using proprietary biotechnology, this ingredient is backed by data showing a 22% improvement in skin elasticity (12-week study in women aged 40–60), offering results comparable to conventional animal collagen. With ethics and tangible results, make your products leaders in a new market.",
+      features: [
+        "100% plant-derived: suitable for vegan and halal products",
+        "High biocompatibility through proprietary biotechnology",
+        "Data showing a 22% improvement in skin elasticity",
+        "Sustainable ingredient with a significantly reduced environmental footprint",
+        "Made from organically grown materials with full traceability",
+      ],
+      applications: [
+        "Beauty supplements",
+        "Skincare cosmetics",
+        "Sports nutrition",
+        "Functional beverages",
+        "Vegan foods",
+        "Health foods for seniors",
+      ],
+      origins: ["Europe", "Japan"],
+    },
+    anserine: {
+      category: "AMINO ACID COMPOUND",
+      name: "Anserine",
+      subName: "アンセリン",
+      shortDescription:
+        "2.2 times the antioxidant power of vitamin C. A natural dipeptide that lets you target three markets (sports, beauty and cognition) with one ingredient.",
+      description:
+        "What if a single ingredient could open the door to three growth markets? Anserine, a natural salmon-derived dipeptide, is a versatile ingredient for sports nutrition, beauty and cognitive function support, with exceptional antioxidant power 2.2 times that of vitamin C. Our high-quality powder, with a purity of 98% or more, is highly water-soluble and can be formulated into a wide range of formats, from beverages to supplements and cosmetics. A next-generation functional ingredient nurtured by the seas of Japan, bringing new competitiveness to your product lineup.",
+      features: [
+        "Purity of 98% or more: a natural salmon-derived dipeptide",
+        "2.2 times the antioxidant power of vitamin C (free radical scavenging)",
+        "Highly water-soluble and suitable for a wide range of formats",
+        "Manufactured in an ISO 9001 certified facility, with third-party testing of every lot",
+        "Highly cost-effective at a recommended inclusion rate of 0.1%–0.5%",
+      ],
+      applications: [
+        "Sports nutrition",
+        "Functional beverages",
+        "Anti-aging supplements",
+        "Beauty cosmetics",
+        "Functional foods",
+        "Pet food",
+      ],
+      origins: ["Japan"],
+    },
+    "gymnema-sylvestre": {
+      category: "HERBAL EXTRACT",
+      name: "Gymnema Sylvestre Extract",
+      subName: "ギムネマ・シルベスタエキス",
+      shortDescription:
+        "The \"sugar destroyer\" leaf: a leading ingredient for the sugar care market, proven by 2,000 years of Ayurveda.",
+      description:
+        "For more than 2,000 years in India, Gymnema sylvestre has been known as \"gurmar\" (the destroyer of sugar). The extract from its leaves is guaranteed by specification to contain 25% or more gymnemic acids, and in the sugar care and blood sugar support market it carries a persuasiveness other materials lack, as an ingredient backed by both tradition and science. Demand is rising rapidly as the low-carb and diet markets expand, and the ingredient suits a wide range of product designs, from supplements to functional foods. A next-generation functional ingredient that answers a key consumer insight: changing the way we relate to sweets.",
+      features: [
+        "Gymnemic acid content of 25% or more guaranteed by specification (gravimetric method)",
+        "Safe sterilization process: non-irradiated, non-ETO treated",
+        "GMO-free, BSE/TSE-free",
+        "Lot-specific COA (Certificate of Analysis) provided",
+        "Meets heavy metal and microbiological testing standards (USP compliant)",
+      ],
+      applications: [
+        "Sugar care supplements",
+        "Diet supplements",
+        "Blood sugar support foods",
+        "Functional beverages",
+        "Health teas",
+        "Functional foods",
+      ],
+      origins: ["India"],
+    },
+    ashwagandha: {
+      category: "ADAPTOGEN",
+      name: "Ashwagandha Extract",
+      subName: "アシュワガンダエキス",
+      shortDescription:
+        "The world's most talked-about adaptogen: a scientifically studied, calming ingredient for a stressed-out society.",
+      description:
+        "What if one ingredient could address the three biggest concerns of modern life: stress, sleep and vitality? Ashwagandha, often called the king of herbs in India's traditional Ayurvedic medicine, is the fastest-growing ingredient in the global adaptogen market. Our extract, with a withanolide content of 5% or more guaranteed by HPLC, is supported by extensive clinical data on cortisol reduction, improved sleep quality and enhanced exercise performance, and is already a mainstream ingredient in Western markets. With awareness growing rapidly in Japan too, now is the time to add it to your product lineup.",
+      features: [
+        "Withanolide content of 5% or more guaranteed by HPLC",
+        "Whole-plant use for a broad profile of active constituents",
+        "Safe sterilization process: non-irradiated, non-ETO treated",
+        "GMO-free, BSE/TSE-free",
+        "Lot-specific COA (Certificate of Analysis) and MSDS provided",
+      ],
+      applications: [
+        "Stress care supplements",
+        "Sleep support products",
+        "Sports nutrition",
+        "Cognitive function support",
+        "Vitality supplements for men",
+        "Anti-aging products",
+      ],
+      origins: ["India"],
+    },
+    "garcinia-cambogia": {
+      category: "WEIGHT MANAGEMENT",
+      name: "Garcinia Cambogia Extract",
+      subName: "ガルシニア・カンボジアエキス",
+      shortDescription:
+        "Over 60% HCA. A staple of the diet market, working by blocking fat synthesis and helping control appetite.",
+      description:
+        "\"Instead of forcing yourself to suppress cravings, work with the body's own mechanisms\": Garcinia cambogia is an ingredient that puts this concept into practice scientifically. Our fruit-derived extract, guaranteed to contain 60% or more hydroxycitric acid (HCA), has long remained one of the most popular ingredients in the global diet supplement market through two mechanisms: inhibition of fat-synthesizing enzymes and promotion of satiety. In Japan, too, it is drawing growing attention as a material for Foods for Specified Health Uses (FOSHU) and Foods with Function Claims. With solid evidence and a stable supply, it is a trusted choice for your weight management products.",
+      features: [
+        "Hydroxycitric acid (HCA) content of 60% or more guaranteed (HPLC)",
+        "Natural fruit-derived extract with extensive safety data",
+        "Safe sterilization process: non-irradiated, non-ETO treated",
+        "GMO-free, BSE/TSE-free",
+        "Meets heavy metal and microbiological testing standards (USP/ICP-OES compliant)",
+      ],
+      applications: [
+        "Diet supplements",
+        "Appetite control products",
+        "Metabolic support",
+        "Functional foods",
+        "Sports nutrition",
+        "Health beverages",
+      ],
+      origins: ["India"],
+    },
+    bromelain: {
+      category: "ENZYME EXTRACT",
+      name: "Bromelain Extract",
+      subName: "ブロメラインエキス",
+      shortDescription:
+        "A powerful pineapple-derived protease. One ingredient for three markets: digestion, anti-inflammation and sports recovery.",
+      description:
+        "Digestive support, anti-inflammation and sports recovery: enter three growth markets with a single ingredient. Bromelain, derived from pineapple stems, is a protease with high enzyme activity of 2500 GDU or more. Beyond helping the digestion and absorption of food, there is scientific evidence for its role in modulating inflammatory responses and in post-exercise muscle recovery, and in Western countries it is also used as a pharmaceutical-grade ingredient. A white, highly water-soluble powder, it can be formulated into a wide range of formats, from supplements to functional beverages. A versatile, naturally derived enzyme that brings new value to your product portfolio.",
+      features: [
+        "Enzyme activity of 2500 GDU or more guaranteed (measured value: 2550 GDU)",
+        "Natural protease derived from pineapple stems",
+        "Versatile white powder with excellent water solubility",
+        "Safe sterilization process: non-irradiated, non-ETO treated",
+        "GMO-free, meets heavy metal testing standards (USP compliant)",
+      ],
+      applications: [
+        "Digestive enzyme supplements",
+        "Anti-inflammatory support products",
+        "Sports recovery",
+        "Joint care products",
+        "Functional foods",
+        "Cosmetic ingredients",
+      ],
+      origins: ["India"],
+    },
+    "eye-lift": {
+      category: "OPHTHALMIC PRODUCT",
+      name: "EYE LIFT Eye Drops",
+      subName: "アイリフト（EYE LIFT）点眼液",
+      shortDescription:
+        "Japanese-made eye drops based on oxymetazoline hydrochloride 0.1% and naphazoline nitrate 0.05%, formulated with hyaluronic acid and vitamin B12.",
+      description:
+        "EYE LIFT is an eye drop formulated around two ingredients: oxymetazoline hydrochloride 0.1% and naphazoline nitrate 0.05%. It also contains hyaluronic acid and vitamin B12 with consideration for the ocular surface. The product is manufactured in Japan and supplied in a 5 mL bottle. Please contact us for terms of supply and detailed documentation.",
+      features: [
+        "Oxymetazoline hydrochloride 0.1%",
+        "Naphazoline nitrate 0.05%",
+        "Other ingredients: hyaluronic acid, vitamin B12, sodium chloride, benzalkonium chloride",
+        "Volume: 5 mL",
+        "Storage: store at room temperature, away from heat, humidity and direct sunlight",
+      ],
+      applications: ["Eye care products"],
+      origins: ["Japan"],
+    },
+  },
+};
+
+export default en;

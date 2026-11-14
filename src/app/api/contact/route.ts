@@ -7,6 +7,7 @@ interface ContactBody {
   email: string;
   inquiryType: string;
   message: string;
+  language?: string;
 }
 
 export async function POST(request: NextRequest) {
@@ -44,6 +45,7 @@ export async function POST(request: NextRequest) {
         `お名前: ${body.name}`,
         `メール: ${body.email}`,
         `種別: ${body.inquiryType || "未選択"}`,
+        `サイト言語: ${body.language || "ja"}`,
         "",
         "--- メッセージ ---",
         body.message || "(なし)",

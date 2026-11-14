@@ -1,8 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import type { Locale } from "@/i18n/config";
+import ja, { type Dictionary } from "@/i18n/dictionaries/ja";
 
-export function ContactForm() {
+interface ContactFormProps {
+  t: Dictionary["contactPage"]["form"];
+  locale: Locale;
+}
+
+export function ContactForm({ t, locale }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -25,16 +32,17 @@ export function ContactForm() {
           email: formData.get("email"),
           inquiryType: formData.get("inquiryType"),
           message: formData.get("message"),
+          language: locale,
         }),
       });
 
       if (!res.ok) {
-        throw new Error("送信に失敗しました");
+        throw new Error(t.error);
       }
 
       setSubmitted(true);
     } catch {
-      setError("送信に失敗しました。時間をおいて再度お試しください。");
+      setError(t.error);
     } finally {
       setLoading(false);
     }
@@ -43,7 +51,6 @@ export function ContactForm() {
   if (submitted) {
     return (
       <div className="bg-cream/60 px-8 py-14 md:px-12 md:py-20 text-center relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
         <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-8 rounded-full border border-gold/30 flex items-center justify-center">
           <svg
             viewBox="0 0 32 32"
@@ -57,13 +64,11 @@ export function ContactForm() {
             <path d="M8 16l6 6 12-14" />
           </svg>
         </div>
-        <p className="font-serif text-xl md:text-[1.75rem] text-forest mb-4 font-light">
-          お問い合わせありがとうございます
+        <p className="text-xl md:text-[1.75rem] text-forest mb-4">
+          {t.thanksTitle}
         </p>
         <p className="text-sm text-text-muted leading-relaxed">
-          担当者より折り返しご連絡いたします。
-          <br />
-          通常2営業日以内にご返答いたします。
+          {t.thanksBody}
         </p>
       </div>
     );
@@ -77,9 +82,9 @@ export function ContactForm() {
         </div>
       )}
       {[
-        { name: "company", label: "会社名 / Company", type: "text", placeholder: "株式会社〇〇", required: true },
-        { name: "name", label: "お名前 / Name", type: "text", placeholder: "山田 太郎", required: true },
-        { name: "email", label: "メールアドレス / Email", type: "email", placeholder: "info@example.com", required: true },
+        { name: "company", label: t.company, type: "text", placeholder: t.companyPlaceholder, required: true },
+        { name: "name", label: t.name, type: "text", placeholder: t.namePlaceholder, required: true },
+        { name: "email", label: t.email, type: "email", placeholder: t.emailPlaceholder, required: true },
       ].map((field) => (
         <div key={field.name} className="flex flex-col gap-2.5">
           <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
@@ -96,34 +101,36 @@ export function ContactForm() {
       ))}
       <div className="flex flex-col gap-2.5">
         <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
-          お問い合わせ内容 / Inquiry Type
+          {t.inquiryType}
         </label>
         <select name="inquiryType" className="form-input" defaultValue="">
           <option value="" disabled>
-            選択してください
+            {t.selectPlaceholder}
           </option>
-          <option>サンプル依頼</option>
-          <option>製品情報・お見積もり</option>
-          <option>製品・原料について</option>
-          <option>その他</option>
+          {/* Values stay Japanese so staff always receive the same inquiry types */}
+          {t.inquiryOptions.map((label, i) => (
+            <option key={label} value={ja.contactPage.form.inquiryOptions[i]}>
+              {label}
+            </option>
+          ))}
         </select>
       </div>
       <div className="flex flex-col gap-2.5">
         <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
-          メッセージ / Message
+          {t.message}
         </label>
         <textarea
           name="message"
-          placeholder="ご質問・ご要望をご記入ください"
+          placeholder={t.messagePlaceholder}
           className="form-input resize-y min-h-[140px]"
         />
       </div>
       <button
         type="submit"
         disabled={loading}
-        className="bg-forest text-cream border-none py-4 md:py-4 px-12 md:px-14 text-[0.7rem] tracking-[0.28em] font-sans cursor-pointer hover:bg-moss transition-all duration-500 self-start disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_6px_20px_rgba(26,51,40,0.18)] hover:-translate-y-0.5 uppercase font-medium"
+        className="btn-primary bg-accent hover:bg-sage text-white border-none py-3.5 px-12 text-[0.9rem] font-sans cursor-pointer self-start disabled:opacity-50 disabled:cursor-not-allowed font-medium"
       >
-        {loading ? "送信中..." : "送信する →"}
+        {loading ? t.sending : t.submit}
       </button>
     </form>
   );

@@ -1,12 +1,22 @@
 import { JsonLd } from "./JsonLd";
-import { SITE_URL } from "@/lib/constants";
+import { defaultLocale, localeUrl, type Locale } from "@/i18n/config";
 
 interface BreadcrumbItem {
   name: string;
   href: string;
 }
 
-export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
+interface BreadcrumbSchemaProps {
+  items: BreadcrumbItem[];
+  locale?: Locale;
+  homeLabel?: string;
+}
+
+export function BreadcrumbSchema({
+  items,
+  locale = defaultLocale,
+  homeLabel = "ホーム",
+}: BreadcrumbSchemaProps) {
   const data = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -14,14 +24,14 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "ホーム",
-        item: SITE_URL,
+        name: homeLabel,
+        item: localeUrl(locale, "/"),
       },
       ...items.map((item, index) => ({
         "@type": "ListItem",
         position: index + 2,
         name: item.name,
-        item: `${SITE_URL}${item.href}`,
+        item: localeUrl(locale, item.href),
       })),
     ],
   };

@@ -1,21 +1,30 @@
 import { JsonLd } from "./JsonLd";
-import { SITE_URL } from "@/lib/constants";
 import { Product } from "@/types/product";
+import { localeUrl, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries/ja";
 
-export function ItemListSchema({ products }: { products: Product[] }) {
+interface ItemListSchemaProps {
+  products: Product[];
+  locale: Locale;
+  dict: Dictionary;
+}
+
+export function ItemListSchema({ products, locale, dict }: ItemListSchemaProps) {
   const data = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "サプリメント原材料一覧",
-    description:
-      "株式会社サプリ販売が取り扱うサプリメント・健康食品・化粧品原材料の製品一覧",
+    name: dict.productsPage.listName,
+    description: dict.productsPage.metaDescription,
     numberOfItems: products.length,
-    itemListElement: products.map((product, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: `${product.nameJa} (${product.nameEn})`,
-      url: `${SITE_URL}/products/${product.slug}`,
-    })),
+    itemListElement: products.map((product, index) => {
+      const text = dict.products[product.slug];
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: `${text.name} (${text.subName})`,
+        url: localeUrl(locale, `/products/${product.slug}`),
+      };
+    }),
   };
 
   return <JsonLd data={data} />;

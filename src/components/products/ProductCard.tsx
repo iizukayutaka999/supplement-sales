@@ -1,51 +1,40 @@
 import Link from "next/link";
 import { Product } from "@/types/product";
 import { ProductIcon } from "@/components/ui/ProductIcon";
+import { localePath, type Locale } from "@/i18n/config";
+import type { ProductText } from "@/i18n/dictionaries/ja";
 
 interface ProductCardProps {
   product: Product;
-  index?: number;
+  text: ProductText;
+  locale: Locale;
+  readMore: string;
 }
 
-export function ProductCard({ product, index }: ProductCardProps) {
+export function ProductCard({ product, text, locale, readMore }: ProductCardProps) {
   return (
     <Link
-      href={`/products/${product.slug}`}
-      className="product-card-line group relative bg-off-white p-8 md:p-12 lg:p-14 overflow-hidden transition-colors duration-500 hover:bg-paper no-underline block"
+      href={localePath(locale, `/products/${product.slug}`)}
+      className="group flex flex-col bg-white rounded-2xl border border-border p-7 md:p-8 no-underline transition-all duration-200 hover:border-accent hover:shadow-elevated"
     >
-      <div className="flex justify-between items-start mb-10 md:mb-14">
-        {typeof index === "number" && (
-          <span className="display-serif text-3xl md:text-4xl text-gold/50 leading-none">
-            {String(index + 1).padStart(2, "0")}
-          </span>
-        )}
-        <div className="text-sage/70 transition-all duration-500 group-hover:text-gold group-hover:-translate-y-1 ml-auto">
-          <ProductIcon slug={product.slug} className="w-10 h-10 md:w-12 md:h-12" />
-        </div>
+      <div className="w-14 h-14 rounded-xl bg-accent-soft text-accent flex items-center justify-center mb-6">
+        <ProductIcon slug={product.slug} className="w-8 h-8" />
       </div>
 
-      <p className="eyebrow text-gold/90 mb-4 md:mb-5">{product.category}</p>
+      <p className="text-[0.75rem] font-medium text-accent mb-2">{text.category}</p>
 
-      <h3 className="display-serif text-[1.4rem] md:text-[1.7rem] text-forest mb-1.5 md:mb-2 leading-[1.15]">
-        {product.nameJa}
+      <h3 className="text-[1.15rem] md:text-[1.25rem] font-medium text-forest leading-[1.4] mb-1">
+        {text.name}
       </h3>
-      <p className="font-serif italic text-sm md:text-[0.95rem] text-sage mb-6 md:mb-8">
-        {product.nameEn}
+      <p className="text-[0.8rem] text-stone mb-4">{text.subName}</p>
+
+      <p className="text-[0.88rem] leading-[1.85] text-text-muted mb-6 flex-1">
+        {text.shortDescription}
       </p>
 
-      <p className="text-[0.8rem] md:text-[0.83rem] leading-[2] text-text-muted font-light mb-8 md:mb-10">
-        {product.shortDescription}
-      </p>
-
-      {product.origins && (
-        <p className="text-[0.6rem] tracking-[0.35em] text-stone uppercase mb-8 md:mb-10">
-          Origin — {product.origins.join(" · ")}
-        </p>
-      )}
-
-      <span className="inline-flex items-center gap-3 text-[0.66rem] tracking-[0.32em] text-forest font-medium transition-all duration-500 group-hover:text-gold group-hover:gap-5 uppercase">
-        Read More
-        <span className="inline-block w-6 h-px bg-current transition-all duration-500 group-hover:w-10" />
+      <span className="inline-flex items-center gap-1.5 text-[0.85rem] font-medium text-accent">
+        {readMore}
+        <span className="transition-transform duration-200 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1">→</span>
       </span>
     </Link>
   );

@@ -1,0 +1,517 @@
+import type { Dictionary } from "./ja";
+
+const ms: Dictionary = {
+  meta: {
+    siteName: "Supplement Sales Co., Ltd.",
+    defaultTitle:
+      "Supplement Sales Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
+    titleSuffix: "Supplement Sales Co., Ltd.",
+    description:
+      "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami membekalkan bahan mentah B2B berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, ashwagandha, gymnema, garcinia dan bromelain. Perkhidmatan dalam bahasa Jepun, Inggeris dan Rusia.",
+    ogImageAlt:
+      "Supplement Sales Co., Ltd. - Import, pengeluaran dan penjualan bahan mentah suplemen",
+  },
+  company: {
+    name: "Supplement Sales Co., Ltd.",
+    subName: "株式会社サプリ販売",
+    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    businessHours: "Hari bekerja, 9:00–18:00 (JST)",
+    supportLanguages: "日本語 · English · Русский",
+    founded: "2024",
+    business:
+      "Import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik",
+  },
+  nav: {
+    home: "Laman Utama",
+    products: "Produk",
+    company: "Profil Syarikat",
+    contact: "Hubungi Kami",
+    openMenu: "Buka menu",
+    closeMenu: "Tutup menu",
+    breadcrumb: "Navigasi serbuk roti",
+    language: "Bahasa",
+  },
+  home: {
+    metaTitle:
+      "Supplement Sales Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
+    metaDescription:
+      "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Bekalan stabil bahan mentah B2B berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, kolagen berasaskan tumbuhan dan anserina. Perkhidmatan dalam bahasa Jepun, Inggeris dan Rusia.",
+    hero: {
+      eyebrow: "Supplement Sales Co., Ltd.",
+      titleLine1: "Kekuatan alam,",
+      titleLine2: "dengan kualiti yang terjamin.",
+      lead: "Kami membekalkan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik secara stabil melalui import dan penjualan, serta pengeluaran dan penjualan.",
+      ctaProducts: "Lihat Produk",
+      ctaContact: "Hubungi Kami",
+      highlights: [
+        "COA lengkap",
+        "Sampel tersedia",
+        "Lot kecil diterima",
+        "Bahasa Jepun · Inggeris · Rusia",
+      ],
+    },
+    featured: {
+      eyebrow: "Products",
+      title: "Bahan Mentah Kami",
+      lead: "Bahan mentah terpilih untuk suplemen, makanan kesihatan dan kosmetik. Kami menerima permintaan bermula daripada sampel dan lot kecil.",
+      viewAll: "Lihat semua produk →",
+    },
+    strengths: {
+      eyebrow: "Our Strengths",
+      title: "Mengapa Memilih Kami",
+      items: [
+        {
+          title: "Pengeluaran Sendiri × Perolehan Bahan Mentah",
+          body: "Sistem pengeluaran di kilang sendiri dan urus niaga terus dengan pembekal dalam dan luar negara. Kami melaksanakan kawalan kualiti yang menyeluruh, daripada perolehan bahan mentah hingga pengeluaran.",
+        },
+        {
+          title: "Sokongan Pelbagai Bahasa",
+          body: "Perkhidmatan dalam bahasa Jepun, Inggeris dan Rusia. Rundingan dengan pembekal luar negara dan perolehan bahan mentah dari luar negara dikendalikan dengan lancar pada tahap penutur asli.",
+        },
+        {
+          title: "Kawalan Kualiti dan Sokongan Pensijilan",
+          body: "COA, HACCP dan pemeriksaan pihak ketiga yang lengkap. Sistem kawalan kualiti kami yang mematuhi pelbagai piawaian dan pensijilan menyokong produk syarikat anda dengan pasti.",
+        },
+        {
+          title: "Sampel dan Lot Kecil",
+          body: "Anda boleh menilai sampel sebelum pengeluaran besar-besaran. Dengan penerimaan pesanan lot kecil, anda boleh membuat pesanan secara berperingkat sambil mengesahkan kualiti.",
+        },
+      ],
+    },
+    cta: {
+      title: "Jangan ragu untuk berbincang tentang bahan mentah",
+      lead: "Kami juga menerima permintaan perolehan bahan mentah yang tidak tersenarai serta permintaan sampel.",
+      button: "Hubungi Kami",
+    },
+    faq: [
+      {
+        question: "Apakah jenis syarikat Supplement Sales Co., Ltd.?",
+        answer:
+          "Kami ialah syarikat perdagangan pakar B2B yang menjalankan import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami mengendalikan bahan mentah berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, kolagen berasaskan tumbuhan dan anserina.",
+      },
+      {
+        question: "Apakah bahan mentah yang anda kendalikan?",
+        answer:
+          "Kami mengendalikan bahan mentah berfungsi yang disokong bukti, seperti serbuk ubi bit merah (pewarna semula jadi, antioksidan), Boswellia serrata (sendi, anti-radang), kolagen berasaskan tumbuhan (bahan kecantikan mesra vegan) dan anserina (dipeptida berantioksidan tinggi daripada ikan salmon).",
+      },
+      {
+        question: "Apakah bahasa yang disokong?",
+        answer:
+          "Kami menyokong tiga bahasa: Jepun, Inggeris dan Rusia. Rundingan dengan pembekal luar negara juga dapat dikendalikan dengan lancar.",
+      },
+      {
+        question: "Bolehkah saya memesan sampel atau lot kecil?",
+        answer:
+          "Ya, sampel tersedia untuk semua produk. Kami juga menerima pesanan bermula daripada lot kecil. Sila hubungi kami melalui borang pertanyaan.",
+      },
+    ],
+  },
+  productsPage: {
+    metaTitle: "Produk | Rangkaian Bahan Mentah Suplemen, Makanan Kesihatan dan Kosmetik",
+    metaDescription:
+      "Senarai bahan mentah suplemen berkualiti tinggi. Daripada import dan penjualan hingga pengeluaran dan penjualan sendiri. Sampel dan lot kecil tersedia.",
+    eyebrow: "Products",
+    title: "Produk",
+    subtitle: "Perpustakaan bahan mentah yang dipilih dengan teliti.",
+    lead: "Kami mengendalikan pelbagai bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Daripada import dan penjualan hingga pengeluaran sendiri, semuanya dikawal ketat berdasarkan piawaian kualiti Jepun.",
+    listName: "Senarai Bahan Mentah Suplemen",
+    faq: [
+      {
+        question: "Adakah sampel disediakan?",
+        answer:
+          "Ya, sampel tersedia untuk semua produk. Sila nyatakan nama produk dalam borang pertanyaan dan hantar permintaan anda.",
+      },
+      {
+        question: "Bolehkah saya membuat pesanan dalam lot kecil?",
+        answer:
+          "Ya, kami menerima pesanan bermula daripada lot kecil. Kuantiti pesanan minimum berbeza mengikut produk, jadi sila hubungi kami untuk butiran.",
+      },
+      {
+        question: "Adakah Sijil Analisis (COA) disediakan?",
+        answer:
+          "Ya, Sijil Analisis (COA) bagi setiap lot tersedia untuk semua produk. Kami juga mematuhi pelbagai pensijilan seperti HACCP.",
+      },
+    ],
+  },
+  productCard: {
+    readMore: "Ketahui lanjut",
+  },
+  productDetail: {
+    metaTitle: "{name} ({subName}) | Bahan Mentah Suplemen",
+    metaDescriptionSuffix:
+      "{name} yang dibekalkan oleh Supplement Sales Co., Ltd. Sampel dan lot kecil tersedia.",
+    descriptionHeading: "Gambaran Produk",
+    featuresHeading: "Ciri-ciri",
+    applicationsHeading: "Kegunaan",
+    originsHeading: "Negara Asal",
+    ctaTitle: "Pertanyaan tentang {name}",
+    ctaLead: "Sila hubungi kami untuk sampel, dokumen terperinci, sebut harga dan sebagainya.",
+    ctaButton: "Minta Sampel",
+    faqWhat: "Apakah {name}?",
+    faqSampleQ: "Bolehkah saya mendapatkan sampel {name}?",
+    faqSampleA:
+      "Ya, sampel {name} tersedia. Sila nyatakan nama produk dalam borang pertanyaan dan hantar permintaan anda.",
+    faqUseQ: "Dalam produk apakah {name} boleh digunakan?",
+    faqUseA: "{name} boleh digunakan untuk kegunaan seperti {applications}.",
+    listSeparator: ", ",
+  },
+  companyPage: {
+    metaTitle:
+      "Profil Syarikat | Syarikat Perdagangan Pakar Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
+    metaDescription:
+      "Profil syarikat Supplement Sales Co., Ltd. Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Kami mempunyai sistem pengeluaran sendiri, sokongan pelbagai bahasa (Jepun, Inggeris, Rusia) dan sistem kawalan kualiti.",
+    eyebrow: "About Us",
+    title: "Profil Syarikat",
+    intro:
+      "Supplement Sales Co., Ltd. ialah syarikat perdagangan pakar yang menjalankan import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Dengan memanfaatkan sistem pengeluaran sendiri dan rangkaian perolehan yang boleh dipercayai, kami mengendalikan segalanya secara bersepadu, daripada perolehan bahan mentah hingga pengeluaran dan penjualan, serta menyokong pembangunan produk pelanggan secara menyeluruh.",
+    infoHeading: "Company Information",
+    labels: {
+      name: "Nama Syarikat",
+      founded: "Tahun Ditubuhkan",
+      address: "Alamat",
+      business: "Bidang Perniagaan",
+      languages: "Bahasa Disokong",
+      hours: "Waktu Perniagaan",
+    },
+    strengthsEyebrow: "Our Strengths",
+    strengthsTitle: "Kekuatan Kami",
+    strengths: [
+      {
+        title: "Pengeluaran Sendiri & Perolehan Bahan Mentah",
+        description:
+          "Selain sistem pengeluaran di kilang sendiri, kami berurus niaga terus dengan pembekal dalam dan luar negara. Kami melaksanakan kawalan kualiti yang menyeluruh, daripada perolehan bahan mentah hingga pengeluaran.",
+      },
+      {
+        title: "Sokongan Pelbagai Bahasa",
+        description:
+          "Perkhidmatan tersedia dalam bahasa Jepun, Inggeris dan Rusia. Rundingan dengan pembekal luar negara dan perolehan bahan mentah dari luar negara juga dikendalikan dengan lancar.",
+      },
+      {
+        title: "Kawalan Kualiti dan Sokongan Pensijilan",
+        description:
+          "Dokumen pensijilan yang diperlukan untuk pengeluaran dan penjualan (COA, HACCP dan lain-lain) adalah lengkap. Sistem kawalan kualiti kami yang mematuhi pelbagai piawaian dan pensijilan memberikan anda keyakinan.",
+      },
+      {
+        title: "Sampel dan Lot Kecil",
+        description:
+          "Anda boleh menilai sampel sebelum pengeluaran besar-besaran. Kami menerima pesanan bermula daripada lot kecil, supaya anda boleh membuat pesanan selepas mengesahkan kualiti dengan teliti.",
+      },
+    ],
+    ctaEyebrow: "Contact",
+    ctaTitle: "Jangan ragu untuk menghubungi kami",
+    ctaLead: "Kami menerima soalan tentang produk, permintaan sampel dan sebagainya.",
+    ctaButton: "Hubungi Kami",
+    faq: [
+      {
+        question: "Bilakah Supplement Sales Co., Ltd. ditubuhkan?",
+        answer:
+          "Syarikat ini ditubuhkan pada tahun 2024. Ibu pejabat kami terletak di Tomioka, Wilayah Gunma.",
+      },
+      {
+        question: "Adakah anda mempunyai pengeluaran sendiri?",
+        answer:
+          "Ya, kami mempunyai sistem pengeluaran di kilang sendiri dan melaksanakan kawalan kualiti yang menyeluruh, daripada perolehan bahan mentah hingga pengeluaran.",
+      },
+      {
+        question: "Bagaimanakah sistem kawalan kualiti anda?",
+        answer:
+          "Dokumen pensijilan seperti COA (Sijil Analisis) dan HACCP adalah lengkap, dan kami mempunyai sistem kawalan kualiti yang mematuhi pelbagai piawaian dan pensijilan.",
+      },
+    ],
+  },
+  contactPage: {
+    metaTitle: "Hubungi Kami | Pertanyaan, Sampel dan Sebut Harga Bahan Mentah Suplemen",
+    metaDescription:
+      "Hubungi Supplement Sales Co., Ltd. untuk pertanyaan tentang bahan mentah suplemen, makanan kesihatan dan kosmetik, permintaan sampel, sebut harga dan sebagainya. Perkhidmatan dalam bahasa Jepun, Inggeris dan Rusia. Kami biasanya membalas dalam tempoh 2 hari bekerja.",
+    eyebrow: "Contact",
+    title: "Hubungi Kami",
+    lead: "Sila hubungi kami untuk pertanyaan tentang bahan mentah, permintaan sampel, sebut harga dan sebagainya. Kami biasanya membalas dalam tempoh 2 hari bekerja.",
+    labels: {
+      company: "Nama Syarikat",
+      address: "Alamat",
+      languages: "Bahasa Disokong",
+      hours: "Waktu Operasi",
+    },
+    faq: [
+      {
+        question: "Adakah sampel disediakan?",
+        answer:
+          "Ya, sampel tersedia untuk kebanyakan produk. Sila maklumkan produk yang anda inginkan melalui borang pertanyaan.",
+      },
+      {
+        question: "Bolehkah saya membuat pesanan dalam lot kecil?",
+        answer:
+          "Ya, kami menerima pesanan bermula daripada lot kecil. Kuantiti pesanan minimum berbeza mengikut produk, jadi jangan ragu untuk berbincang dengan kami.",
+      },
+      {
+        question: "Apakah bahasa yang disokong?",
+        answer:
+          "Kami menyokong tiga bahasa: Jepun, Inggeris dan Rusia. Rundingan dengan pembekal luar negara juga dapat dikendalikan dengan lancar.",
+      },
+      {
+        question: "Berapa lama masa yang diambil untuk membalas pertanyaan?",
+        answer:
+          "Kami biasanya membalas dalam tempoh 2 hari bekerja. Jika urusan anda mendesak, sila nyatakan perkara tersebut dalam pertanyaan anda.",
+      },
+    ],
+    form: {
+      company: "Nama Syarikat",
+      companyPlaceholder: "Syarikat ABC Sdn. Bhd.",
+      name: "Nama",
+      namePlaceholder: "Ahmad bin Abdullah",
+      email: "Alamat E-mel",
+      emailPlaceholder: "info@example.com",
+      inquiryType: "Jenis Pertanyaan",
+      selectPlaceholder: "Sila pilih",
+      inquiryOptions: [
+        "Permintaan sampel",
+        "Maklumat produk / sebut harga",
+        "Tentang produk / bahan mentah",
+        "Lain-lain",
+      ],
+      message: "Mesej",
+      messagePlaceholder: "Sila tulis soalan atau permintaan anda",
+      submit: "Hantar →",
+      sending: "Menghantar...",
+      error: "Penghantaran gagal. Sila cuba lagi sebentar lagi.",
+      thanksTitle: "Terima kasih atas pertanyaan anda",
+      thanksBody:
+        "Wakil kami akan menghubungi anda semula. Kami biasanya membalas dalam tempoh 2 hari bekerja.",
+    },
+  },
+  footer: {
+    description:
+      "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik.",
+    menuHeading: "Menu",
+    infoHeading: "Maklumat Syarikat",
+    legal: "Notis di bawah Akta Transaksi Komersial Tertentu",
+    privacy: "Dasar Privasi",
+    japaneseOnlyNote: " (Bahasa Jepun)",
+  },
+  notFound: {
+    title: "Halaman tidak ditemui",
+    body: "Halaman yang anda cari tidak wujud atau mungkin telah dipindahkan.",
+    back: "Kembali ke laman utama",
+  },
+  products: {
+    "red-beet-powder": {
+      category: "BAHAN SUPLEMEN",
+      name: "Serbuk Ubi Bit Merah",
+      subName: "Red Beet Powder",
+      shortDescription:
+        "Diproses dalam masa 24 jam selepas dituai. Bahan mentah yang membezakan produk anda dengan warna merah semula jadi yang terang, tanpa bergantung pada pewarna sintetik.",
+      description:
+        "Dengan \"merah semula jadi\", jadikan produk syarikat anda pilihan sejak pandangan pertama. Serbuk ubi bit merah ialah satu-satunya bahan mentah yang menggabungkan warna merah semula jadi yang mendalam, yang tidak dapat dihasilkan semula oleh pewarna sintetik, dengan nilai nutrisi asli ubi bit. Melalui pemprosesan suhu rendah dalam masa 24 jam selepas dituai, kuasa antioksidan betasianin dan komponen nitrat yang menyokong aliran darah dikekalkan semaksimum mungkin. \"Sihat dan pada masa yang sama cantik\": gabungan inilah yang membolehkan pembangunan produk generasi baharu yang memikat hati pengguna.",
+      features: [
+        "Pemprosesan suhu rendah dalam masa 24 jam selepas dituai untuk mengekalkan nilai nutrisi semaksimum mungkin",
+        "Tanpa pewarna sintetik — warna merah terang daripada pigmen semula jadi betasianin",
+        "Saiz zarah seragam (100 mesh) dengan keterlarutan tinggi dalam air dan minyak",
+        "Sijil Analisis (COA) bagi setiap lot",
+        "Fleksibel daripada lot kecil hingga pengeluaran besar-besaran",
+      ],
+      applications: [
+        "Minuman berfungsi",
+        "Gula-gula dan konfeksi",
+        "Suplemen",
+        "Produk tenusu",
+        "Perasa",
+      ],
+      origins: ["Eropah", "Jepun"],
+    },
+    "boswellia-serrata": {
+      category: "EKSTRAK HERBA",
+      name: "Boswellia Serrata",
+      subName: "Boswellia Serrata",
+      shortDescription:
+        "Kearifan Ayurveda selama 5,000 tahun, dibekalkan mengikut piawaian kualiti moden. Bahan mentah tumpuan dalam bidang sendi dan anti-radang.",
+      description:
+        "\"Resin yang melawan keradangan\", yang dipelihara oleh perubatan tradisional India selama 5,000 tahun, kini untuk produk syarikat anda mengikut piawaian kualiti moden. Boswellia serrata ialah antara segelintir bahan mentah yang boleh ditawarkan dengan yakin kepada pengguna dalam pasaran penjagaan sendi yang mencari \"bahan semula jadi yang disokong bukti\". Kandungan asid boswellik sekurang-kurangnya 65% dijamin, dengan bekalan stabil melalui penuaian mampan yang diiktiraf oleh kerajaan India. Daya yakin \"tradisi × sains\" meletakkan produk syarikat anda selangkah di hadapan pesaing.",
+      features: [
+        "Kandungan asid boswellik sekurang-kurangnya 65% dijamin mengikut spesifikasi",
+        "Bekalan stabil melalui penuaian mampan yang diiktiraf oleh kerajaan India",
+        "Gabungan teknik penapisan tradisional dan kawalan kualiti moden",
+        "Sistem kebolehkesanan yang lengkap",
+        "COA (Sijil Analisis) dan data keselamatan lengkap",
+      ],
+      applications: [
+        "Suplemen sokongan sendi",
+        "Krim anti-radang",
+        "Produk penjagaan pernafasan",
+        "Pemulihan sukan",
+        "Sokongan penghadaman",
+        "Kosmetik anti-penuaan",
+      ],
+      origins: ["India"],
+    },
+    "plant-based-collagen": {
+      category: "ALTERNATIF KOLAGEN",
+      name: "Serbuk Kolagen Berasaskan Tumbuhan",
+      subName: "Plant-Based Collagen Powder",
+      shortDescription:
+        "Sifar bahan berasaskan haiwan, tanpa mengorbankan kecantikan. Bahan mentah yang membuka jalan dalam pasaran vegan dan beretika yang berkembang pesat.",
+      description:
+        "\"Kolagen yang benar-benar dapat dirasai, dengan sifar bahan berasaskan haiwan\": kolagen berasaskan tumbuhan menyelesaikan percanggahan ini. Pasaran vegan terus berkembang pada kadar dua digit setiap tahun dan bukan lagi pasaran khusus. Bahan mentah ini, yang diekstrak daripada tumbuhan seperti bunga raya menggunakan bioteknologi tersendiri, mempunyai data terbukti peningkatan keanjalan kulit sebanyak 22% (ujian 12 minggu ke atas wanita berumur 40-an hingga 60-an), dan memberikan kesan yang dapat dirasai setanding dengan kolagen berasaskan haiwan konvensional. Dengan \"etika × kesan yang dirasai\", jadikan produk syarikat anda peneraju dalam pasaran baharu.",
+      features: [
+        "100% berasaskan tumbuhan — sesuai untuk vegan dan halal",
+        "Biokeserasian tinggi melalui bioteknologi tersendiri",
+        "Data terbukti peningkatan keanjalan kulit sebanyak 22%",
+        "Bahan mentah mampan dengan impak alam sekitar yang jauh lebih rendah",
+        "Menggunakan bahan mentah tanaman organik dengan kebolehkesanan penuh",
+      ],
+      applications: [
+        "Suplemen kecantikan",
+        "Kosmetik penjagaan kulit",
+        "Nutrisi sukan",
+        "Minuman berfungsi",
+        "Makanan vegan",
+        "Makanan kesihatan untuk warga emas",
+      ],
+      origins: ["Eropah", "Jepun"],
+    },
+    anserine: {
+      category: "SEBATIAN ASID AMINO",
+      name: "Anserina",
+      subName: "Anserine",
+      shortDescription:
+        "Kuasa antioksidan 2.2 kali ganda vitamin C. Dipeptida semula jadi yang membolehkan satu bahan mentah menyasarkan tiga pasaran: sukan, kecantikan dan kognitif.",
+      description:
+        "Bagaimana jika satu bahan mentah dapat mendekati tiga pasaran yang sedang berkembang? Anserina, dipeptida semula jadi daripada ikan salmon, ialah bahan mentah serba guna untuk tiga pasaran, iaitu nutrisi sukan, kecantikan dan sokongan fungsi kognitif, dengan kuasa antioksidan yang luar biasa, 2.2 kali ganda vitamin C. Serbuk berkualiti tinggi dengan ketulenan sekurang-kurangnya 98% ini sangat larut dalam air dan boleh dirumus ke dalam pelbagai bentuk, daripada minuman dan suplemen hingga kosmetik. Sebagai \"bahan berfungsi generasi baharu yang dipupuk oleh lautan Jepun\", ia menambah daya saing baharu kepada rangkaian produk syarikat anda.",
+      features: [
+        "Ketulenan sekurang-kurangnya 98% — dipeptida semula jadi daripada ikan salmon",
+        "Kuasa antioksidan 2.2 kali ganda vitamin C (penghapusan radikal bebas)",
+        "Sangat larut dalam air dan boleh dirumus ke dalam pelbagai bentuk",
+        "Dikeluarkan di kemudahan bersijil ISO 9001 dengan pemeriksaan pihak ketiga bagi setiap lot",
+        "Kadar campuran disyorkan 0.1%–0.5% untuk keberkesanan kos yang tinggi",
+      ],
+      applications: [
+        "Nutrisi sukan",
+        "Minuman berfungsi",
+        "Suplemen anti-penuaan",
+        "Kosmetik kecantikan",
+        "Makanan berfungsi",
+        "Makanan haiwan peliharaan",
+      ],
+      origins: ["Jepun"],
+    },
+    "gymnema-sylvestre": {
+      category: "EKSTRAK HERBA",
+      name: "Ekstrak Gymnema Sylvestre",
+      subName: "Gymnema Sylvestre Extract",
+      shortDescription:
+        "\"Daun pemusnah gula\": bahan mentah terkemuka untuk pasaran penjagaan karbohidrat, dibuktikan oleh Ayurveda selama 2,000 tahun.",
+      description:
+        "Gymnema sylvestre telah digelar \"gurmar\" (pemusnah gula) di India selama lebih 2,000 tahun. Ekstrak daripada daunnya menjamin kandungan asid gimnemik sekurang-kurangnya 25% mengikut spesifikasi, dan dalam pasaran penjagaan karbohidrat dan sokongan paras gula dalam darah, ia mempunyai daya yakin yang tiada pada bahan lain sebagai \"bahan mentah yang disokong oleh tradisi dan sains\". Permintaan terhadap bahan mentah ini meningkat dengan pesat seiring dengan perkembangan pasaran diet rendah karbohidrat dan penurunan berat badan, dan ia sesuai untuk pelbagai reka bentuk produk, daripada suplemen hingga makanan berfungsi. \"Mengubah cara kita berhubung dengan makanan manis\": inilah bahan mentah berfungsi generasi baharu yang menjawab wawasan pengguna ini.",
+      features: [
+        "Kandungan asid gimnemik sekurang-kurangnya 25% dijamin mengikut spesifikasi (kaedah gravimetrik)",
+        "Proses pensterilan selamat tanpa penyinaran dan tanpa rawatan ETO",
+        "Bebas GMO dan bebas BSE/TSE",
+        "COA (Sijil Analisis) bagi setiap lot",
+        "Memenuhi piawaian ujian logam berat dan mikrobiologi (mematuhi USP)",
+      ],
+      applications: [
+        "Suplemen penjagaan karbohidrat",
+        "Suplemen diet",
+        "Makanan sokongan paras gula dalam darah",
+        "Minuman berfungsi",
+        "Teh kesihatan",
+        "Makanan berfungsi",
+      ],
+      origins: ["India"],
+    },
+    ashwagandha: {
+      category: "ADAPTOGEN",
+      name: "Ekstrak Ashwagandha",
+      subName: "Ashwagandha Extract",
+      shortDescription:
+        "Adaptogen yang paling mendapat perhatian di dunia. \"Bahan mentah penenang yang dibuktikan secara saintifik\" yang dicari oleh masyarakat yang tertekan.",
+      description:
+        "Bagaimana jika satu bahan mentah dapat menangani tiga kebimbangan utama manusia moden, iaitu tekanan, tidur dan tenaga? Ashwagandha, herba \"raja\" dalam perubatan tradisional India, Ayurveda, ialah bahan mentah yang paling pesat berkembang dalam pasaran adaptogen dunia. Ekstrak ini, dengan kandungan withanolida sekurang-kurangnya 5% yang dijamin melalui kaedah HPLC, mempunyai data klinikal yang banyak berkaitan pengurangan kortisol, peningkatan kualiti tidur dan peningkatan prestasi senaman, dan sudah pun menjadi bahan mentah arus perdana di pasaran Eropah dan Amerika. Kini, ketika kesedaran terhadapnya meningkat dengan pesat di pasaran Jepun juga, inilah bahan mentah yang patut ditambah ke dalam rangkaian produk syarikat anda.",
+      features: [
+        "Kandungan withanolida sekurang-kurangnya 5% dijamin melalui kaedah HPLC",
+        "Profil komponen aktif yang luas melalui penggunaan keseluruhan tumbuhan",
+        "Proses pensterilan selamat tanpa penyinaran dan tanpa rawatan ETO",
+        "Bebas GMO dan bebas BSE/TSE",
+        "COA (Sijil Analisis) dan MSDS bagi setiap lot",
+      ],
+      applications: [
+        "Suplemen penjagaan tekanan",
+        "Produk sokongan tidur",
+        "Nutrisi sukan",
+        "Sokongan fungsi kognitif",
+        "Suplemen tenaga untuk lelaki",
+        "Produk anti-penuaan",
+      ],
+      origins: ["India"],
+    },
+    "garcinia-cambogia": {
+      category: "PENGURUSAN BERAT BADAN",
+      name: "Ekstrak Garcinia Cambogia",
+      subName: "Garcinia Cambogia Extract",
+      shortDescription:
+        "Kandungan HCA melebihi 60%. Bahan mentah standard dalam pasaran diet, melalui penyekatan sintesis lemak dan kawalan selera makan.",
+      description:
+        "\"Bukan memaksa diri menahan keinginan untuk makan, tetapi pendekatan melalui mekanisme tubuh\": Garcinia cambogia ialah bahan mentah yang merealisasikan konsep ini secara saintifik. Ekstrak ini, dengan kandungan asid hidroksisitrik (HCA) daripada buah yang dijamin sekurang-kurangnya 60%, telah lama mengekalkan populariti di kedudukan teratas dalam pasaran suplemen diet dunia melalui dua mekanisme, iaitu perencatan enzim sintesis lemak dan penggalakan rasa kenyang. Di Jepun juga, ia semakin mendapat perhatian sebagai bahan untuk Makanan untuk Kegunaan Kesihatan Tertentu (FOSHU) dan Makanan dengan Dakwaan Fungsi. Dengan bukti yang kukuh dan sistem bekalan yang stabil, tambahkan produk yang boleh dipercayai kepada rangkaian produk pengurusan berat badan syarikat anda.",
+      features: [
+        "Kandungan asid hidroksisitrik (HCA) sekurang-kurangnya 60% dijamin (kaedah HPLC)",
+        "Ekstrak semula jadi daripada buah — data keselamatan yang banyak",
+        "Proses pensterilan selamat tanpa penyinaran dan tanpa rawatan ETO",
+        "Bebas GMO dan bebas BSE/TSE",
+        "Memenuhi piawaian ujian logam berat dan mikrobiologi (mematuhi USP/ICP-OES)",
+      ],
+      applications: [
+        "Suplemen diet",
+        "Produk kawalan selera makan",
+        "Sokongan metabolik",
+        "Makanan berfungsi",
+        "Nutrisi sukan",
+        "Minuman kesihatan",
+      ],
+      origins: ["India"],
+    },
+    bromelain: {
+      category: "EKSTRAK ENZIM",
+      name: "Ekstrak Bromelain",
+      subName: "Bromelain Extract",
+      shortDescription:
+        "Enzim pemecah protein yang kuat daripada nanas. Tiga pasaran, iaitu penghadaman, anti-radang dan pemulihan sukan, dengan satu bahan mentah.",
+      description:
+        "Sokongan penghadaman, anti-radang dan pemulihan sukan: memasuki tiga pasaran yang sedang berkembang dengan satu bahan mentah. Bromelain daripada batang nanas ialah enzim pemecah protein dengan aktiviti enzim yang tinggi, sekurang-kurangnya 2500GDU. Selain membantu penghadaman dan penyerapan makanan, ia juga mempunyai asas saintifik dalam pengawalaturan tindak balas keradangan dan pemulihan otot selepas sukan, dan di Eropah dan Amerika ia turut digunakan sebagai bahan mentah gred farmaseutikal. Serbuk putih ini sangat larut dalam air dan boleh dirumus ke dalam pelbagai bentuk, daripada suplemen hingga minuman berfungsi. Sebagai \"enzim serba guna daripada sumber semula jadi\", ia menambah nilai baharu kepada portfolio produk syarikat anda.",
+      features: [
+        "Aktiviti enzim sekurang-kurangnya 2500GDU dijamin (nilai sebenar 2550GDU)",
+        "Enzim pemecah protein semula jadi daripada batang nanas",
+        "Serbuk putih, sangat larut dalam air — bahan mentah yang sangat serba guna",
+        "Proses pensterilan selamat tanpa penyinaran dan tanpa rawatan ETO",
+        "Bebas GMO dan memenuhi piawaian ujian logam berat (mematuhi USP)",
+      ],
+      applications: [
+        "Suplemen enzim penghadaman",
+        "Produk sokongan anti-radang",
+        "Pemulihan sukan",
+        "Produk penjagaan sendi",
+        "Makanan berfungsi",
+        "Bahan mentah kosmetik",
+      ],
+      origins: ["India"],
+    },
+    "eye-lift": {
+      category: "PRODUK OFTALMIK",
+      name: "Titisan Mata EYE LIFT",
+      subName: "EYE LIFT Eye Drops",
+      shortDescription:
+        "Titisan mata buatan Jepun yang berasaskan oksimetazolina hidroklorida 0.1% dan nafazolina nitrat 0.05%, dengan tambahan asid hialuronik dan vitamin B12.",
+      description:
+        "EYE LIFT ialah titisan mata yang direka berasaskan dua komponen utama, iaitu oksimetazolina hidroklorida 0.1% dan nafazolina nitrat 0.05%. Asid hialuronik dan vitamin B12 turut ditambah sebagai pertimbangan terhadap permukaan mata. Produk ini dikeluarkan di Jepun dan dibekalkan dalam botol 5mL. Sila hubungi kami untuk syarat urus niaga dan dokumen terperinci.",
+      features: [
+        "Oksimetazolina hidroklorida 0.1%",
+        "Nafazolina nitrat 0.05%",
+        "Bahan lain: asid hialuronik, vitamin B12, natrium klorida, benzalkonium klorida",
+        "Kandungan: 5mL",
+        "Penyimpanan: Simpan pada suhu bilik, jauhi suhu tinggi, kelembapan tinggi dan cahaya matahari langsung",
+      ],
+      applications: ["Produk penjagaan mata"],
+      origins: ["Jepun"],
+    },
+  },
+};
+
+export default ms;

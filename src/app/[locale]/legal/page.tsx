@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { defaultLocale } from "@/i18n/config";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PageSchema } from "@/components/seo/PageSchema";
@@ -41,7 +43,13 @@ const breadcrumbItems = [
   { name: "特定商取引法に基づく表記", href: "/legal" },
 ];
 
-export default function LegalPage() {
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+// Japanese legal document — no translated versions
+export default async function LegalPage({ params }: Props) {
+  if ((await params).locale !== defaultLocale) notFound();
   return (
     <>
       <PageSchema

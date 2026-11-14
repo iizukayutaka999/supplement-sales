@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { defaultLocale } from "@/i18n/config";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PageSchema } from "@/components/seo/PageSchema";
@@ -42,7 +44,13 @@ const breadcrumbItems = [
   { name: "プライバシーポリシー", href: "/privacy" },
 ];
 
-export default function PrivacyPage() {
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+// Japanese legal document — no translated versions
+export default async function PrivacyPage({ params }: Props) {
+  if ((await params).locale !== defaultLocale) notFound();
   return (
     <>
       <PageSchema
@@ -65,7 +73,7 @@ export default function PrivacyPage() {
 
             <div className="mt-8 md:mt-12 space-y-8 md:space-y-12 text-sm md:text-[0.85rem] leading-relaxed md:leading-[2.2] text-text-muted">
               <div>
-                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4 font-light">
+                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4">
                   1. 個人情報の取得
                 </h2>
                 <p>
@@ -75,7 +83,7 @@ export default function PrivacyPage() {
               </div>
 
               <div>
-                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4 font-light">
+                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4">
                   2. 利用目的
                 </h2>
                 <p>取得した個人情報は、以下の目的で利用いたします。</p>
@@ -88,7 +96,7 @@ export default function PrivacyPage() {
               </div>
 
               <div>
-                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4 font-light">
+                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4">
                   3. 第三者への提供
                 </h2>
                 <p>
@@ -97,7 +105,7 @@ export default function PrivacyPage() {
               </div>
 
               <div>
-                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4 font-light">
+                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4">
                   4. 個人情報の管理
                 </h2>
                 <p>
@@ -106,7 +114,7 @@ export default function PrivacyPage() {
               </div>
 
               <div>
-                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4 font-light">
+                <h2 className="font-serif text-xl md:text-2xl text-forest mb-3 md:mb-4">
                   5. お問い合わせ窓口
                 </h2>
                 <p>

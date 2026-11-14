@@ -1,0 +1,495 @@
+import type { Dictionary } from "./ja";
+
+const vi: Dictionary = {
+  meta: {
+    siteName: "Supplement Sales Co., Ltd.",
+    defaultTitle: "Supplement Sales Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+    titleSuffix: "Supplement Sales Co., Ltd.",
+    description:
+      "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Cung cấp nguyên liệu B2B chất lượng cao như bột củ dền đỏ, Boswellia serrata, Ashwagandha, Gymnema, Garcinia, Bromelain. Hỗ trợ tiếng Nhật, tiếng Anh và tiếng Nga.",
+    ogImageAlt: "Supplement Sales Co., Ltd. - Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+  },
+  company: {
+    name: "Supplement Sales Co., Ltd.",
+    subName: "株式会社サプリ販売",
+    address: "1004-1 Warabi, Tomioka, Gunma 370-2303, Japan",
+    businessHours: "Thứ Hai – Thứ Sáu, 9:00–18:00 (giờ Nhật Bản, JST)",
+    supportLanguages: "日本語 · English · Русский",
+    founded: "Năm 2024",
+    business:
+      "Nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm",
+  },
+  nav: {
+    home: "Trang chủ",
+    products: "Sản phẩm",
+    company: "Giới thiệu công ty",
+    contact: "Liên hệ",
+    openMenu: "Mở menu",
+    closeMenu: "Đóng menu",
+    breadcrumb: "Đường dẫn trang",
+    language: "Ngôn ngữ",
+  },
+  home: {
+    metaTitle: "Supplement Sales Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+    metaDescription:
+      "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Cung cấp ổn định nguyên liệu B2B chất lượng cao như bột củ dền đỏ, Boswellia serrata, collagen thực vật, anserine. Hỗ trợ tiếng Nhật, tiếng Anh và tiếng Nga.",
+    hero: {
+      eyebrow: "Supplement Sales Co., Ltd.",
+      titleLine1: "Sức mạnh của thiên nhiên,",
+      titleLine2: "với chất lượng đáng tin cậy.",
+      lead: "Chúng tôi cung cấp ổn định nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm thông qua hoạt động nhập khẩu, sản xuất và phân phối.",
+      ctaProducts: "Xem sản phẩm",
+      ctaContact: "Liên hệ",
+      highlights: ["Đầy đủ COA", "Cung cấp mẫu thử", "Nhận đơn số lượng nhỏ", "Hỗ trợ tiếng Nhật · Anh · Nga"],
+    },
+    featured: {
+      eyebrow: "Products",
+      title: "Nguyên liệu chúng tôi cung cấp",
+      lead: "Nguyên liệu được tuyển chọn cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Chúng tôi đáp ứng từ mẫu thử và đơn hàng số lượng nhỏ.",
+      viewAll: "Xem tất cả sản phẩm →",
+    },
+    strengths: {
+      eyebrow: "Our Strengths",
+      title: "Lý do khách hàng lựa chọn chúng tôi",
+      items: [
+        {
+          title: "Tự sản xuất × Thu mua nguyên liệu",
+          body: "Năng lực sản xuất tại nhà máy của công ty cùng giao dịch trực tiếp với các nhà cung cấp trong và ngoài nước. Chúng tôi quản lý chất lượng xuyên suốt từ khâu thu mua nguyên liệu đến sản xuất.",
+        },
+        {
+          title: "Hỗ trợ đa ngôn ngữ",
+          body: "Hỗ trợ bằng tiếng Nhật, tiếng Anh và tiếng Nga. Việc đàm phán với nhà cung cấp nước ngoài và thu mua nguyên liệu từ nước ngoài diễn ra suôn sẻ ở trình độ bản ngữ.",
+        },
+        {
+          title: "Quản lý chất lượng & hỗ trợ chứng nhận",
+          body: "Đầy đủ COA, HACCP và kiểm nghiệm bên thứ ba. Hệ thống quản lý chất lượng đáp ứng các tiêu chuẩn và chứng nhận, hỗ trợ vững chắc cho sản phẩm của quý công ty.",
+        },
+        {
+          title: "Mẫu thử & đơn hàng số lượng nhỏ",
+          body: "Quý khách có thể kiểm tra bằng mẫu thử trước khi sản xuất hàng loạt. Với đơn hàng từ số lượng nhỏ, quý khách có thể đặt hàng từng bước trong khi kiểm tra chất lượng.",
+        },
+      ],
+    },
+    cta: {
+      title: "Hãy liên hệ với chúng tôi về nguyên liệu",
+      lead: "Chúng tôi cũng nhận thu mua các nguyên liệu không có trong danh mục và yêu cầu mẫu thử.",
+      button: "Liên hệ",
+    },
+    faq: [
+      {
+        question: "Supplement Sales Co., Ltd. là công ty như thế nào?",
+        answer:
+          "Chúng tôi là công ty thương mại B2B chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Chúng tôi cung cấp các nguyên liệu chất lượng cao như bột củ dền đỏ, Boswellia serrata, collagen thực vật, anserine.",
+      },
+      {
+        question: "Công ty cung cấp những loại nguyên liệu nào?",
+        answer:
+          "Chúng tôi cung cấp các nguyên liệu chức năng có cơ sở bằng chứng như bột củ dền đỏ (chất màu tự nhiên, chống oxy hóa), Boswellia serrata (khớp, chống viêm), collagen thực vật (nguyên liệu làm đẹp phù hợp thuần chay), anserine (dipeptide chống oxy hóa cao có nguồn gốc từ cá hồi).",
+      },
+      {
+        question: "Công ty hỗ trợ những ngôn ngữ nào?",
+        answer:
+          "Chúng tôi hỗ trợ 3 ngôn ngữ: tiếng Nhật, tiếng Anh và tiếng Nga. Việc đàm phán với nhà cung cấp nước ngoài cũng được thực hiện suôn sẻ.",
+      },
+      {
+        question: "Có thể đặt mẫu thử hoặc đơn hàng số lượng nhỏ không?",
+        answer:
+          "Có, chúng tôi có thể cung cấp mẫu thử cho tất cả sản phẩm. Chúng tôi cũng nhận đơn hàng từ số lượng nhỏ. Vui lòng liên hệ qua biểu mẫu liên hệ.",
+      },
+    ],
+  },
+  productsPage: {
+    metaTitle: "Sản phẩm | Danh mục nguyên liệu thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm",
+    metaDescription:
+      "Danh mục nguyên liệu thực phẩm bổ sung chất lượng cao. Đáp ứng từ nhập khẩu đến sản xuất và phân phối. Có thể trao đổi từ mẫu thử và đơn hàng số lượng nhỏ.",
+    eyebrow: "Products",
+    title: "Sản phẩm",
+    subtitle: "Thư viện nguyên liệu được tuyển chọn kỹ lưỡng.",
+    lead: "Chúng tôi cung cấp đa dạng nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Từ nhập khẩu đến tự sản xuất, tất cả đều được quản lý nghiêm ngặt theo tiêu chuẩn chất lượng của Nhật Bản.",
+    listName: "Danh mục nguyên liệu thực phẩm bổ sung",
+    faq: [
+      {
+        question: "Công ty có cung cấp mẫu thử không?",
+        answer:
+          "Có, chúng tôi có thể cung cấp mẫu thử cho tất cả sản phẩm. Vui lòng ghi rõ tên sản phẩm và gửi yêu cầu qua biểu mẫu liên hệ.",
+      },
+      {
+        question: "Có thể đặt hàng số lượng nhỏ không?",
+        answer:
+          "Có, chúng tôi nhận đơn hàng từ số lượng nhỏ. Số lượng đặt hàng tối thiểu khác nhau tùy sản phẩm, vui lòng liên hệ để biết chi tiết.",
+      },
+      {
+        question: "Công ty có cung cấp giấy chứng nhận chất lượng (COA) không?",
+        answer:
+          "Có, tất cả sản phẩm đều có giấy chứng nhận kiểm nghiệm chất lượng (COA) cho từng lô. Chúng tôi cũng đáp ứng các chứng nhận như HACCP.",
+      },
+    ],
+  },
+  productCard: {
+    readMore: "Xem chi tiết",
+  },
+  productDetail: {
+    metaTitle: "{name} ({subName}) | Nguyên liệu thực phẩm bổ sung",
+    metaDescriptionSuffix:
+      "{name} do Supplement Sales Co., Ltd. cung cấp. Đáp ứng từ mẫu thử và đơn hàng số lượng nhỏ.",
+    descriptionHeading: "Tổng quan sản phẩm",
+    featuresHeading: "Đặc điểm",
+    applicationsHeading: "Ứng dụng",
+    originsHeading: "Xuất xứ",
+    ctaTitle: "Liên hệ về {name}",
+    ctaLead: "Vui lòng liên hệ với chúng tôi về mẫu thử, tài liệu chi tiết hoặc báo giá.",
+    ctaButton: "Yêu cầu mẫu thử",
+    faqWhat: "{name} là gì?",
+    faqSampleQ: "Có thể nhận mẫu thử {name} không?",
+    faqSampleA:
+      "Có, chúng tôi có thể cung cấp mẫu thử {name}. Vui lòng ghi rõ tên sản phẩm và gửi yêu cầu qua biểu mẫu liên hệ.",
+    faqUseQ: "{name} có thể được sử dụng cho những sản phẩm nào?",
+    faqUseA: "{name} có thể được sử dụng cho các ứng dụng như {applications}.",
+    listSeparator: ", ",
+  },
+  companyPage: {
+    metaTitle: "Giới thiệu công ty | Công ty chuyên nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
+    metaDescription:
+      "Giới thiệu Supplement Sales Co., Ltd. – công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Có năng lực tự sản xuất, hỗ trợ đa ngôn ngữ (tiếng Nhật, tiếng Anh, tiếng Nga) và hệ thống quản lý chất lượng.",
+    eyebrow: "About Us",
+    title: "Giới thiệu công ty",
+    intro:
+      "Supplement Sales Co., Ltd. là công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Tận dụng năng lực tự sản xuất và mạng lưới thu mua đáng tin cậy, chúng tôi đáp ứng xuyên suốt từ thu mua nguyên liệu đến sản xuất và phân phối, hỗ trợ toàn diện cho quá trình phát triển sản phẩm của khách hàng.",
+    infoHeading: "Company Information",
+    labels: {
+      name: "Tên công ty",
+      founded: "Thành lập",
+      address: "Địa chỉ",
+      business: "Lĩnh vực kinh doanh",
+      languages: "Ngôn ngữ hỗ trợ",
+      hours: "Giờ làm việc",
+    },
+    strengthsEyebrow: "Our Strengths",
+    strengthsTitle: "Thế mạnh của chúng tôi",
+    strengths: [
+      {
+        title: "Tự sản xuất & thu mua nguyên liệu",
+        description:
+          "Bên cạnh năng lực sản xuất tại nhà máy của công ty, chúng tôi giao dịch trực tiếp với các nhà cung cấp trong và ngoài nước. Chúng tôi quản lý chất lượng xuyên suốt từ khâu thu mua nguyên liệu đến sản xuất.",
+      },
+      {
+        title: "Hỗ trợ đa ngôn ngữ",
+        description:
+          "Có thể hỗ trợ bằng tiếng Nhật, tiếng Anh và tiếng Nga. Việc đàm phán với nhà cung cấp nước ngoài và thu mua nguyên liệu từ nước ngoài được thực hiện suôn sẻ.",
+      },
+      {
+        title: "Quản lý chất lượng & hỗ trợ chứng nhận",
+        description:
+          "Đầy đủ các giấy tờ chứng nhận cần thiết cho sản xuất và kinh doanh (COA, HACCP, v.v.). Hệ thống quản lý chất lượng đáp ứng các tiêu chuẩn và chứng nhận, mang lại sự an tâm cho khách hàng.",
+      },
+      {
+        title: "Mẫu thử & đơn hàng số lượng nhỏ",
+        description:
+          "Quý khách có thể kiểm tra bằng mẫu thử trước khi sản xuất hàng loạt. Chúng tôi nhận đơn từ số lượng nhỏ, để quý khách đặt hàng sau khi đã kiểm tra kỹ chất lượng.",
+      },
+    ],
+    ctaEyebrow: "Contact",
+    ctaTitle: "Hãy liên hệ với chúng tôi",
+    ctaLead: "Chúng tôi tiếp nhận các câu hỏi về sản phẩm, yêu cầu mẫu thử và nhiều nội dung khác.",
+    ctaButton: "Liên hệ",
+    faq: [
+      {
+        question: "Supplement Sales Co., Ltd. được thành lập khi nào?",
+        answer: "Công ty được thành lập năm 2024, có trụ sở chính tại thành phố Tomioka, tỉnh Gunma.",
+      },
+      {
+        question: "Công ty có tự sản xuất không?",
+        answer:
+          "Có, chúng tôi có năng lực sản xuất tại nhà máy của công ty và quản lý chất lượng xuyên suốt từ khâu thu mua nguyên liệu đến sản xuất.",
+      },
+      {
+        question: "Hệ thống quản lý chất lượng của công ty như thế nào?",
+        answer:
+          "Chúng tôi có đầy đủ các giấy tờ chứng nhận như COA (giấy chứng nhận phân tích), HACCP và xây dựng hệ thống quản lý chất lượng đáp ứng các tiêu chuẩn và chứng nhận.",
+      },
+    ],
+  },
+  contactPage: {
+    metaTitle: "Liên hệ | Tư vấn nguyên liệu thực phẩm bổ sung, mẫu thử và báo giá",
+    metaDescription:
+      "Liên hệ Supplement Sales Co., Ltd. để được tư vấn về nguyên liệu thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm, yêu cầu mẫu thử, báo giá. Hỗ trợ tiếng Nhật, tiếng Anh và tiếng Nga. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",
+    eyebrow: "Contact",
+    title: "Liên hệ",
+    lead: "Vui lòng liên hệ với chúng tôi để được tư vấn về nguyên liệu, yêu cầu mẫu thử hoặc báo giá. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",
+    labels: {
+      company: "Tên công ty",
+      address: "Địa chỉ",
+      languages: "Ngôn ngữ hỗ trợ",
+      hours: "Giờ tiếp nhận",
+    },
+    faq: [
+      {
+        question: "Công ty có cung cấp mẫu thử không?",
+        answer:
+          "Có, chúng tôi có thể cung cấp mẫu thử cho nhiều sản phẩm. Vui lòng cho chúng tôi biết sản phẩm mong muốn qua biểu mẫu liên hệ.",
+      },
+      {
+        question: "Có thể đặt hàng số lượng nhỏ không?",
+        answer:
+          "Có, chúng tôi nhận đơn hàng từ số lượng nhỏ. Số lượng đặt hàng tối thiểu khác nhau tùy sản phẩm, vui lòng liên hệ để được tư vấn.",
+      },
+      {
+        question: "Công ty hỗ trợ những ngôn ngữ nào?",
+        answer:
+          "Chúng tôi hỗ trợ 3 ngôn ngữ: tiếng Nhật, tiếng Anh và tiếng Nga. Việc đàm phán với nhà cung cấp nước ngoài cũng được thực hiện suôn sẻ.",
+      },
+      {
+        question: "Mất bao lâu để nhận được phản hồi sau khi liên hệ?",
+        answer:
+          "Chúng tôi thường phản hồi trong vòng 2 ngày làm việc. Nếu cần gấp, vui lòng ghi rõ trong nội dung liên hệ.",
+      },
+    ],
+    form: {
+      company: "Tên công ty",
+      companyPlaceholder: "Công ty TNHH ABC",
+      name: "Họ và tên",
+      namePlaceholder: "Nguyễn Văn A",
+      email: "Địa chỉ email",
+      emailPlaceholder: "info@example.com",
+      inquiryType: "Nội dung liên hệ",
+      selectPlaceholder: "Vui lòng chọn",
+      inquiryOptions: ["Yêu cầu mẫu thử", "Thông tin sản phẩm & báo giá", "Về sản phẩm & nguyên liệu", "Khác"],
+      message: "Tin nhắn",
+      messagePlaceholder: "Vui lòng nhập câu hỏi hoặc yêu cầu của quý khách",
+      submit: "Gửi →",
+      sending: "Đang gửi...",
+      error: "Gửi không thành công. Vui lòng thử lại sau.",
+      thanksTitle: "Cảm ơn quý khách đã liên hệ",
+      thanksBody: "Nhân viên phụ trách sẽ liên hệ lại với quý khách. Chúng tôi thường phản hồi trong vòng 2 ngày làm việc.",
+    },
+  },
+  footer: {
+    description:
+      "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm.",
+    menuHeading: "Menu",
+    infoHeading: "Thông tin công ty",
+    legal: "Thông tin theo Luật Giao dịch Thương mại Đặc định",
+    privacy: "Chính sách bảo mật",
+    japaneseOnlyNote: " (tiếng Nhật)",
+  },
+  notFound: {
+    title: "Không tìm thấy trang",
+    body: "Trang quý khách đang tìm không tồn tại hoặc có thể đã được di chuyển.",
+    back: "Quay về trang chủ",
+  },
+  products: {
+    "red-beet-powder": {
+      category: "SUPPLEMENT INGREDIENT",
+      name: "Bột củ dền đỏ",
+      subName: "Red Beet Powder",
+      shortDescription:
+        "Được chế biến trong vòng 24 giờ sau thu hoạch. Nguyên liệu tạo nên sự khác biệt cho sản phẩm bằng sắc đỏ tươi tự nhiên, không cần đến phẩm màu tổng hợp.",
+      description:
+        "Với “sắc đỏ tự nhiên”, sản phẩm của quý công ty sẽ được lựa chọn ngay từ cái nhìn đầu tiên. Bột củ dền đỏ là nguyên liệu duy nhất kết hợp được sắc đỏ tự nhiên có chiều sâu mà phẩm màu tổng hợp không thể tái tạo với giá trị dinh dưỡng vốn có của củ dền. Nhờ chế biến ở nhiệt độ thấp trong vòng 24 giờ sau thu hoạch, khả năng chống oxy hóa của betacyanin và thành phần nitrat hỗ trợ lưu thông máu được giữ lại tối đa. “Vừa tốt cho sức khỏe, vừa đẹp mắt” — chính sự kết hợp này giúp tạo nên thế hệ sản phẩm mới chinh phục người tiêu dùng.",
+      features: [
+        "Chế biến ở nhiệt độ thấp trong vòng 24 giờ sau thu hoạch, giữ tối đa giá trị dinh dưỡng",
+        "Không cần phẩm màu tổng hợp — sắc đỏ tươi từ sắc tố tự nhiên betacyanin",
+        "Kích thước hạt đồng đều (100 mesh), khả năng hòa tan cao trong nước và dầu",
+        "Đầy đủ giấy chứng nhận kiểm nghiệm chất lượng (COA) cho từng lô",
+        "Linh hoạt từ đơn hàng số lượng nhỏ đến sản xuất quy mô lớn",
+      ],
+      applications: ["Đồ uống chức năng", "Bánh kẹo", "Thực phẩm bổ sung", "Sản phẩm từ sữa", "Gia vị"],
+      origins: ["Châu Âu", "Nhật Bản"],
+    },
+    "boswellia-serrata": {
+      category: "HERBAL EXTRACT",
+      name: "Boswellia serrata (Nhũ hương Ấn Độ)",
+      subName: "Boswellia Serrata",
+      shortDescription:
+        "Trí tuệ Ayurveda 5.000 năm, được cung cấp theo tiêu chuẩn chất lượng hiện đại. Nguyên liệu được chú ý trong lĩnh vực khớp và chống viêm.",
+      description:
+        "“Loại nhựa cây chống lại viêm” mà y học cổ truyền Ấn Độ đã gìn giữ suốt 5.000 năm, nay đến với sản phẩm của quý công ty theo tiêu chuẩn chất lượng hiện đại. Boswellia serrata là một trong số ít nguyên liệu có thể tự tin cung cấp cho người tiêu dùng đang tìm kiếm “nguyên liệu tự nhiên có bằng chứng” trên thị trường chăm sóc khớp. Hàm lượng axit boswellic được đảm bảo từ 65% trở lên, nguồn cung ổn định nhờ thu hoạch bền vững được Chính phủ Ấn Độ chứng nhận. Sức thuyết phục của “truyền thống × khoa học” sẽ giúp sản phẩm của quý công ty nổi bật hơn đối thủ.",
+      features: [
+        "Đảm bảo quy cách hàm lượng axit boswellic từ 65% trở lên",
+        "Nguồn cung ổn định nhờ thu hoạch bền vững được Chính phủ Ấn Độ chứng nhận",
+        "Kết hợp kỹ thuật tinh chế truyền thống với quản lý chất lượng hiện đại",
+        "Hệ thống truy xuất nguồn gốc đầy đủ",
+        "Đầy đủ COA (giấy chứng nhận phân tích) và dữ liệu an toàn",
+      ],
+      applications: [
+        "Thực phẩm bổ sung hỗ trợ khớp",
+        "Kem chống viêm",
+        "Sản phẩm chăm sóc hô hấp",
+        "Phục hồi thể thao",
+        "Hỗ trợ tiêu hóa",
+        "Mỹ phẩm chống lão hóa",
+      ],
+      origins: ["Ấn Độ"],
+    },
+    "plant-based-collagen": {
+      category: "COLLAGEN ALTERNATIVE",
+      name: "Bột collagen thực vật",
+      subName: "Plant-Based Collagen Powder",
+      shortDescription:
+        "Không có thành phần từ động vật, làm đẹp không cần đánh đổi. Nguyên liệu mở lối vào thị trường thuần chay và tiêu dùng có đạo đức đang tăng trưởng nhanh.",
+      description:
+        "“Collagen không có thành phần từ động vật mà vẫn thực sự cảm nhận được hiệu quả” — collagen thực vật đã giải quyết mâu thuẫn này. Thị trường thuần chay tăng trưởng hai con số mỗi năm và không còn là thị trường ngách. Nguyên liệu này được chiết xuất từ các loại thực vật như hoa dâm bụt bằng công nghệ sinh học độc quyền, có dữ liệu thực nghiệm cho thấy độ đàn hồi da tăng 22% (thử nghiệm 12 tuần trên phụ nữ 40–60 tuổi), mang lại cảm nhận không thua kém collagen động vật truyền thống. Với “đạo đức × hiệu quả cảm nhận”, hãy đưa sản phẩm của quý công ty trở thành người dẫn đầu thị trường mới.",
+      features: [
+        "100% nguồn gốc thực vật — phù hợp thuần chay và Halal",
+        "Độ tương thích sinh học cao nhờ công nghệ sinh học độc quyền",
+        "Có dữ liệu thực nghiệm cho thấy độ đàn hồi da tăng 22%",
+        "Nguyên liệu bền vững, giảm đáng kể tác động đến môi trường",
+        "Sử dụng nguyên liệu canh tác hữu cơ, truy xuất nguồn gốc đầy đủ",
+      ],
+      applications: [
+        "Thực phẩm bổ sung làm đẹp",
+        "Mỹ phẩm chăm sóc da",
+        "Dinh dưỡng thể thao",
+        "Đồ uống chức năng",
+        "Thực phẩm thuần chay",
+        "Thực phẩm sức khỏe cho người cao tuổi",
+      ],
+      origins: ["Châu Âu", "Nhật Bản"],
+    },
+    anserine: {
+      category: "AMINO ACID COMPOUND",
+      name: "Anserine",
+      subName: "Anserine",
+      shortDescription:
+        "Khả năng chống oxy hóa gấp 2,2 lần vitamin C. Dipeptide tự nhiên giúp tiếp cận 3 thị trường — thể thao, làm đẹp và nhận thức — chỉ với một nguyên liệu.",
+      description:
+        "Nếu chỉ một nguyên liệu có thể tiếp cận 3 thị trường đang tăng trưởng thì sao? Anserine, dipeptide tự nhiên có nguồn gốc từ cá hồi, là nguyên liệu đa năng với khả năng chống oxy hóa vượt trội gấp 2,2 lần vitamin C, đáp ứng 3 thị trường: dinh dưỡng thể thao, làm đẹp và hỗ trợ chức năng nhận thức. Dạng bột chất lượng cao với độ tinh khiết từ 98% trở lên, hòa tan tốt trong nước, có thể phối trộn vào nhiều dạng bào chế từ đồ uống, thực phẩm bổ sung đến mỹ phẩm. Là “nguyên liệu chức năng thế hệ mới được nuôi dưỡng từ biển Nhật Bản”, anserine mang lại sức cạnh tranh mới cho dòng sản phẩm của quý công ty.",
+      features: [
+        "Độ tinh khiết từ 98% trở lên — dipeptide tự nhiên có nguồn gốc từ cá hồi",
+        "Khả năng chống oxy hóa gấp 2,2 lần vitamin C (loại bỏ gốc tự do)",
+        "Hòa tan tốt trong nước, có thể phối trộn vào nhiều dạng bào chế",
+        "Sản xuất tại cơ sở đạt chứng nhận ISO 9001, kiểm nghiệm bên thứ ba cho từng lô",
+        "Hiệu quả chi phí cao với tỷ lệ phối trộn khuyến nghị 0,1%–0,5%",
+      ],
+      applications: [
+        "Dinh dưỡng thể thao",
+        "Đồ uống chức năng",
+        "Thực phẩm bổ sung chống lão hóa",
+        "Mỹ phẩm làm đẹp",
+        "Thực phẩm chức năng",
+        "Thức ăn cho thú cưng",
+      ],
+      origins: ["Nhật Bản"],
+    },
+    "gymnema-sylvestre": {
+      category: "HERBAL EXTRACT",
+      name: "Chiết xuất dây thìa canh (Gymnema sylvestre)",
+      subName: "Gymnema Sylvestre Extract",
+      shortDescription:
+        "“Chiếc lá phá hủy đường” — nguyên liệu hàng đầu cho thị trường chăm sóc đường, đã được Ayurveda 2.000 năm chứng minh.",
+      description:
+        "Gymnema sylvestre đã được gọi là “gurmar (kẻ phá hủy đường)” tại Ấn Độ suốt hơn 2.000 năm. Chiết xuất từ lá của cây này được đảm bảo quy cách hàm lượng axit gymnemic từ 25% trở lên, có sức thuyết phục mà các nguyên liệu khác không có trên thị trường chăm sóc đường và hỗ trợ đường huyết, với vai trò “nguyên liệu được cả truyền thống lẫn khoa học chứng thực”. Nhu cầu đối với nguyên liệu này đang tăng nhanh cùng với sự mở rộng của thị trường hạn chế đường và ăn kiêng, và nguyên liệu đáp ứng đa dạng thiết kế sản phẩm từ thực phẩm bổ sung đến thực phẩm chức năng. “Thay đổi cách sống chung với đồ ngọt” — đây là nguyên liệu chức năng thế hệ mới đáp ứng nhận thức này của người tiêu dùng.",
+      features: [
+        "Đảm bảo quy cách hàm lượng axit gymnemic từ 25% trở lên (phương pháp khối lượng)",
+        "Quy trình tiệt trùng an toàn, không chiếu xạ, không xử lý ETO",
+        "Không GMO, không BSE/TSE",
+        "Đầy đủ COA (giấy chứng nhận phân tích) cho từng lô",
+        "Đạt tiêu chuẩn kiểm nghiệm kim loại nặng và vi sinh vật (theo USP)",
+      ],
+      applications: [
+        "Thực phẩm bổ sung chăm sóc đường",
+        "Thực phẩm bổ sung ăn kiêng",
+        "Thực phẩm hỗ trợ đường huyết",
+        "Đồ uống chức năng",
+        "Trà sức khỏe",
+        "Thực phẩm chức năng",
+      ],
+      origins: ["Ấn Độ"],
+    },
+    ashwagandha: {
+      category: "ADAPTOGEN",
+      name: "Chiết xuất sâm Ấn Độ (Ashwagandha)",
+      subName: "Ashwagandha Extract",
+      shortDescription:
+        "Adaptogen được chú ý nhất trên thế giới. “Nguyên liệu thư giãn đã được khoa học chứng minh” mà xã hội nhiều căng thẳng đang tìm kiếm.",
+      description:
+        "Nếu chỉ một nguyên liệu có thể tiếp cận 3 mối lo lớn của con người hiện đại — căng thẳng, giấc ngủ và sinh lực — thì sao? “Ashwagandha”, được xem như vua của các loại thảo dược trong y học cổ truyền Ayurveda của Ấn Độ, là nguyên liệu tăng trưởng nhanh nhất trên thị trường adaptogen thế giới. Chiết xuất này được đảm bảo hàm lượng withanolide từ 5% trở lên bằng phương pháp HPLC, có nhiều dữ liệu lâm sàng về giảm cortisol, cải thiện chất lượng giấc ngủ và nâng cao hiệu suất vận động, và đã là nguyên liệu chủ đạo tại thị trường Âu Mỹ. Khi mức độ nhận biết tại thị trường Nhật Bản cũng đang tăng nhanh, đây chính là thời điểm nên bổ sung nguyên liệu này vào dòng sản phẩm của quý công ty.",
+      features: [
+        "Đảm bảo hàm lượng withanolide từ 5% trở lên bằng phương pháp HPLC",
+        "Sử dụng toàn cây cho dải thành phần hoạt tính rộng",
+        "Quy trình tiệt trùng an toàn, không chiếu xạ, không xử lý ETO",
+        "Không GMO, không BSE/TSE",
+        "Đầy đủ COA (giấy chứng nhận phân tích) và MSDS cho từng lô",
+      ],
+      applications: [
+        "Thực phẩm bổ sung chăm sóc căng thẳng",
+        "Sản phẩm hỗ trợ giấc ngủ",
+        "Dinh dưỡng thể thao",
+        "Hỗ trợ chức năng nhận thức",
+        "Thực phẩm bổ sung sinh lực cho nam giới",
+        "Sản phẩm chống lão hóa",
+      ],
+      origins: ["Ấn Độ"],
+    },
+    "garcinia-cambogia": {
+      category: "WEIGHT MANAGEMENT",
+      name: "Chiết xuất bứa (Garcinia cambogia)",
+      subName: "Garcinia Cambogia Extract",
+      shortDescription:
+        "Hàm lượng HCA trên 60%. Nguyên liệu quen thuộc của thị trường ăn kiêng với cơ chế ngăn tổng hợp chất béo và kiểm soát cảm giác thèm ăn.",
+      description:
+        "“Không ép buộc kìm nén cảm giác thèm ăn, mà tiếp cận từ cơ chế của cơ thể” — Garcinia cambogia là nguyên liệu hiện thực hóa ý tưởng này một cách khoa học. Chiết xuất này được đảm bảo hàm lượng axit hydroxycitric (HCA) có nguồn gốc từ quả từ 60% trở lên, và nhờ hai cơ chế ức chế enzyme tổng hợp chất béo và thúc đẩy cảm giác no, đã duy trì mức độ phổ biến hàng đầu trên thị trường thực phẩm bổ sung ăn kiêng thế giới trong nhiều năm. Tại Nhật Bản, nguyên liệu này cũng ngày càng được chú ý như một thành phần cho thực phẩm dành cho sức khỏe đặc định (FOSHU) và thực phẩm ghi nhãn chức năng. Với bằng chứng đáng tin cậy và nguồn cung ổn định, đây là lựa chọn đáng tin cậy cho các sản phẩm quản lý cân nặng của quý công ty.",
+      features: [
+        "Đảm bảo hàm lượng axit hydroxycitric (HCA) từ 60% trở lên (phương pháp HPLC)",
+        "Chiết xuất tự nhiên từ quả — nhiều dữ liệu an toàn",
+        "Quy trình tiệt trùng an toàn, không chiếu xạ, không xử lý ETO",
+        "Không GMO, không BSE/TSE",
+        "Đạt tiêu chuẩn kiểm nghiệm kim loại nặng và vi sinh vật (theo USP/ICP-OES)",
+      ],
+      applications: [
+        "Thực phẩm bổ sung ăn kiêng",
+        "Sản phẩm kiểm soát cảm giác thèm ăn",
+        "Hỗ trợ trao đổi chất",
+        "Thực phẩm chức năng",
+        "Dinh dưỡng thể thao",
+        "Đồ uống sức khỏe",
+      ],
+      origins: ["Ấn Độ"],
+    },
+    bromelain: {
+      category: "ENZYME EXTRACT",
+      name: "Chiết xuất bromelain",
+      subName: "Bromelain Extract",
+      shortDescription:
+        "Enzyme phân giải protein mạnh có nguồn gốc từ dứa. Tiếp cận 3 thị trường tiêu hóa, chống viêm và phục hồi thể thao chỉ với một nguyên liệu.",
+      description:
+        "Hỗ trợ tiêu hóa, chống viêm, phục hồi thể thao — có thể tham gia 3 thị trường đang tăng trưởng chỉ với một nguyên liệu. Bromelain có nguồn gốc từ thân cây dứa là enzyme phân giải protein với hoạt tính enzyme cao từ 2500 GDU trở lên. Không chỉ hỗ trợ tiêu hóa và hấp thu thực phẩm, bromelain còn có cơ sở khoa học về điều hòa phản ứng viêm và phục hồi cơ sau vận động, và tại Âu Mỹ còn được sử dụng như nguyên liệu cấp dược phẩm. Dạng bột màu trắng, hòa tan tốt trong nước, có thể phối trộn vào nhiều dạng bào chế từ thực phẩm bổ sung đến đồ uống chức năng. Là “enzyme đa năng có nguồn gốc tự nhiên”, bromelain mang lại giá trị mới cho danh mục sản phẩm của quý công ty.",
+      features: [
+        "Đảm bảo hoạt tính enzyme từ 2500 GDU trở lên (giá trị thực đo 2550 GDU)",
+        "Enzyme phân giải protein tự nhiên có nguồn gốc từ thân cây dứa",
+        "Dạng bột màu trắng, hòa tan tốt trong nước, nguyên liệu có tính ứng dụng cao",
+        "Quy trình tiệt trùng an toàn, không chiếu xạ, không xử lý ETO",
+        "Không GMO, đạt tiêu chuẩn kiểm nghiệm kim loại nặng (theo USP)",
+      ],
+      applications: [
+        "Thực phẩm bổ sung enzyme tiêu hóa",
+        "Sản phẩm hỗ trợ chống viêm",
+        "Phục hồi thể thao",
+        "Sản phẩm chăm sóc khớp",
+        "Thực phẩm chức năng",
+        "Nguyên liệu mỹ phẩm",
+      ],
+      origins: ["Ấn Độ"],
+    },
+    "eye-lift": {
+      category: "OPHTHALMIC PRODUCT",
+      name: "Thuốc nhỏ mắt EYE LIFT",
+      subName: "EYE LIFT Eye Drops",
+      shortDescription:
+        "Thuốc nhỏ mắt sản xuất tại Nhật Bản, chứa chủ yếu oxymetazoline hydrochloride 0,1% và naphazoline nitrate 0,05%, kèm axit hyaluronic và vitamin B12.",
+      description:
+        "EYE LIFT là thuốc nhỏ mắt được thiết kế với hai thành phần chính là oxymetazoline hydrochloride 0,1% và naphazoline nitrate 0,05%. Sản phẩm có bổ sung axit hyaluronic và vitamin B12 nhằm chú trọng đến bề mặt mắt. Đây là sản phẩm sản xuất tại Nhật Bản, đóng chai 5 mL. Về điều kiện phân phối và tài liệu chi tiết, vui lòng liên hệ với chúng tôi.",
+      features: [
+        "Oxymetazoline hydrochloride 0,1%",
+        "Naphazoline nitrate 0,05%",
+        "Thành phần khác: axit hyaluronic, vitamin B12, natri clorid, benzalkonium clorid",
+        "Dung tích 5 mL",
+        "Bảo quản: tránh nơi nhiệt độ cao, độ ẩm cao và ánh nắng trực tiếp; bảo quản ở nhiệt độ thường",
+      ],
+      applications: ["Sản phẩm chăm sóc mắt"],
+      origins: ["Nhật Bản"],
+    },
+  },
+};
+
+export default vi;

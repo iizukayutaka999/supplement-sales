@@ -89,6 +89,14 @@ export function ProductIcon({ slug, className = "w-9 h-9" }: ProductIconProps) {
           <path {...stroke} d="M24 8c-2-2-3-4-3-6M24 8c2-2 3-4 3-6" />
         </svg>
       );
+    case "eye-lift":
+      return (
+        <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
+          <path {...stroke} d="M24 6c0 0-9 11-9 18a9 9 0 0 0 18 0c0-7-9-18-9-18Z" />
+          <path {...stroke} d="M19 26a5 5 0 0 0 5 5" />
+          <path {...stroke} d="M10 40c4-3 9-4.5 14-4.5s10 1.5 14 4.5" />
+        </svg>
+      );
     default:
       return null;
   }
