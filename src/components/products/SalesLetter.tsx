@@ -1,17 +1,5 @@
 import type { SalesLetter as SalesLetterData } from "@/types/product";
-
-/** Renders "**…**" segments of a paragraph in bold. */
-function withEmphasis(text: string) {
-  return text.split(/(\*\*.+?\*\*)/g).map((part, i) =>
-    part.startsWith("**") && part.endsWith("**") ? (
-      <strong key={i} className="font-semibold text-forest">
-        {part.slice(2, -2)}
-      </strong>
-    ) : (
-      part
-    )
-  );
-}
+import { Emphasis } from "@/components/ui/Emphasis";
 
 export function SalesLetter({ letter }: { letter: SalesLetterData }) {
   return (
@@ -23,7 +11,9 @@ export function SalesLetter({ letter }: { letter: SalesLetterData }) {
         </h2>
         <div className="space-y-5 text-[0.95rem] md:text-[1.02rem] leading-[2] text-forest/85">
           {letter.paragraphs.map((p) => (
-            <p key={p}>{withEmphasis(p)}</p>
+            <p key={p}>
+              <Emphasis text={p} />
+            </p>
           ))}
         </div>
         <div className="mt-12 md:mt-14 text-center">

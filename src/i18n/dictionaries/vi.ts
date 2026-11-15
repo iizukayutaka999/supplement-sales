@@ -33,45 +33,144 @@ const vi: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
     metaDescription: "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Cung cấp ổn định nguyên liệu B2B chất lượng cao như bột củ dền đỏ, Boswellia serrata, collagen thực vật, anserine.",
     hero: {
-      titleLine1: "Sức mạnh của thiên nhiên,",
-      titleLine2: "với chất lượng đáng tin cậy.",
-      lead: "Chúng tôi cung cấp ổn định nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm thông qua hoạt động nhập khẩu, sản xuất và phân phối.",
-      ctaProducts: "Xem sản phẩm",
-      ctaContact: "Liên hệ",
+      titleLine1: "Tiếp tục mua nguyên liệu đó từ nhà cung cấp hiện tại",
+      titleLine2: "có thật sự là lựa chọn tốt nhất?",
+      lead: "Không chỉ là giá cả. Mà còn là chất lượng, thông số kỹ thuật và điều kiện cung ứng. Việc thu mua nguyên liệu có thể vẫn còn những điểm đáng để xem xét lại.",
+      ctaContact: "Trao đổi về nguyên liệu",
+      ctaProducts: "Xem danh mục nguyên liệu",
       highlights: [
-        "Đầy đủ COA",
-        "Cung cấp mẫu thử",
-        "Nhận đơn số lượng nhỏ",
+        "Có thể kiểm tra tài liệu chất lượng (COA)",
+        "Có thể trao đổi từ mẫu thử, lô nhỏ",
+        "Trao đổi cả nguyên liệu chưa có trong danh mục",
+      ],
+    },
+    pains: {
+      eyebrow: "Thách thức",
+      title: "Khi thu mua nguyên liệu, quý khách đã từng gặp những tình huống như thế này chưa?",
+      items: [
+        "\"Không biết có thể hạ giá thêm một chút được không?\"",
+        "\"Cùng một nguyên liệu, nhưng mỗi nhà sản xuất lại có thông số kỹ thuật khác nhau. Nên chọn loại nào đây?\"",
+        "\"Muốn mua trực tiếp từ nhà sản xuất nước ngoài, nhưng đàm phán và thủ tục nhập khẩu thật phiền phức.\"",
+        "\"Muốn thử một nguyên liệu mới, nhưng số lượng đặt hàng tối thiểu lại quá lớn.\"",
+        "\"Nếu nhà cung cấp hiện tại không thể cung ứng nữa thì phải làm sao?\"",
+      ],
+      note: "Có lẽ những ai làm công việc thu mua nguyên liệu đều đã ít nhất một lần gặp phải những trăn trở như vậy.",
+      conclusion: "Thực ra, những vấn đề này có một điểm chung. Đó là: **nguyên nhân có thể không nằm ở bản thân nguyên liệu, mà ở chỗ lựa chọn nguồn cung còn hạn chế**.",
+    },
+    options: {
+      eyebrow: "Vì sao nên so sánh",
+      title: "Chỉ cần thêm một nhà cung cấp, điều gì sẽ thay đổi?",
+      lead: "Chất lượng ổn, giao hàng đúng hẹn, quý khách cũng không có gì phải phàn nàn nhiều về nhà cung cấp hiện tại. Dù vậy, nếu có thể mua nguyên liệu có thông số kỹ thuật tương đương từ một nguồn cung khác thì sao?",
+      benefits: [
+        {
+          title: "Có thể so sánh giá",
+          body: "Với nguyên liệu có thông số kỹ thuật tương đương, quý khách có thể đặt các báo giá cạnh nhau để cân nhắc.",
+        },
+        {
+          title: "Có thể phân tán rủi ro nguồn cung",
+          body: "Dù một nhà cung cấp ngừng cung ứng, quý khách vẫn có cách để tiếp tục thu mua.",
+        },
+        {
+          title: "Có thể nhận được đề xuất mới",
+          body: "Quý khách có thể sẽ nhận được đề xuất về thông số kỹ thuật khác hoặc nguyên liệu mới.",
+        },
+      ],
+      note: "Tất nhiên, không phải lúc nào giá cũng sẽ rẻ hơn. Nhưng **bản thân việc có những lựa chọn để so sánh đã là một lợi thế lớn đối với người phụ trách thu mua.**",
+      bridge: "Và một trong những lựa chọn đó mà chúng tôi mong quý khách biết đến chính là Supplement Sales Japan Co., Ltd.",
+    },
+    approach: {
+      eyebrow: "Cách chúng tôi làm việc",
+      title: "Trước khi bán nguyên liệu, chúng tôi muốn hiểu quý khách thực sự cần gì.",
+      body: [
+        "Supplement Sales Japan Co., Ltd. nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm.",
+        "Điều chúng tôi coi trọng không đơn thuần là bán nguyên liệu. Chất lượng, thông số kỹ thuật, số lượng, giá cả, thời gian giao hàng — chúng tôi muốn tìm ra nguyên liệu đáp ứng đúng những điều kiện mà quý khách cần.",
+      ],
+      listTitle: "Chẳng hạn, chúng tôi rất mong nhận được những yêu cầu như sau.",
+      list: [
+        "Đang tìm nguyên liệu thay thế cho loại đang sử dụng",
+        "Muốn thu mua một loại chiết xuất thực vật cụ thể từ nước ngoài",
+        "Đang cân nhắc đưa vào sử dụng một nguyên liệu chức năng mới",
+        "Muốn kiểm tra tài liệu chất lượng như COA trước khi mua",
+        "Muốn đánh giá bằng mẫu thử rồi mới quyết định số lượng đặt hàng",
+        "Đang tìm nguyên liệu không có trên website",
+      ],
+      note: "Không phải yêu cầu nào chúng tôi cũng có thể đáp ứng. Nhưng trước tiên, chúng ta có thể bắt đầu từ việc kiểm tra khả năng thu mua.",
+    },
+    strengths: {
+      eyebrow: "Những gì chúng tôi làm",
+      title: "Những điều chúng tôi có thể làm với tư cách đối tác thu mua nguyên liệu.",
+      items: [
+        {
+          title: "Mạng lưới thu mua nguyên liệu trong và ngoài nước",
+          body: "Không chỉ tại Nhật Bản, chúng tôi còn thu mua nguyên liệu từ các nhà cung cấp nước ngoài. Với những nguyên liệu hoặc thông số kỹ thuật cụ thể, quý khách có thể trao đổi với chúng tôi cả về những mặt hàng ngoài danh mục hiện có.",
+        },
+        {
+          title: "Cân nhắc dựa trên tài liệu chất lượng",
+          body: "Khi chọn nguyên liệu, điều quan trọng không chỉ là tên gọi hay giá cả. Quý khách có thể cân nhắc việc sử dụng trong khi kiểm tra các tài liệu và điều kiện cần thiết như hàm lượng thành phần, xuất xứ, phương pháp sản xuất, giấy chứng nhận phân tích (COA).",
+        },
+        {
+          title: "Trao đổi từ mẫu thử, lô nhỏ",
+          body: "Với nguyên liệu lần đầu sử dụng, quý khách không cần nhập ngay số lượng lớn. Với những nguyên liệu có thể đáp ứng, chúng tôi sẵn sàng trao đổi về mẫu thử hoặc lô nhỏ. Sau khi đánh giá và thấy hài lòng, xin mời quý khách cân nhắc đơn hàng tiếp theo.",
+        },
+        {
+          title: "Từ thu mua nguyên liệu đến sản xuất",
+          body: "Không chỉ thu mua nguyên liệu, quý khách còn có thể trao đổi với chúng tôi về bước thương mại hóa sản phẩm sau đó. Chúng tôi hướng tới một hệ thống có thể hỗ trợ phát triển sản phẩm từ cả hai phía: thu mua nguyên liệu và sản xuất.",
+        },
       ],
     },
     featured: {
-      eyebrow: "Products",
-      title: "Nguyên liệu chúng tôi cung cấp",
-      lead: "Nguyên liệu được tuyển chọn cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Chúng tôi đáp ứng từ mẫu thử và đơn hàng số lượng nhỏ.",
-      viewAll: "Xem tất cả sản phẩm →",
+      eyebrow: "Sản phẩm",
+      title: "Chẳng hạn, chúng tôi đang kinh doanh những nguyên liệu như sau.",
+      lead: "Đây chỉ là một phần trong số các nguyên liệu chúng tôi đang giới thiệu.",
+      notListedTitle: "Ngay cả khi nguyên liệu quý khách đang tìm chưa có trên website, cũng không cần vội bỏ cuộc.",
+      notListedBody: "Trước hết, xin hãy cho chúng tôi biết tên nguyên liệu.",
+      notListedButton: "Gửi tên nguyên liệu để trao đổi",
+      viewAll: "Xem danh sách sản phẩm →",
     },
-    strengths: {
-      eyebrow: "Our Strengths",
-      title: "Lý do khách hàng lựa chọn chúng tôi",
+    welcome: {
+      title: "Ngay cả khi quý khách \"chưa định mua ngay\", chúng tôi vẫn rất hoan nghênh.",
+      lead: "Khi tìm nguồn cung nguyên liệu, hẳn không phải doanh nghiệp nào cũng đã quyết định đặt hàng ngay từ đầu.",
       items: [
-        {
-          title: "Tự sản xuất × Thu mua nguyên liệu",
-          body: "Năng lực sản xuất tại nhà máy của công ty cùng giao dịch trực tiếp với các nhà cung cấp trong và ngoài nước. Chúng tôi quản lý chất lượng xuyên suốt từ khâu thu mua nguyên liệu đến sản xuất.",
-        },
-        {
-          title: "Quản lý chất lượng & hỗ trợ chứng nhận",
-          body: "Đầy đủ COA, HACCP và kiểm nghiệm bên thứ ba. Hệ thống quản lý chất lượng đáp ứng các tiêu chuẩn và chứng nhận, hỗ trợ vững chắc cho sản phẩm của quý công ty.",
-        },
-        {
-          title: "Mẫu thử & đơn hàng số lượng nhỏ",
-          body: "Quý khách có thể kiểm tra bằng mẫu thử trước khi sản xuất hàng loạt. Với đơn hàng từ số lượng nhỏ, quý khách có thể đặt hàng từng bước trong khi kiểm tra chất lượng.",
-        },
+        "Chỉ muốn biết giá",
+        "Muốn biết có mẫu thử hay không",
+        "Muốn biết có thể thu mua theo thông số kỹ thuật mong muốn hay không",
+        "Muốn có sẵn một nhà cung cấp khác cho tương lai",
       ],
+      note: "Như vậy cũng không sao cả. Trong thu mua nguyên liệu, việc có sẵn các lựa chọn từ trước quan trọng hơn là vội vàng tìm kiếm khi đã thực sự cần.",
     },
     cta: {
-      title: "Hãy liên hệ với chúng tôi về nguyên liệu",
-      lead: "Chúng tôi cũng nhận thu mua các nguyên liệu không có trong danh mục và yêu cầu mẫu thử.",
-      button: "Liên hệ",
+      eyebrow: "Liên hệ",
+      title: "Trước hết, xin hãy cho chúng tôi biết tên một nguyên liệu.",
+      lead: "Quý khách không cần chuẩn bị tài liệu phức tạp ngay từ đầu. Khi liên hệ, xin vui lòng cho chúng tôi biết những thông tin sau trong phạm vi quý khách nắm được.",
+      fields: [
+        {
+          label: "Tên nguyên liệu",
+          value: "Nguyên liệu quý khách đang tìm",
+        },
+        {
+          label: "Số lượng mong muốn",
+          value: "Ví dụ: 1kg, 10kg, 100kg",
+        },
+        {
+          label: "Thông số kỹ thuật mong muốn",
+          value: "Hàm lượng thành phần, xuất xứ, v.v. (chưa xác định cũng được)",
+        },
+        {
+          label: "Nhu cầu",
+          value: "Báo giá, mẫu thử, tài liệu chất lượng, kiểm tra khả năng thu mua",
+        },
+      ],
+      fieldsNote: "Dựa trên thông tin nhận được, chúng tôi sẽ kiểm tra những nội dung có thể đáp ứng.",
+      button: "Liên hệ về nguyên liệu",
+      buttonNote: "Xin đừng ngần ngại liên hệ với chúng tôi về báo giá, mẫu thử hoặc khả năng thu mua nguyên liệu.",
+    },
+    closing: {
+      title: "Vì hoạt động thu mua nguyên liệu tốt hơn cho quý công ty.",
+      body: "Mục tiêu của chúng tôi không đơn thuần là bán nguyên liệu một lần. Khi quý khách tìm một nguyên liệu mới. Khi muốn xem xét lại giá mua hiện tại. Khi muốn có thêm nguồn cung. Khi phát triển một sản phẩm mới.",
+      quote: "\"À, phải rồi. Thử hỏi Supplement Sales Japan xem.\"",
+      quoteNote: "Mà là trở thành công ty được quý khách nhớ đến như thế.",
+      question: "Trước khi mua nguyên liệu, quý khách có muốn so sánh trước không?",
+      ask: "Hãy cho chúng tôi biết nguyên liệu mà quý khách đang tìm kiếm.",
     },
     faq: [
       {

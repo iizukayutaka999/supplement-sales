@@ -33,45 +33,144 @@ const en: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
     metaDescription: "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Reliable supply of high-quality B2B ingredients including red beet powder, Boswellia serrata, plant-based collagen and anserine.",
     hero: {
-      titleLine1: "The power of nature,",
-      titleLine2: "with quality you can trust.",
-      lead: "We deliver a reliable supply of raw materials for supplements, health foods and cosmetics through both import and in-house manufacturing.",
-      ctaProducts: "View Products",
-      ctaContact: "Contact Us",
+      titleLine1: "Is your current supplier really",
+      titleLine2: "still the best source for that ingredient?",
+      lead: "It's not only about price. Quality, specifications, even supply terms. There may still be room to rethink how you source your ingredients.",
+      ctaContact: "Ask about an ingredient",
+      ctaProducts: "View our ingredients",
       highlights: [
-        "Full COA",
-        "Samples available",
-        "Small lots welcome",
+        "Quality documents (COA) available",
+        "Ask about samples and small lots",
+        "Ask about unlisted ingredients, too",
+      ],
+    },
+    pains: {
+      eyebrow: "Challenges",
+      title: "Have you run into any of these when buying ingredients?",
+      items: [
+        "“Could we get the price down a little?”",
+        "“It's the same ingredient, but every manufacturer has different specs. Which one should we choose?”",
+        "“We'd like to buy directly from an overseas manufacturer, but the negotiations and import procedures are a hassle.”",
+        "“We want to try a new ingredient, but the minimum order quantity is far too large.”",
+        "“What would we do if our current supplier couldn't deliver anymore?”",
+      ],
+      note: "If you work in ingredient procurement, you have probably faced at least one of these at some point.",
+      conclusion: "In fact, these problems have one thing in common: **the cause may not be the ingredient itself, but having too few sourcing options.**",
+    },
+    options: {
+      eyebrow: "Why Compare",
+      title: "What changes when you add just one more supplier?",
+      lead: "Quality and lead times are fine, and you have no major complaints about your current supplier. Even so, what if you could get an ingredient with equivalent specifications from another source?",
+      benefits: [
+        {
+          title: "Compare prices",
+          body: "Put quotes for ingredients with equivalent specifications side by side and weigh them up.",
+        },
+        {
+          title: "Spread your supply risk",
+          body: "If one supplier stops delivering, you still have a way to keep sourcing.",
+        },
+        {
+          title: "Hear new proposals",
+          body: "You may be offered different specifications or new ingredients.",
+        },
+      ],
+      note: "Of course, it is not always cheaper. But **simply having options to compare is a real strength for any purchasing manager.**",
+      bridge: "And one of those options we'd like you to know about is us: Supplement Sales Japan Co., Ltd.",
+    },
+    approach: {
+      eyebrow: "Our Approach",
+      title: "Before we sell you an ingredient, we want to understand what you need.",
+      body: [
+        "Supplement Sales Japan Co., Ltd. imports, manufactures and sells raw materials for supplements, health foods and cosmetics.",
+        "What matters to us is not just selling ingredients. It is finding the ingredient that matches the quality, specifications, quantity, price and lead time you need.",
+      ],
+      listTitle: "For example, we welcome inquiries like these.",
+      list: [
+        "Looking for an alternative to an ingredient you use now",
+        "Sourcing a specific plant extract from overseas",
+        "Considering a new functional ingredient",
+        "Checking the COA and other quality documents before buying",
+        "Evaluating a sample before deciding on order volume",
+        "Looking for an ingredient not listed on our website",
+      ],
+      note: "We can't promise to meet every request. But we can always start by checking whether it can be sourced.",
+    },
+    strengths: {
+      eyebrow: "What We Do",
+      title: "What we can do as your ingredient sourcing partner.",
+      items: [
+        {
+          title: "A sourcing network in Japan and overseas",
+          body: "We source ingredients not only within Japan but also from overseas suppliers. You can ask us about specific ingredients or specifications, including ones outside our current range.",
+        },
+        {
+          title: "Review the quality documents before you decide",
+          body: "Choosing an ingredient is about more than its name or price. You can evaluate it while checking the documents and conditions you need, such as active content, origin, manufacturing method and the Certificate of Analysis (COA).",
+        },
+        {
+          title: "Start with samples or small lots",
+          body: "There's no need to buy a large volume of an ingredient you're using for the first time. Where possible, we can discuss samples or small lots. Evaluate it, and once you're satisfied, think about your next order.",
+        },
+        {
+          title: "From sourcing to manufacturing",
+          body: "Beyond buying ingredients, you can also talk with us about turning them into products. We aim to support your product development from both sides: ingredient sourcing and manufacturing.",
+        },
       ],
     },
     featured: {
       eyebrow: "Products",
-      title: "Our Ingredients",
-      lead: "Carefully selected raw materials for supplements, health foods and cosmetics. We can start with samples and small lots.",
+      title: "For example, we handle ingredients like these.",
+      lead: "These are only some of the ingredients we currently offer.",
+      notListedTitle: "Even if the ingredient you're looking for isn't on our website, there's no need to give up.",
+      notListedBody: "Just start by telling us the name of the ingredient.",
+      notListedButton: "Tell us the ingredient name",
       viewAll: "View all products →",
     },
-    strengths: {
-      eyebrow: "Our Strengths",
-      title: "Why Clients Choose Us",
+    welcome: {
+      title: "Even if you're “not planning to buy right now,” you're welcome here.",
+      lead: "Not every company that looks for an ingredient source has decided to place an order from the start.",
       items: [
-        {
-          title: "In-house Manufacturing × Ingredient Sourcing",
-          body: "Our own manufacturing facility combined with direct relationships with suppliers in Japan and overseas. We maintain consistent quality control from raw material procurement through to production.",
-        },
-        {
-          title: "Quality Control & Certification Support",
-          body: "Full COA, HACCP and third-party testing. Our quality control system meets a range of standards and certifications to reliably support your products.",
-        },
-        {
-          title: "Samples & Small Lots",
-          body: "Evaluate samples before moving to volume production. With small-lot orders, you can scale up step by step while confirming quality.",
-        },
+        "You only want to know the price",
+        "You want to check whether a sample is available",
+        "You want to know if it can be sourced to your specification",
+        "You want a backup supplier in place for the future",
       ],
+      note: "That's perfectly fine. With ingredient sourcing, it's better to have options in place beforehand than to scramble for them once you actually need them.",
     },
     cta: {
-      title: "Talk to us about your ingredient needs",
-      lead: "We also source ingredients not listed on this site and handle sample requests.",
-      button: "Contact Us",
+      eyebrow: "Contact",
+      title: "To begin, just tell us the name of one ingredient.",
+      lead: "There's no need to prepare complex documents up front. When you contact us, please share as much of the following as you can.",
+      fields: [
+        {
+          label: "Ingredient name",
+          value: "The ingredient you're looking for",
+        },
+        {
+          label: "Quantity needed",
+          value: "e.g. 1kg, 10kg, 100kg",
+        },
+        {
+          label: "Specification",
+          value: "Active content, origin, etc. (fine if not yet decided)",
+        },
+        {
+          label: "What you need",
+          value: "A quote, a sample, quality documents, or a check on whether it can be sourced",
+        },
+      ],
+      fieldsNote: "Based on what you tell us, we'll check what we can offer.",
+      button: "Send an ingredient inquiry",
+      buttonNote: "Feel free to contact us about ingredient quotes, samples, or whether an ingredient can be sourced.",
+    },
+    closing: {
+      title: "Better ingredient sourcing, for your company.",
+      body: "Our goal is not simply to sell you an ingredient once. When you're looking for a new ingredient. When you want to review what you pay today. When you want to add suppliers. When you're developing a new product.",
+      quote: "“Oh, right. Let's ask Supplement Sales Japan.”",
+      quoteNote: "It is to be the company that comes to mind in moments like these.",
+      question: "Before you buy an ingredient, why not compare first?",
+      ask: "Tell us which ingredient you're looking for right now.",
     },
     faq: [
       {

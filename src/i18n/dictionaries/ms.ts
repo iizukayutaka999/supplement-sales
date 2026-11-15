@@ -33,45 +33,144 @@ const ms: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
     metaDescription: "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Bekalan stabil bahan mentah B2B berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, kolagen berasaskan tumbuhan dan anserina.",
     hero: {
-      titleLine1: "Kekuatan alam,",
-      titleLine2: "dengan kualiti yang terjamin.",
-      lead: "Kami membekalkan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik secara stabil melalui import dan penjualan, serta pengeluaran dan penjualan.",
-      ctaProducts: "Lihat Produk",
-      ctaContact: "Hubungi Kami",
+      titleLine1: "Adakah terus membeli bahan mentah itu daripada pembekal semasa anda",
+      titleLine2: "benar-benar pilihan terbaik?",
+      lead: "Bukan sekadar harga. Kualiti, spesifikasi, malah syarat bekalan juga. Perolehan bahan mentah anda mungkin masih boleh dinilai semula.",
+      ctaContact: "Bincang tentang bahan mentah",
+      ctaProducts: "Lihat bahan mentah kami",
       highlights: [
-        "COA lengkap",
-        "Sampel tersedia",
-        "Lot kecil diterima",
+        "Dokumen kualiti (COA) boleh disemak",
+        "Sampel dan lot kecil boleh dibincangkan",
+        "Bahan mentah yang tidak tersenarai juga boleh dibincangkan",
+      ],
+    },
+    pains: {
+      eyebrow: "Cabaran",
+      title: "Pernahkah anda mengalami perkara seperti ini semasa membeli bahan mentah?",
+      items: [
+        "\"Bolehkah harganya dikurangkan sedikit lagi?\"",
+        "\"Bahan mentahnya sama, tetapi spesifikasinya berbeza mengikut pengilang. Yang mana patut dipilih?\"",
+        "\"Kami mahu membeli terus daripada pengilang luar negara, tetapi urusan rundingan dan prosedur import sangat menyusahkan.\"",
+        "\"Kami mahu mencuba bahan mentah baharu, tetapi kuantiti pesanan minimumnya terlalu besar.\"",
+        "\"Bagaimana jika pembekal semasa tidak lagi dapat membekalkannya?\"",
+      ],
+      note: "Barangkali sesiapa sahaja yang terlibat dalam perolehan bahan mentah pernah menghadapi kebimbangan seperti ini, sekurang-kurangnya sekali.",
+      conclusion: "Sebenarnya, masalah-masalah ini ada satu persamaan: **puncanya mungkin bukan pada bahan mentah itu sendiri, tetapi pada pilihan sumber perolehan yang terhad**.",
+    },
+    options: {
+      eyebrow: "Mengapa Membandingkan",
+      title: "Apa yang boleh berubah hanya dengan menambah satu lagi pembekal?",
+      lead: "Kualiti dan tempoh penghantaran tiada masalah. Tiada rungutan besar terhadap pembekal semasa. Namun, bagaimana jika bahan mentah dengan spesifikasi setara boleh diperoleh daripada sumber bekalan lain?",
+      benefits: [
+        {
+          title: "Anda boleh membandingkan harga",
+          body: "Anda boleh menilai beberapa sebut harga secara serentak untuk bahan mentah dengan spesifikasi setara.",
+        },
+        {
+          title: "Anda boleh mengagihkan risiko bekalan",
+          body: "Jika bekalan daripada satu pembekal terhenti, anda masih ada cara untuk meneruskan perolehan.",
+        },
+        {
+          title: "Anda boleh menerima cadangan baharu",
+          body: "Anda mungkin menerima cadangan untuk spesifikasi lain atau bahan mentah baharu.",
+        },
+      ],
+      note: "Sudah tentu, harga tidak semestinya akan menjadi lebih murah. Namun, **mempunyai pilihan untuk dibandingkan itu sendiri sudah menjadi kelebihan besar bagi pegawai pembelian.**",
+      bridge: "Dan salah satu pilihan yang kami harap anda kenali ialah kami, Supplement Sales Japan Co., Ltd.",
+    },
+    approach: {
+      eyebrow: "Pendekatan Kami",
+      title: "Sebelum menjual bahan mentah, kami ingin tahu apa yang anda perlukan.",
+      body: [
+        "Supplement Sales Japan Co., Ltd. menjalankan import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik.",
+        "Yang kami utamakan bukan sekadar menjual bahan mentah. Kualiti, spesifikasi, kuantiti, harga dan tempoh penghantaran yang anda perlukan. Kami mahu mencari bahan mentah yang memenuhi syarat-syarat itu.",
+      ],
+      listTitle: "Contohnya, kami mengalu-alukan pertanyaan seperti ini.",
+      list: [
+        "Mencari pengganti bagi bahan mentah yang sedang digunakan",
+        "Ingin mendapatkan ekstrak tumbuhan tertentu dari luar negara",
+        "Sedang mempertimbangkan penggunaan bahan mentah berfungsi yang baharu",
+        "Ingin menyemak dokumen kualiti seperti COA sebelum membeli",
+        "Ingin menilai sampel dahulu sebelum menentukan kuantiti pesanan",
+        "Mencari bahan mentah yang tidak tersenarai di laman web",
+      ],
+      note: "Kami tidak semestinya dapat memenuhi setiap permintaan. Namun, kita boleh bermula dengan menyemak sama ada perolehannya mungkin.",
+    },
+    strengths: {
+      eyebrow: "Apa Yang Kami Lakukan",
+      title: "Apa yang boleh kami lakukan sebagai rakan perolehan bahan mentah anda.",
+      items: [
+        {
+          title: "Rangkaian perolehan bahan mentah dalam dan luar negara",
+          body: "Selain di Jepun, kami juga berusaha mendapatkan bahan mentah daripada pembekal luar negara. Untuk bahan mentah atau spesifikasi tertentu, anda juga boleh bertanya tentang item di luar rangkaian sedia ada kami.",
+        },
+        {
+          title: "Semak dokumen kualiti sebelum membuat keputusan",
+          body: "Dalam memilih bahan mentah, yang penting bukan sekadar nama atau harga. Anda boleh mempertimbangkan penggunaannya sambil menyemak dokumen dan syarat yang diperlukan, seperti kandungan komponen, negara asal, kaedah pengeluaran dan sijil analisis (COA).",
+        },
+        {
+          title: "Bermula dengan sampel atau lot kecil",
+          body: "Anda tidak perlu terus membeli dalam kuantiti besar untuk bahan mentah yang baru pertama kali digunakan. Bagi bahan mentah yang boleh kami sediakan, sampel atau lot kecil boleh dibincangkan. Nilailah dahulu, dan pertimbangkan pesanan seterusnya setelah anda berpuas hati.",
+        },
+        {
+          title: "Daripada perolehan bahan mentah hingga pengeluaran",
+          body: "Selain membeli bahan mentah, anda juga boleh berbincang tentang langkah seterusnya, iaitu pengkomersialan produk. Kami berusaha membina sistem yang dapat menyokong pembangunan produk dari dua sudut: perolehan bahan mentah dan pengeluaran.",
+        },
       ],
     },
     featured: {
-      eyebrow: "Products",
-      title: "Bahan Mentah Kami",
-      lead: "Bahan mentah terpilih untuk suplemen, makanan kesihatan dan kosmetik. Kami menerima permintaan bermula daripada sampel dan lot kecil.",
+      eyebrow: "Produk",
+      title: "Contohnya, ini antara bahan mentah yang kami kendalikan.",
+      lead: "Ini hanya sebahagian daripada bahan mentah yang sedang kami tawarkan.",
+      notListedTitle: "Walaupun bahan mentah yang anda cari tidak tersenarai di laman web, anda tidak perlu berputus asa.",
+      notListedBody: "Mulakan dengan memberitahu kami nama bahan mentah tersebut.",
+      notListedButton: "Beritahu kami nama bahan mentah",
       viewAll: "Lihat semua produk →",
     },
-    strengths: {
-      eyebrow: "Our Strengths",
-      title: "Mengapa Memilih Kami",
+    welcome: {
+      title: "\"Belum bercadang untuk membeli sekarang\"? Anda tetap dialu-alukan.",
+      lead: "Apabila mencari sumber bahan mentah, tentu bukan semua syarikat sudah memutuskan untuk membuat pesanan dari awal.",
       items: [
-        {
-          title: "Pengeluaran Sendiri × Perolehan Bahan Mentah",
-          body: "Sistem pengeluaran di kilang sendiri dan urus niaga terus dengan pembekal dalam dan luar negara. Kami melaksanakan kawalan kualiti yang menyeluruh, daripada perolehan bahan mentah hingga pengeluaran.",
-        },
-        {
-          title: "Kawalan Kualiti dan Sokongan Pensijilan",
-          body: "COA, HACCP dan pemeriksaan pihak ketiga yang lengkap. Sistem kawalan kualiti kami yang mematuhi pelbagai piawaian dan pensijilan menyokong produk syarikat anda dengan pasti.",
-        },
-        {
-          title: "Sampel dan Lot Kecil",
-          body: "Anda boleh menilai sampel sebelum pengeluaran besar-besaran. Dengan penerimaan pesanan lot kecil, anda boleh membuat pesanan secara berperingkat sambil mengesahkan kualiti.",
-        },
+        "Hanya ingin tahu harga",
+        "Ingin menyemak sama ada sampel tersedia",
+        "Ingin tahu sama ada bahan mentah dengan spesifikasi yang dikehendaki boleh diperoleh",
+        "Ingin mendapatkan pembekal alternatif sebagai persediaan masa depan",
       ],
+      note: "Itu tidak mengapa. Dalam perolehan bahan mentah, menyediakan pilihan lebih awal adalah lebih penting daripada tergesa-gesa mencari apabila keperluan sudah tiba.",
     },
     cta: {
-      title: "Jangan ragu untuk berbincang tentang bahan mentah",
-      lead: "Kami juga menerima permintaan perolehan bahan mentah yang tidak tersenarai serta permintaan sampel.",
-      button: "Hubungi Kami",
+      eyebrow: "Hubungi Kami",
+      title: "Mulakan dengan memberitahu kami satu nama bahan mentah.",
+      lead: "Anda tidak perlu menyediakan dokumen yang rumit dari awal. Semasa membuat pertanyaan, sila maklumkan maklumat berikut setakat yang anda tahu.",
+      fields: [
+        {
+          label: "Nama bahan mentah",
+          value: "Bahan mentah yang anda cari",
+        },
+        {
+          label: "Kuantiti dikehendaki",
+          value: "Contoh: 1kg, 10kg, 100kg",
+        },
+        {
+          label: "Spesifikasi dikehendaki",
+          value: "Kandungan komponen, kawasan asal, dsb. (belum pasti pun tidak mengapa)",
+        },
+        {
+          label: "Permintaan",
+          value: "Sebut harga, sampel, dokumen kualiti, semakan sama ada boleh diperoleh",
+        },
+      ],
+      fieldsNote: "Berdasarkan maklumat yang diberikan, kami akan menyemak apa yang dapat kami sediakan.",
+      button: "Buat pertanyaan tentang bahan mentah",
+      buttonNote: "Jangan ragu untuk bertanya kepada kami tentang sebut harga, sampel atau sama ada sesuatu bahan mentah boleh diperoleh.",
+    },
+    closing: {
+      title: "Perolehan bahan mentah yang lebih baik untuk syarikat anda.",
+      body: "Matlamat kami bukan sekadar menjual bahan mentah sekali sahaja. Apabila anda mencari bahan mentah baharu. Apabila anda ingin menilai semula harga belian semasa. Apabila anda ingin menambah sumber bekalan. Apabila anda membangunkan produk baharu.",
+      quote: "\"Oh ya, cuba tanya Supplement Sales Japan.\"",
+      quoteNote: "Kami ingin menjadi syarikat yang terlintas di fikiran anda pada saat-saat seperti itu.",
+      question: "Sebelum membeli bahan mentah, mengapa tidak bandingkan dahulu?",
+      ask: "Beritahu kami bahan mentah yang sedang anda cari.",
     },
     faq: [
       {

@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { HeroSection } from "@/components/home/HeroSection";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { StrengthsSection } from "@/components/home/StrengthsSection";
+import { PainPointsSection } from "@/components/home/PainPointsSection";
+import { OptionsSection } from "@/components/home/OptionsSection";
+import { ApproachSection } from "@/components/home/ApproachSection";
+import { WelcomeSection } from "@/components/home/WelcomeSection";
+import { InquirySection } from "@/components/home/InquirySection";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -44,8 +49,13 @@ export default async function HomePage({ params }: Props) {
       <BreadcrumbSchema items={[]} locale={locale} homeLabel={dict.nav.home} />
       <FAQSchema items={dict.home.faq} />
       <HeroSection locale={locale} t={dict.home.hero} />
+      <PainPointsSection t={dict.home.pains} />
+      <OptionsSection t={dict.home.options} />
+      <ApproachSection t={dict.home.approach} />
+      <StrengthsSection t={dict.home.strengths} />
       <FeaturedProducts locale={locale} dict={dict} />
-      <StrengthsSection locale={locale} t={dict.home} />
+      <WelcomeSection t={dict.home.welcome} />
+      <InquirySection locale={locale} t={dict.home.cta} closing={dict.home.closing} />
       <ScrollReveal />
     </>
   );

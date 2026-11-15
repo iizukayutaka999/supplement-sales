@@ -33,45 +33,144 @@ const id: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
     metaDescription: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Pasokan stabil bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
     hero: {
-      titleLine1: "Kekuatan alam,",
-      titleLine2: "dengan kualitas terjamin.",
-      lead: "Kami memasok bahan baku untuk suplemen, makanan kesehatan, dan kosmetik secara stabil melalui impor serta produksi dan penjualan sendiri.",
-      ctaProducts: "Lihat Produk",
-      ctaContact: "Hubungi Kami",
+      titleLine1: "Apakah terus membeli bahan baku itu dari pemasok saat ini",
+      titleLine2: "benar-benar pilihan terbaik?",
+      lead: "Bukan hanya soal harga. Juga kualitas, spesifikasi, hingga syarat pasokan. Pengadaan bahan baku Anda mungkin masih bisa ditinjau ulang.",
+      ctaContact: "Konsultasi Bahan Baku",
+      ctaProducts: "Lihat Bahan Baku Kami",
       highlights: [
-        "COA tersedia",
-        "Sampel tersedia",
-        "Lot kecil bisa",
+        "Dokumen mutu (COA) dapat diperiksa",
+        "Bisa mulai dari sampel & lot kecil",
+        "Bahan di luar daftar pun bisa ditanyakan",
+      ],
+    },
+    pains: {
+      eyebrow: "Tantangan",
+      title: "Pernahkah Anda mengalami hal seperti ini saat membeli bahan baku?",
+      items: [
+        "\"Bisakah harganya ditekan sedikit lagi?\"",
+        "\"Bahan bakunya sama, tetapi spesifikasinya berbeda di tiap produsen. Mana yang sebaiknya dipilih?\"",
+        "\"Ingin membeli langsung dari produsen luar negeri, tetapi negosiasi dan prosedur impornya merepotkan.\"",
+        "\"Ingin mencoba bahan baku baru, tetapi jumlah pesanan minimumnya terlalu besar.\"",
+        "\"Bagaimana kalau pemasok kami saat ini tidak bisa memasok lagi?\"",
+      ],
+      note: "Siapa pun yang menangani pengadaan bahan baku mungkin pernah setidaknya sekali mengalami kekhawatiran seperti ini, bukan?",
+      conclusion: "Sebenarnya, masalah-masalah ini memiliki satu kesamaan. Yaitu, **penyebabnya mungkin bukan bahan bakunya itu sendiri, melainkan pilihan sumber pengadaan yang terbatas**.",
+    },
+    options: {
+      eyebrow: "Mengapa Membandingkan",
+      title: "Apa yang berubah jika Anda menambah satu pemasok saja?",
+      lead: "Kualitas dan waktu pengiriman tidak bermasalah, dan Anda tidak punya keluhan besar terhadap pemasok saat ini. Namun, bagaimana jika bahan baku dengan spesifikasi setara bisa diperoleh dari sumber lain?",
+      benefits: [
+        {
+          title: "Anda dapat membandingkan harga",
+          body: "Untuk bahan baku dengan spesifikasi setara, Anda dapat menimbang beberapa penawaran harga secara berdampingan.",
+        },
+        {
+          title: "Anda dapat menyebar risiko pasokan",
+          body: "Jika pasokan dari satu pemasok terhenti, Anda tetap memiliki cara untuk melanjutkan pengadaan.",
+        },
+        {
+          title: "Anda dapat menerima usulan baru",
+          body: "Anda mungkin mendapat usulan spesifikasi lain atau bahan baku baru.",
+        },
+      ],
+      note: "Tentu saja, harganya belum tentu menjadi lebih murah. Namun, **memiliki pilihan untuk dibandingkan itu sendiri sudah menjadi kekuatan besar bagi penanggung jawab pembelian.**",
+      bridge: "Dan sebagai salah satu pilihan tersebut, kami ingin Anda mengenal kami: Supplement Sales Japan Co., Ltd.",
+    },
+    approach: {
+      eyebrow: "Pendekatan Kami",
+      title: "Sebelum menjual bahan baku, kami ingin memahami apa yang sebenarnya Anda butuhkan.",
+      body: [
+        "Supplement Sales Japan Co., Ltd. melakukan impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik.",
+        "Yang kami utamakan bukan sekadar menjual bahan baku. Kualitas, spesifikasi, jumlah, harga, dan waktu pengiriman yang Anda butuhkan. Yang penting bagi kami adalah menemukan bahan baku yang sesuai dengan syarat-syarat itu.",
+      ],
+      listTitle: "Misalnya, kami menantikan konsultasi seperti berikut.",
+      list: [
+        "Sedang mencari pengganti bahan baku yang digunakan saat ini",
+        "Ingin mendatangkan ekstrak tumbuhan tertentu dari luar negeri",
+        "Sedang mempertimbangkan penggunaan bahan fungsional baru",
+        "Ingin memeriksa dokumen mutu seperti COA sebelum membeli",
+        "Ingin mengevaluasi sampel terlebih dahulu sebelum menentukan jumlah pesanan",
+        "Sedang mencari bahan baku yang tidak tercantum di situs web",
+      ],
+      note: "Kami belum tentu dapat memenuhi semua permintaan. Namun, kita bisa mulai dengan memastikan kemungkinan pengadaannya terlebih dahulu.",
+    },
+    strengths: {
+      eyebrow: "Yang Kami Lakukan",
+      title: "Yang dapat kami lakukan sebagai mitra pengadaan bahan baku Anda.",
+      items: [
+        {
+          title: "Jaringan Pengadaan Bahan Baku Dalam & Luar Negeri",
+          body: "Selain dari dalam negeri Jepang, kami juga mengupayakan pengadaan bahan baku dari pemasok luar negeri. Untuk bahan baku atau spesifikasi tertentu, Anda juga dapat berkonsultasi tentang produk di luar yang sudah kami tangani.",
+        },
+        {
+          title: "Pertimbangan Berdasarkan Dokumen Mutu",
+          body: "Dalam memilih bahan baku, yang penting bukan hanya nama atau harganya. Anda dapat mempertimbangkan penggunaannya sambil memeriksa dokumen dan syarat yang diperlukan, seperti kandungan komponen, asal, metode produksi, dan sertifikat analisis (COA).",
+        },
+        {
+          title: "Konsultasi Mulai dari Sampel & Lot Kecil",
+          body: "Untuk bahan baku yang baru pertama kali digunakan, Anda tidak perlu langsung membeli dalam jumlah besar. Untuk bahan baku yang memungkinkan, Anda dapat berkonsultasi mulai dari sampel atau lot kecil. Silakan evaluasi, lalu pertimbangkan pesanan berikutnya setelah Anda yakin.",
+        },
+        {
+          title: "Dari Pengadaan Bahan Baku hingga Produksi",
+          body: "Selain pembelian bahan baku, Anda juga dapat berkonsultasi tentang tahap selanjutnya, yaitu menjadikannya produk. Kami berupaya mewujudkan sistem yang dapat mendukung pengembangan produk dari dua sisi: pengadaan bahan baku dan produksi.",
+        },
       ],
     },
     featured: {
-      eyebrow: "Products",
-      title: "Bahan Baku Kami",
-      lead: "Bahan baku pilihan untuk suplemen, makanan kesehatan, dan kosmetik. Kami melayani mulai dari sampel dan lot kecil.",
+      eyebrow: "Produk",
+      title: "Misalnya, inilah beberapa bahan baku yang kami tangani.",
+      lead: "Ini adalah sebagian dari bahan baku yang saat ini kami tawarkan.",
+      notListedTitle: "Meskipun bahan baku yang Anda cari tidak tercantum di situs web kami, Anda tidak perlu menyerah.",
+      notListedBody: "Silakan beri tahu kami nama bahan bakunya terlebih dahulu.",
+      notListedButton: "Sampaikan Nama Bahan Baku",
       viewAll: "Lihat semua produk →",
     },
-    strengths: {
-      eyebrow: "Our Strengths",
-      title: "Mengapa Memilih Kami",
+    welcome: {
+      title: "Anda yang \"belum berencana membeli sekarang\" pun kami sambut dengan senang hati.",
+      lead: "Saat mencari sumber pengadaan bahan baku, tentu tidak semua perusahaan sudah memutuskan untuk memesan sejak awal.",
       items: [
-        {
-          title: "Produksi Sendiri × Pengadaan Bahan Baku",
-          body: "Sistem produksi di pabrik sendiri dan transaksi langsung dengan pemasok dalam dan luar negeri. Kami menerapkan pengendalian mutu yang konsisten mulai dari pengadaan bahan baku hingga produksi.",
-        },
-        {
-          title: "Pengendalian Mutu & Dukungan Sertifikasi",
-          body: "COA, HACCP, dan pengujian pihak ketiga tersedia lengkap. Dengan sistem pengendalian mutu yang memenuhi berbagai standar dan sertifikasi, kami mendukung produk Anda secara andal.",
-        },
-        {
-          title: "Sampel & Lot Kecil",
-          body: "Anda dapat memeriksa sampel sebelum produksi massal. Dengan layanan mulai dari lot kecil, Anda dapat memesan secara bertahap sambil memastikan kualitas.",
-        },
+        "Hanya ingin tahu harganya",
+        "Ingin memastikan apakah ada sampel",
+        "Ingin tahu apakah spesifikasi yang diinginkan bisa didapatkan",
+        "Ingin menyiapkan pemasok lain untuk masa depan",
       ],
+      note: "Itu pun tidak masalah. Dalam pengadaan bahan baku, menyiapkan pilihan sejak dini lebih penting daripada mencarinya terburu-buru saat benar-benar dibutuhkan.",
     },
     cta: {
-      title: "Silakan konsultasikan kebutuhan bahan baku Anda",
-      lead: "Kami juga menerima permintaan pengadaan bahan baku yang tidak tercantum di sini serta permintaan sampel.",
-      button: "Hubungi Kami",
+      eyebrow: "Kontak",
+      title: "Pertama-tama, beri tahu kami satu nama bahan baku saja.",
+      lead: "Anda tidak perlu menyiapkan dokumen yang rumit sejak awal. Saat menghubungi kami, silakan sampaikan informasi berikut sejauh yang Anda ketahui.",
+      fields: [
+        {
+          label: "Nama bahan baku",
+          value: "Bahan baku yang Anda cari",
+        },
+        {
+          label: "Jumlah yang diinginkan",
+          value: "Contoh: 1kg, 10kg, 100kg",
+        },
+        {
+          label: "Spesifikasi yang diinginkan",
+          value: "Kandungan komponen, asal, dll. (boleh belum ditentukan)",
+        },
+        {
+          label: "Kebutuhan Anda",
+          value: "Penawaran harga, sampel, dokumen mutu, konfirmasi ketersediaan pengadaan",
+        },
+      ],
+      fieldsNote: "Berdasarkan informasi tersebut, kami akan memeriksa apa saja yang dapat kami tangani.",
+      button: "Tanyakan tentang Bahan Baku",
+      buttonNote: "Jangan ragu untuk menghubungi kami terkait penawaran harga, sampel, maupun ketersediaan pengadaan bahan baku.",
+    },
+    closing: {
+      title: "Pengadaan bahan baku yang lebih baik untuk perusahaan Anda.",
+      body: "Tujuan kami bukan sekadar menjual bahan baku satu kali saja. Saat Anda mencari bahan baku baru. Saat Anda ingin meninjau ulang harga beli saat ini. Saat Anda ingin menambah pemasok. Saat Anda mengembangkan produk baru.",
+      quote: "\"Oh iya, coba tanya Supplement Sales Japan.\"",
+      quoteNote: "Menjadi perusahaan yang teringat oleh Anda seperti itu—itulah tujuan kami.",
+      question: "Sebelum membeli bahan baku, bagaimana kalau membandingkannya terlebih dahulu?",
+      ask: "Beri tahu kami bahan baku yang sedang Anda cari saat ini.",
     },
     faq: [
       {
