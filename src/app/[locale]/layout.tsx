@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import {
-  Noto_Sans,
-  Noto_Sans_Arabic,
-  Noto_Sans_Armenian,
-  Noto_Sans_Devanagari,
-  Noto_Sans_JP,
-  Noto_Sans_Thai,
-} from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
@@ -25,50 +18,16 @@ const notoSansJP = Noto_Sans_JP({
   display: "swap",
 });
 
-// Script-specific fonts, all exposed as --font-locale and only applied to their own language
-const latinExtended = Noto_Sans({
-  subsets: ["latin", "latin-ext", "cyrillic", "vietnamese"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-locale",
-  display: "swap",
-  preload: false,
-});
-const armenian = Noto_Sans_Armenian({
-  subsets: ["armenian"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-locale",
-  display: "swap",
-  preload: false,
-});
-const thai = Noto_Sans_Thai({
-  subsets: ["thai"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-locale",
-  display: "swap",
-  preload: false,
-});
-const devanagari = Noto_Sans_Devanagari({
-  subsets: ["devanagari"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-locale",
-  display: "swap",
-  preload: false,
-});
-const arabic = Noto_Sans_Arabic({
-  subsets: ["arabic"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-locale",
-  display: "swap",
-  preload: false,
-});
-
+// Fonts for scripts Noto Sans JP lacks. They are loaded from Google Fonts at runtime
+// rather than through next/font: Turbopack's next/font/google intermittently fails
+// to resolve these font files at build time, which broke Vercel deployments.
 const localeFont: Partial<Record<Locale, string>> = {
-  ru: latinExtended.variable,
-  vi: latinExtended.variable,
-  hy: armenian.variable,
-  th: thai.variable,
-  hi: devanagari.variable,
-  ar: arabic.variable,
+  ru: "Noto Sans",
+  vi: "Noto Sans",
+  hy: "Noto Sans Armenian",
+  th: "Noto Sans Thai",
+  hi: "Noto Sans Devanagari",
+  ar: "Noto Sans Arabic",
 };
 
 const ogLocale: Record<Locale, string> = {
@@ -184,12 +143,25 @@ export default async function RootLayout({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
+  const fontFamily = localeFont[locale];
 
   return (
     <html lang={locale} dir={rtlLocales.includes(locale) ? "rtl" : "ltr"}>
       <body
-        className={`${notoSansJP.variable} ${localeFont[locale] ?? ""} antialiased`}
+        className={`${notoSansJP.variable} antialiased`}
+        style={fontFamily ? ({ "--font-locale": `"${fontFamily}"` } as React.CSSProperties) : undefined}
       >
+        {fontFamily && (
+          <>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+            <link
+              rel="stylesheet"
+              href={`https://fonts.googleapis.com/css2?family=${fontFamily.replace(/ /g, "+")}:wght@400;500;600;700&display=swap`}
+              precedence="default"
+            />
+          </>
+        )}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
