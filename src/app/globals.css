@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  /* Loaded from Google Fonts in [locale]/layout.tsx */
+  --font-noto-sans-jp: "Noto Sans JP";
+}
+
 @theme inline {
   /* Clean white palette — white base, one fresh green accent */
   --color-ink: #1c2622;

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import { Noto_Sans_JP } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
@@ -11,16 +10,10 @@ import "../globals.css";
 
 const GA_ID = "G-5MWPMNEHWP";
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-noto-sans-jp",
-  display: "swap",
-});
-
-// Fonts for scripts Noto Sans JP lacks. They are loaded from Google Fonts at runtime
-// rather than through next/font: Turbopack's next/font/google intermittently fails
-// to resolve these font files at build time, which broke Vercel deployments.
+// All fonts are loaded from Google Fonts at runtime rather than through next/font:
+// Turbopack's next/font/google intermittently fails to resolve font files at build
+// time ("queries have exactly one entry"), which broke Vercel deployments.
+// Noto Sans JP is the base font; these cover scripts it lacks.
 const localeFont: Partial<Record<Locale, string>> = {
   ru: "Noto Sans",
   vi: "Noto Sans",
@@ -144,24 +137,21 @@ export default async function RootLayout({
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
   const fontFamily = localeFont[locale];
+  const fontFamilies = ["Noto Sans JP", ...(fontFamily ? [fontFamily] : [])];
+  const fontsHref =
+    "https://fonts.googleapis.com/css2?" +
+    fontFamilies.map((f) => `family=${f.replace(/ /g, "+")}:wght@400;500;600;700`).join("&") +
+    "&display=swap";
 
   return (
     <html lang={locale} dir={rtlLocales.includes(locale) ? "rtl" : "ltr"}>
       <body
-        className={`${notoSansJP.variable} antialiased`}
+        className="antialiased"
         style={fontFamily ? ({ "--font-locale": `"${fontFamily}"` } as React.CSSProperties) : undefined}
       >
-        {fontFamily && (
-          <>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-            <link
-              rel="stylesheet"
-              href={`https://fonts.googleapis.com/css2?family=${fontFamily.replace(/ /g, "+")}:wght@400;500;600;700&display=swap`}
-              precedence="default"
-            />
-          </>
-        )}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="stylesheet" href={fontsHref} precedence="default" />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"

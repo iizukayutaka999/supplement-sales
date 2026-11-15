@@ -10,6 +10,8 @@ export function HeroSection({ locale, t }: { locale: Locale; t: Dictionary["home
 
         <h1 className="text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] font-semibold text-forest leading-[1.35] tracking-[0.02em] mb-6 md:mb-8">
           {t.titleLine1}
+          {/* Space-separated languages need a space where the two lines join on wide screens */}
+          {locale !== "ja" && " "}
           <br className="sm:hidden" />
           {t.titleLine2}
         </h1>
