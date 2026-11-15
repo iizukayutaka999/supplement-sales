@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { products } from "@/data/products";
+import { localesFor, productsFor } from "@/data/products";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ProductIcon } from "@/components/ui/ProductIcon";
 import { SalesLetter } from "@/components/products/SalesLetter";
@@ -17,7 +17,7 @@ interface Props {
 
 export async function generateStaticParams() {
   return locales.flatMap((locale) =>
-    products.map((product) => ({ locale, slug: product.slug }))
+    productsFor(locale).map((product) => ({ locale, slug: product.slug }))
   );
 }
 
@@ -26,7 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = l as Locale;
   const dict = getDictionary(locale);
   const text = dict.products[slug];
-  if (!text) return {};
+  const product = productsFor(locale).find((p) => p.slug === slug);
+  if (!text || !product) return {};
 
   const vars = { name: text.name, subName: text.subName };
   const path = `/products/${slug}`;
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: fill(dict.productDetail.metaTitle, vars),
     description: `${text.description} ${fill(dict.productDetail.metaDescriptionSuffix, vars)}`,
-    alternates: alternatesFor(locale, path),
+    alternates: alternatesFor(locale, path, localesFor(product)),
     openGraph: {
       title: `${text.name} | ${dict.meta.titleSuffix}`,
       description: text.shortDescription,
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductDetailPage({ params }: Props) {
   const { locale: l, slug } = await params;
   const locale = l as Locale;
-  const product = products.find((p) => p.slug === slug);
+  const product = productsFor(locale).find((p) => p.slug === slug);
   if (!product) {
     notFound();
   }

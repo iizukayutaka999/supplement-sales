@@ -1,4 +1,5 @@
 import { Product } from "@/types/product";
+import { locales, type Locale } from "@/i18n/config";
 
 const catalog: Product[] = [
   {
@@ -214,6 +215,8 @@ const catalog: Product[] = [
     slug: "eye-lift",
     // Unpublished until the reservation site is ready
     hidden: true,
+    // Not offered on the Japanese site
+    hiddenInLocales: ["ja"],
     icon: "💧",
     category: "OPHTHALMIC PRODUCT",
     nameJa: "アイリフト（EYE LIFT）点眼液",
@@ -258,3 +261,13 @@ const catalog: Product[] = [
 
 /** Products published on the site (entries with `hidden: true` are excluded) */
 export const products = catalog.filter((p) => !p.hidden);
+
+/** Published products shown on pages in the given language */
+export function productsFor(locale: Locale): Product[] {
+  return products.filter((p) => !p.hiddenInLocales?.includes(locale));
+}
+
+/** Languages whose pages show the given product */
+export function localesFor(product: Product): Locale[] {
+  return locales.filter((l) => !product.hiddenInLocales?.includes(l));
+}

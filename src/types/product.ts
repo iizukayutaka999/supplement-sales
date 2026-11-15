@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config";
+
 export interface SalesLetter {
   title: string;
   /** One entry per paragraph; wrap text in **…** to emphasize it */
@@ -20,4 +22,6 @@ export interface Product {
   salesLetter?: SalesLetter;
   /** true = kept in data but not published on the site */
   hidden?: boolean;
+  /** Languages whose pages never show this product */
+  hiddenInLocales?: Locale[];
 }

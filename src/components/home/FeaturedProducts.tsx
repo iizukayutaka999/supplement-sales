@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { products } from "@/data/products";
+import { productsFor } from "@/data/products";
 import { ProductGrid } from "@/components/products/ProductGrid";
 import { localePath, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/ja";
@@ -19,7 +19,7 @@ export function FeaturedProducts({ locale, dict }: { locale: Locale; dict: Dicti
           </p>
         </div>
 
-        <ProductGrid products={products} locale={locale} dict={dict} />
+        <ProductGrid products={productsFor(locale)} locale={locale} dict={dict} />
 
         <div className="text-center mt-12">
           <Link

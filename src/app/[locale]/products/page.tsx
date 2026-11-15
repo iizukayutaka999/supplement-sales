@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { products } from "@/data/products";
+import { productsFor } from "@/data/products";
 import { ProductGrid } from "@/components/products/ProductGrid";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { PageSchema } from "@/components/seo/PageSchema";
@@ -33,6 +33,7 @@ export default async function ProductsPage({ params }: Props) {
   const locale = (await params).locale as Locale;
   const dict = getDictionary(locale);
   const t = dict.productsPage;
+  const products = productsFor(locale);
   const breadcrumbItems = [{ name: dict.nav.products, href: "/products" }];
 
   return (

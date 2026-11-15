@@ -66,10 +66,15 @@ export function stripLocale(pathname: string): string {
 }
 
 /** canonical + hreflang alternates for a page path. */
-export function alternatesFor(locale: Locale, path: string) {
-  const availableIn = japaneseOnlyPaths.includes(path) ? [defaultLocale] : locales;
+export function alternatesFor(locale: Locale, path: string, only?: readonly Locale[]) {
+  const availableIn = only ?? (japaneseOnlyPaths.includes(path) ? [defaultLocale] : locales);
   const languages: Record<string, string> = {};
   for (const l of availableIn) languages[l] = localeUrl(l, path);
-  languages["x-default"] = localeUrl(defaultLocale, path);
+  const fallback = availableIn.includes(defaultLocale)
+    ? defaultLocale
+    : availableIn.includes("en")
+      ? "en"
+      : availableIn[0];
+  languages["x-default"] = localeUrl(fallback, path);
   return { canonical: localeUrl(locale, path), languages };
 }
