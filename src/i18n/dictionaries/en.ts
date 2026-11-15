@@ -33,7 +33,6 @@ const en: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Import, Manufacturing & Sale of Supplement Ingredients",
     metaDescription: "A specialist trading company that imports, manufactures and sells raw materials for supplements, health foods and cosmetics. Reliable supply of high-quality B2B ingredients including red beet powder, Boswellia serrata, plant-based collagen and anserine.",
     hero: {
-      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "The power of nature,",
       titleLine2: "with quality you can trust.",
       lead: "We deliver a reliable supply of raw materials for supplements, health foods and cosmetics through both import and in-house manufacturing.",

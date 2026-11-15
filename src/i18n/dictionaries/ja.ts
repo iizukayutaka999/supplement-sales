@@ -70,7 +70,6 @@ const ja = {
     metaDescription:
       "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売する専門商社。赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン、アンセリン等の高品質B2B原材料を安定供給。",
     hero: {
-      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "自然の力を、",
       titleLine2: "確かな品質で。",
       lead: "サプリメント・健康食品・化粧品の原材料を、輸入販売と製造販売で安定してお届けします。",

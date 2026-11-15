@@ -33,7 +33,6 @@ const ms: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Import, Pengeluaran dan Penjualan Bahan Mentah Suplemen",
     metaDescription: "Syarikat perdagangan pakar dalam import dan penjualan, serta pengeluaran dan penjualan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik. Bekalan stabil bahan mentah B2B berkualiti tinggi seperti serbuk ubi bit merah, Boswellia serrata, kolagen berasaskan tumbuhan dan anserina.",
     hero: {
-      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "Kekuatan alam,",
       titleLine2: "dengan kualiti yang terjamin.",
       lead: "Kami membekalkan bahan mentah untuk suplemen, makanan kesihatan dan kosmetik secara stabil melalui import dan penjualan, serta pengeluaran dan penjualan.",

@@ -6,8 +6,6 @@ export function HeroSection({ locale, t }: { locale: Locale; t: Dictionary["home
   return (
     <section className="bg-white pt-36 pb-20 md:pt-48 md:pb-28 px-4 md:px-16 border-b border-border">
       <div className="max-w-5xl mx-auto text-center">
-        <p className="eyebrow text-accent mb-6">{t.eyebrow}</p>
-
         <h1 className="text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] font-semibold text-forest leading-[1.35] tracking-[0.02em] mb-6 md:mb-8">
           {t.titleLine1}
           {/* Space-separated languages need a space where the two lines join on wide screens */}

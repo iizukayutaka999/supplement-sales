@@ -33,7 +33,6 @@ const vi: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Nhập khẩu, sản xuất và phân phối nguyên liệu thực phẩm bổ sung",
     metaDescription: "Công ty thương mại chuyên nhập khẩu, sản xuất và phân phối nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm. Cung cấp ổn định nguyên liệu B2B chất lượng cao như bột củ dền đỏ, Boswellia serrata, collagen thực vật, anserine.",
     hero: {
-      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "Sức mạnh của thiên nhiên,",
       titleLine2: "với chất lượng đáng tin cậy.",
       lead: "Chúng tôi cung cấp ổn định nguyên liệu cho thực phẩm bổ sung, thực phẩm chức năng và mỹ phẩm thông qua hoạt động nhập khẩu, sản xuất và phân phối.",

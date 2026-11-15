@@ -33,7 +33,6 @@ const id: Dictionary = {
     metaTitle: "Supplement Sales Japan Co., Ltd. | Impor & Produksi Bahan Baku Suplemen",
     metaDescription: "Perusahaan dagang spesialis impor serta produksi dan penjualan bahan baku untuk suplemen, makanan kesehatan, dan kosmetik. Pasokan stabil bahan baku B2B berkualitas tinggi seperti bubuk bit merah, Boswellia serrata, kolagen nabati, dan anserine.",
     hero: {
-      eyebrow: "Supplement Sales Japan Co., Ltd.",
       titleLine1: "Kekuatan alam,",
       titleLine2: "dengan kualitas terjamin.",
       lead: "Kami memasok bahan baku untuk suplemen, makanan kesehatan, dan kosmetik secara stabil melalui impor serta produksi dan penjualan sendiri.",
