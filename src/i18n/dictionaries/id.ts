@@ -461,6 +461,28 @@ const id: Dictionary = {
       origins: [
         "Jepang",
       ],
+      salesLetter: {
+        title: "Saya ingin membuat mata setiap perempuan tampak lebih segar dan berbinar.",
+        paragraphs: [
+          "Mengapa saya berpikir demikian?",
+          "Karena saya merasa, perubahan di area mata saja sudah bisa mengubah ekspresi dan kesan seorang perempuan secara besar.",
+          "Coba bayangkan.",
+          "Pagi hari, saat Anda bercermin.",
+          "Mata Anda tampak lebih segar dan terbuka dari biasanya.",
+          "Pasti Anda akan merasa sedikit lebih bahagia, bukan?",
+          "Mungkin Anda jadi ingin memakai pakaian favorit dan pergi keluar.",
+          "Mungkin Anda jadi ingin berfoto lagi setelah sekian lama.",
+          "Mungkin Anda jadi ingin lebih sering menatap mata orang tersayang saat berbicara.",
+          "Yang ingin saya hadirkan bukan sekadar produk untuk mengubah kesan mata.",
+          "**Melainkan masa depan di mana perempuan lebih percaya diri dengan mata mereka.**",
+          "Usia 20-an, 40-an, maupun 60-an.",
+          "Usia bukanlah soal.",
+          "Saya ingin perempuan selalu bersinar dengan caranya sendiri.",
+          "Dari keinginan itulah saya melihat potensi EYE LIFT.",
+        ],
+        brand: "EYE LIFT",
+        tagline: "Percaya diri dan pesona di setiap mata perempuan.",
+      },
     },
   },
 };

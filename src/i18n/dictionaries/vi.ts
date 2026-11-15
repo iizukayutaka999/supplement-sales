@@ -461,6 +461,28 @@ const vi: Dictionary = {
       origins: [
         "Nhật Bản",
       ],
+      salesLetter: {
+        title: "Tôi muốn mọi người phụ nữ đều có đôi mắt to tròn, rạng rỡ.",
+        paragraphs: [
+          "Vì sao tôi lại nghĩ như vậy?",
+          "Bởi tôi cảm nhận rằng chỉ cần vùng mắt thay đổi, biểu cảm và ấn tượng của người phụ nữ cũng sẽ thay đổi rất nhiều.",
+          "Hãy thử tưởng tượng.",
+          "Buổi sáng, khi bạn soi gương.",
+          "Đôi mắt trông to và có hồn hơn mọi ngày.",
+          "Hẳn bạn sẽ thấy vui hơn một chút, phải không?",
+          "Có lẽ bạn sẽ muốn mặc bộ đồ yêu thích và ra ngoài.",
+          "Có lẽ bạn sẽ muốn chụp ảnh sau một thời gian dài.",
+          "Có lẽ bạn sẽ muốn nhìn vào mắt người thân yêu nhiều hơn khi trò chuyện.",
+          "Điều tôi muốn mang đến không đơn thuần là một sản phẩm thay đổi vẻ ngoài của đôi mắt.",
+          "**Mà là một tương lai nơi phụ nữ tự tin hơn với đôi mắt của chính mình.**",
+          "Dù ở tuổi 20, 40 hay 60.",
+          "Tuổi tác không quan trọng.",
+          "Tôi mong phụ nữ luôn tỏa sáng theo cách của riêng mình.",
+          "Chính vì suy nghĩ đó, tôi đã chú ý đến tiềm năng của EYE LIFT.",
+        ],
+        brand: "EYE LIFT",
+        tagline: "Tự tin và rạng ngời trong ánh mắt mỗi người phụ nữ.",
+      },
     },
   },
 };

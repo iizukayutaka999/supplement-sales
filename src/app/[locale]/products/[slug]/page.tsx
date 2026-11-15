@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ProductIcon } from "@/components/ui/ProductIcon";
+import { SalesLetter } from "@/components/products/SalesLetter";
 import { ProductSchema } from "@/components/seo/ProductSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -97,6 +98,8 @@ export default async function ProductDetailPage({ params }: Props) {
                 </div>
               </div>
             </div>
+
+            {text.salesLetter && <SalesLetter letter={text.salesLetter} />}
 
             {/* Description */}
             <div className="mb-16 md:mb-24 pb-16 md:pb-24 border-b border-border">

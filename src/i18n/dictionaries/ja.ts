@@ -1,4 +1,5 @@
 import { products } from "@/data/products";
+import type { SalesLetter } from "@/types/product";
 
 export interface ProductText {
   category: string;
@@ -11,6 +12,7 @@ export interface ProductText {
   features: string[];
   applications: string[];
   origins?: string[];
+  salesLetter?: SalesLetter;
 }
 
 export interface FaqItem {
@@ -30,6 +32,7 @@ const productTexts: Record<string, ProductText> = Object.fromEntries(
       features: p.features,
       applications: p.applications,
       origins: p.origins,
+      salesLetter: p.salesLetter,
     },
   ])
 );

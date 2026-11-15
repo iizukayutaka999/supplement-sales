@@ -461,6 +461,28 @@ const en: Dictionary = {
       origins: [
         "Japan",
       ],
+      salesLetter: {
+        title: "I want to give every woman bright, wide-open eyes.",
+        paragraphs: [
+          "Why do I feel this way?",
+          "Because I believe that a change around the eyes alone can transform a woman's expression and the impression she makes.",
+          "Imagine this.",
+          "You look in the mirror in the morning,",
+          "and your eyes look brighter and more open than usual.",
+          "Wouldn't that make you just a little happier?",
+          "You might feel like putting on your favorite outfit and heading out.",
+          "You might feel like taking photos again for the first time in a while.",
+          "You might want to look the people you care about in the eye a little more as you talk.",
+          "What I want to deliver is not simply a product that changes how your eyes look.",
+          "**It's a future in which women feel more confident about their eyes.**",
+          "In your 20s, your 40s or your 60s.",
+          "Age doesn't matter.",
+          "I want women to keep shining, always true to themselves.",
+          "That is why I turned my attention to the potential of EYE LIFT.",
+        ],
+        brand: "EYE LIFT",
+        tagline: "Confidence and radiance for every woman's eyes.",
+      },
     },
   },
 };

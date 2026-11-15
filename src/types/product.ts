@@ -1,3 +1,11 @@
+export interface SalesLetter {
+  title: string;
+  /** One entry per paragraph; wrap text in **…** to emphasize it */
+  paragraphs: string[];
+  brand: string;
+  tagline: string;
+}
+
 export interface Product {
   slug: string;
   icon: string;
@@ -9,6 +17,7 @@ export interface Product {
   features: string[];
   applications: string[];
   origins?: string[];
+  salesLetter?: SalesLetter;
   /** true = kept in data but not published on the site */
   hidden?: boolean;
 }
