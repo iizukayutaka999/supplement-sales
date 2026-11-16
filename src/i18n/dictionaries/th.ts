@@ -309,6 +309,10 @@ const th: Dictionary = {
       namePlaceholder: "สมชาย ใจดี",
       email: "อีเมล",
       emailPlaceholder: "info@example.com",
+      phone: "เบอร์โทรศัพท์",
+      phonePlaceholder: "+66 2 123 4567",
+      address: "ที่อยู่",
+      addressPlaceholder: "ถนน เมือง ประเทศ",
       inquiryType: "หัวข้อที่ติดต่อ",
       selectPlaceholder: "กรุณาเลือก",
       inquiryOptions: [

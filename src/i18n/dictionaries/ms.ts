@@ -309,6 +309,10 @@ const ms: Dictionary = {
       namePlaceholder: "Ahmad bin Abdullah",
       email: "Alamat E-mel",
       emailPlaceholder: "info@example.com",
+      phone: "Telefon",
+      phonePlaceholder: "+60 3-1234 5678",
+      address: "Alamat",
+      addressPlaceholder: "Jalan, bandar, negara",
       inquiryType: "Jenis Pertanyaan",
       selectPlaceholder: "Sila pilih",
       inquiryOptions: [

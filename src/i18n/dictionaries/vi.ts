@@ -309,6 +309,10 @@ const vi: Dictionary = {
       namePlaceholder: "Nguyễn Văn A",
       email: "Địa chỉ email",
       emailPlaceholder: "info@example.com",
+      phone: "Số điện thoại",
+      phonePlaceholder: "+84 28 1234 5678",
+      address: "Địa chỉ",
+      addressPlaceholder: "Đường, thành phố, quốc gia",
       inquiryType: "Nội dung liên hệ",
       selectPlaceholder: "Vui lòng chọn",
       inquiryOptions: [

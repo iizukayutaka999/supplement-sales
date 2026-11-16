@@ -309,6 +309,10 @@ const hi: Dictionary = {
       namePlaceholder: "राहुल शर्मा",
       email: "ईमेल पता",
       emailPlaceholder: "info@example.com",
+      phone: "फ़ोन नंबर",
+      phonePlaceholder: "+91 98765 43210",
+      address: "पता",
+      addressPlaceholder: "सड़क, शहर, देश",
       inquiryType: "पूछताछ का विषय",
       selectPlaceholder: "कृपया चुनें",
       inquiryOptions: [

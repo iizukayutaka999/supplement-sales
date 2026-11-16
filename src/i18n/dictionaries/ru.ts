@@ -309,6 +309,10 @@ const ru: Dictionary = {
       namePlaceholder: "Иван Иванов",
       email: "Электронная почта",
       emailPlaceholder: "info@example.com",
+      phone: "Телефон",
+      phonePlaceholder: "+7 495 123-45-67",
+      address: "Адрес",
+      addressPlaceholder: "Улица, город, страна",
       inquiryType: "Тема обращения",
       selectPlaceholder: "Выберите тему",
       inquiryOptions: [

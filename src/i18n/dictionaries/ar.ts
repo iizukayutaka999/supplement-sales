@@ -309,6 +309,10 @@ const ar: Dictionary = {
       namePlaceholder: "الاسم الكامل",
       email: "البريد الإلكتروني",
       emailPlaceholder: "info@example.com",
+      phone: "رقم الهاتف",
+      phonePlaceholder: "+971 4 123 4567",
+      address: "العنوان",
+      addressPlaceholder: "الشارع، المدينة، الدولة",
       inquiryType: "نوع الاستفسار",
       selectPlaceholder: "يرجى الاختيار",
       inquiryOptions: [

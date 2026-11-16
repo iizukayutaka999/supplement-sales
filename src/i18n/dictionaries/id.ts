@@ -309,6 +309,10 @@ const id: Dictionary = {
       namePlaceholder: "Budi Santoso",
       email: "Alamat Email",
       emailPlaceholder: "info@example.com",
+      phone: "Nomor telepon",
+      phonePlaceholder: "+62 21 1234 5678",
+      address: "Alamat",
+      addressPlaceholder: "Jalan, kota, negara",
       inquiryType: "Jenis Pertanyaan",
       selectPlaceholder: "Silakan pilih",
       inquiryOptions: [

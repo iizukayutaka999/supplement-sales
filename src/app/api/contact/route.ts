@@ -5,6 +5,8 @@ interface ContactBody {
   company: string;
   name: string;
   email: string;
+  phone?: string;
+  address?: string;
   inquiryType: string;
   message: string;
   language?: string;
@@ -48,6 +50,8 @@ export async function POST(request: NextRequest) {
         `会社名: ${body.company}`,
         `お名前: ${body.name}`,
         `メール: ${body.email}`,
+        `電話番号: ${body.phone || "(未入力)"}`,
+        `住所: ${body.address || "(未入力)"}`,
         `種別: ${body.inquiryType || "未選択"}`,
         `サイト言語: ${body.language || "ja"}`,
         "",
@@ -74,6 +78,8 @@ export async function POST(request: NextRequest) {
         "━━━━━━━━━━━━━━━━━━━━",
         `会社名: ${body.company}`,
         `お名前: ${body.name}`,
+        `電話番号: ${body.phone || "(未入力)"}`,
+        `住所: ${body.address || "(未入力)"}`,
         `種別: ${body.inquiryType || "未選択"}`,
         "",
         "メッセージ:",

@@ -309,6 +309,10 @@ const en: Dictionary = {
       namePlaceholder: "John Smith",
       email: "Email Address",
       emailPlaceholder: "info@example.com",
+      phone: "Phone",
+      phonePlaceholder: "+1 555 123 4567",
+      address: "Address",
+      addressPlaceholder: "Street, city, country",
       inquiryType: "Inquiry Type",
       selectPlaceholder: "Please select",
       inquiryOptions: [

@@ -309,6 +309,10 @@ const hy: Dictionary = {
       namePlaceholder: "Արամ Պետրոսյան",
       email: "Էլ. փոստ",
       emailPlaceholder: "info@example.com",
+      phone: "Հեռախոս",
+      phonePlaceholder: "+374 10 123456",
+      address: "Հասցե",
+      addressPlaceholder: "Փողոց, քաղաք, երկիր",
       inquiryType: "Հարցման տեսակը",
       selectPlaceholder: "Ընտրեք",
       inquiryOptions: [

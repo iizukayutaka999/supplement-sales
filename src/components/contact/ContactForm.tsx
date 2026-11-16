@@ -30,6 +30,8 @@ export function ContactForm({ t, locale }: ContactFormProps) {
           company: formData.get("company"),
           name: formData.get("name"),
           email: formData.get("email"),
+          phone: formData.get("phone"),
+          address: formData.get("address"),
           inquiryType: formData.get("inquiryType"),
           message: formData.get("message"),
           language: locale,
@@ -85,6 +87,8 @@ export function ContactForm({ t, locale }: ContactFormProps) {
         { name: "company", label: t.company, type: "text", placeholder: t.companyPlaceholder, required: true },
         { name: "name", label: t.name, type: "text", placeholder: t.namePlaceholder, required: true },
         { name: "email", label: t.email, type: "email", placeholder: t.emailPlaceholder, required: true },
+        { name: "phone", label: t.phone, type: "tel", placeholder: t.phonePlaceholder, required: false },
+        { name: "address", label: t.address, type: "text", placeholder: t.addressPlaceholder, required: false },
       ].map((field) => (
         <div key={field.name} className="flex flex-col gap-2.5">
           <label className="text-[0.62rem] tracking-[0.32em] text-gold/90 uppercase font-medium">
