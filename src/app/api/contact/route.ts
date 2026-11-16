@@ -10,6 +10,10 @@ interface ContactBody {
   language?: string;
 }
 
+// Zero-width non-joiners between characters stop mail clients (e.g. Gmail)
+// from turning a postal address into a map link; they are invisible when read.
+const noAutoLink = (text: string) => [...text].join("\u200C");
+
 export async function POST(request: NextRequest) {
   const body: ContactBody = await request.json();
 
@@ -81,8 +85,8 @@ export async function POST(request: NextRequest) {
         "",
         "---",
         "株式会社サプリ販売",
-        "本社：〒370-0865 群馬県高崎市寺尾町1285-2",
-        "富岡工場：〒370-2303 群馬県富岡市蕨1004-1",
+        `本社：${noAutoLink("〒370-0865 群馬県高崎市寺尾町1285-2")}`,
+        `富岡工場：${noAutoLink("〒370-2303 群馬県富岡市蕨1004-1")}`,
         "https://supplement-sales.jp",
         "",
         "※このメールは自動送信です。このメールへの返信はお控えください。",
