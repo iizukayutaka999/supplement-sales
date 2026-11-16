@@ -185,6 +185,18 @@ const vi: Dictionary = {
         question: "Có thể đặt mẫu thử hoặc đơn hàng số lượng nhỏ không?",
         answer: "Có, chúng tôi có thể cung cấp mẫu thử cho tất cả sản phẩm. Chúng tôi cũng nhận đơn hàng từ số lượng nhỏ. Vui lòng liên hệ qua biểu mẫu liên hệ.",
       },
+      {
+        question: "Tôi có thể hỏi về nguyên liệu không có trên trang web không?",
+        answer: "Có. Vui lòng cho chúng tôi biết tên nguyên liệu, số lượng cần và thông số kỹ thuật mong muốn (hàm lượng hoạt chất, xuất xứ, v.v.), chúng tôi sẽ kiểm tra khả năng cung ứng. Chúng tôi không thể đảm bảo đáp ứng mọi yêu cầu, nhưng rất sẵn lòng trao đổi.",
+      },
+      {
+        question: "Tôi có thể xem tài liệu chất lượng như COA trước khi mua không?",
+        answer: "Có. Quý khách có thể kiểm tra các tài liệu và điều kiện cần thiết như hàm lượng hoạt chất, xuất xứ, phương pháp sản xuất và giấy chứng nhận phân tích (COA) trước khi quyết định sử dụng.",
+      },
+      {
+        question: "Tôi có thể liên hệ dù chưa có kế hoạch mua ngay không?",
+        answer: "Có. Chúng tôi hoan nghênh các yêu cầu ở giai đoạn tìm hiểu, như chỉ muốn biết giá, kiểm tra mẫu thử, xem có thể cung ứng theo thông số mong muốn hay không, hoặc chuẩn bị sẵn một nhà cung cấp thay thế cho tương lai.",
+      },
     ],
   },
   productsPage: {
@@ -343,6 +355,7 @@ const vi: Dictionary = {
     body: "Trang quý khách đang tìm không tồn tại hoặc có thể đã được di chuyển.",
     back: "Quay về trang chủ",
   },
+  faqTitle: "Câu hỏi thường gặp",
   products: {
     "red-beet-powder": {
       category: "SUPPLEMENT INGREDIENT",

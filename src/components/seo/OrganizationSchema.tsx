@@ -1,5 +1,6 @@
 import { JsonLd } from "./JsonLd";
 import { SITE_URL, COMPANY_NAME, COMPANY_NAME_EN } from "@/lib/constants";
+import { locales } from "@/i18n/config";
 
 export function OrganizationSchema() {
   const organization = {
@@ -20,7 +21,7 @@ export function OrganizationSchema() {
     },
     image: `${SITE_URL}/images/og-image.png`,
     description:
-      "サプリメント・健康食品・化粧品の原材料の輸入販売および製造販売を行うB2B専門商社。コラーゲン、プロバイオティクス、ローヤルゼリー、抹茶等の高品質原材料を取扱い。",
+      "サプリメント・健康食品・化粧品の原材料の輸入販売および製造販売を行うB2B専門商社。赤ビーツ粉末、ボスウェリアセラータ、アシュワガンダ、アンセリン、ギムネマ・シルベスタ、ガルシニア・カンボジア、ブロメライン、植物性コラーゲン等を取り扱い、ホームページに掲載していない原料の調達相談、サンプル・小ロット、品質資料（COA）の確認にも対応。",
     foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
@@ -99,7 +100,7 @@ export function OrganizationSchema() {
     publisher: {
       "@id": `${SITE_URL}/#organization`,
     },
-    inLanguage: "ja",
+    inLanguage: [...locales],
     description:
       "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売するB2B専門商社のウェブサイト",
   };
@@ -139,7 +140,7 @@ export function OrganizationSchema() {
     "@id": `${SITE_URL}/#service`,
     name: "サプリメント原材料の輸入販売・製造販売",
     description:
-      "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売。赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン、アンセリン等の高品質B2B原材料を安定供給。サンプル提供・小ロット対応可能。",
+      "サプリメント・健康食品・化粧品の原材料を輸入販売・製造販売。赤ビーツ粉末、ボスウェリアセラータ、植物性コラーゲン、アンセリン等のB2B原材料を供給。代替原料・掲載外原料の調達相談、サンプル・小ロット、COA等の品質資料の確認に対応。",
     provider: {
       "@id": `${SITE_URL}/#organization`,
     },
@@ -148,7 +149,6 @@ export function OrganizationSchema() {
       "@type": "Country",
       name: "Japan",
     },
-    availableLanguage: ["Japanese", "English", "Russian"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "サプリメント原材料カタログ",

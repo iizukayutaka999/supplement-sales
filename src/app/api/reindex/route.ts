@@ -1,19 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
+import sitemap from "@/app/sitemap";
 
 const SITE_URL = "https://supplement-sales.jp";
 
-const ALL_URLS = [
-  `${SITE_URL}/`,
-  `${SITE_URL}/products`,
-  `${SITE_URL}/products/red-beet-powder`,
-  `${SITE_URL}/products/boswellia-serrata`,
-  `${SITE_URL}/products/plant-based-collagen`,
-  `${SITE_URL}/products/anserine`,
-  `${SITE_URL}/company`,
-  `${SITE_URL}/contact`,
-  `${SITE_URL}/legal`,
-  `${SITE_URL}/privacy`,
-];
+// Every public URL in every language, plus llms.txt — kept in sync with the sitemap
+const ALL_URLS = [...sitemap().map((entry) => entry.url), `${SITE_URL}/llms.txt`];
 
 export async function POST(request: NextRequest) {
   // シークレットキーで認証

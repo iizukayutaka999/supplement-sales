@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { localesFor, products } from "@/data/products";
 import { alternatesFor, japaneseOnlyPaths, locales, localeUrl, defaultLocale, type Locale } from "@/i18n/config";
 
-const LAST_MODIFIED = new Date("2026-11-14");
+const LAST_MODIFIED = new Date("2026-11-16");
 
 const pages: {
   path: string;

@@ -8,7 +8,10 @@ import {
   type Locale,
 } from "@/i18n/config";
 
-const BOT_PATTERN = /bot|crawl|spider|slurp|facebookexternalhit|preview|lighthouse/i;
+// Search crawlers and AI agents (incl. user-triggered fetchers like ChatGPT-User,
+// Claude-User, Perplexity-User) must see every URL as-is, without geo redirects.
+const BOT_PATTERN =
+  /bot|crawl|spider|slurp|facebookexternalhit|preview|lighthouse|chatgpt-user|claude-user|perplexity-user|anthropic-ai|cohere-ai|meta-externalagent|google-extended|googleother|diffbot/i;
 
 function fromAcceptLanguage(header: string | null): Locale | undefined {
   if (!header) return undefined;

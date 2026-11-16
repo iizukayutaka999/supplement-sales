@@ -5,6 +5,7 @@ import { localesFor, productsFor } from "@/data/products";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ProductIcon } from "@/components/ui/ProductIcon";
 import { SalesLetter } from "@/components/products/SalesLetter";
+import { FaqList } from "@/components/ui/FaqList";
 import { ProductSchema } from "@/components/seo/ProductSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -156,6 +157,12 @@ export default async function ProductDetailPage({ params }: Props) {
                   </div>
                 )}
               </div>
+            </div>
+
+            {/* FAQ */}
+            <div className="mb-14 md:mb-20">
+              <h2 className="text-[0.95rem] font-medium text-forest mb-5">{dict.faqTitle}</h2>
+              <FaqList items={productFaqItems} />
             </div>
 
             {/* CTA */}

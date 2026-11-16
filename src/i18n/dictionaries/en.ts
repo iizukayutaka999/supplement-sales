@@ -185,6 +185,18 @@ const en: Dictionary = {
         question: "Can I order samples or small lots?",
         answer: "Yes, samples are available for all products, and we also accept small-lot orders. Please feel free to reach out via our contact form.",
       },
+      {
+        question: "Can I ask about ingredients that are not listed on your website?",
+        answer: "Yes. Tell us the ingredient name, the quantity you need and your preferred specifications (such as active content or origin), and we will check whether we can source it. We cannot promise to meet every request, but please feel free to ask.",
+      },
+      {
+        question: "Can I review quality documents such as a COA before purchasing?",
+        answer: "Yes. You can review the documents and conditions you need, such as active content, origin, manufacturing method and the certificate of analysis (COA), before deciding to adopt an ingredient.",
+      },
+      {
+        question: "Can I contact you even if I have no immediate plans to buy?",
+        answer: "Yes. We welcome early-stage inquiries, whether you just want to know the price, check if samples are available, find out if we can source your preferred specification, or secure an alternative supplier for the future.",
+      },
     ],
   },
   productsPage: {
@@ -343,6 +355,7 @@ const en: Dictionary = {
     body: "The page you are looking for does not exist or may have been moved.",
     back: "Back to Home",
   },
+  faqTitle: "Frequently Asked Questions",
   products: {
     "red-beet-powder": {
       category: "SUPPLEMENT INGREDIENT",

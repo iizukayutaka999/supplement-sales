@@ -7,6 +7,7 @@ import { OptionsSection } from "@/components/home/OptionsSection";
 import { ApproachSection } from "@/components/home/ApproachSection";
 import { WelcomeSection } from "@/components/home/WelcomeSection";
 import { InquirySection } from "@/components/home/InquirySection";
+import { FaqSection } from "@/components/home/FaqSection";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { PageSchema } from "@/components/seo/PageSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -55,6 +56,7 @@ export default async function HomePage({ params }: Props) {
       <StrengthsSection t={dict.home.strengths} />
       <FeaturedProducts locale={locale} dict={dict} />
       <WelcomeSection t={dict.home.welcome} />
+      <FaqSection title={dict.faqTitle} items={dict.home.faq} />
       <InquirySection locale={locale} t={dict.home.cta} closing={dict.home.closing} />
       <ScrollReveal />
     </>

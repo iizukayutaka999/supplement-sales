@@ -185,6 +185,18 @@ const ms: Dictionary = {
         question: "Bolehkah saya memesan sampel atau lot kecil?",
         answer: "Ya, sampel tersedia untuk semua produk. Kami juga menerima pesanan bermula daripada lot kecil. Sila hubungi kami melalui borang pertanyaan.",
       },
+      {
+        question: "Bolehkah saya bertanya tentang bahan mentah yang tidak disenaraikan di laman web?",
+        answer: "Boleh. Maklumkan nama bahan mentah, kuantiti yang diperlukan dan spesifikasi pilihan anda (seperti kandungan bahan aktif atau asal usul), dan kami akan menyemak sama ada kami dapat memperolehnya. Kami tidak dapat menjamin setiap permintaan dipenuhi, tetapi jangan segan untuk bertanya.",
+      },
+      {
+        question: "Bolehkah saya menyemak dokumen kualiti seperti COA sebelum membeli?",
+        answer: "Boleh. Anda boleh menyemak dokumen dan syarat yang diperlukan, seperti kandungan bahan aktif, asal usul, kaedah pengeluaran dan sijil analisis (COA), sebelum membuat keputusan.",
+      },
+      {
+        question: "Bolehkah saya menghubungi anda walaupun belum bercadang untuk membeli?",
+        answer: "Boleh. Kami mengalu-alukan pertanyaan di peringkat awal, sama ada anda hanya ingin mengetahui harga, menyemak ketersediaan sampel, mengetahui sama ada spesifikasi pilihan anda boleh diperoleh, atau mendapatkan pembekal alternatif untuk masa hadapan.",
+      },
     ],
   },
   productsPage: {
@@ -343,6 +355,7 @@ const ms: Dictionary = {
     body: "Halaman yang anda cari tidak wujud atau mungkin telah dipindahkan.",
     back: "Kembali ke laman utama",
   },
+  faqTitle: "Soalan Lazim",
   products: {
     "red-beet-powder": {
       category: "BAHAN SUPLEMEN",

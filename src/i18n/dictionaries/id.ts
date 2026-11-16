@@ -185,6 +185,18 @@ const id: Dictionary = {
         question: "Apakah bisa memesan sampel atau lot kecil?",
         answer: "Ya, sampel tersedia untuk semua produk. Kami juga melayani pesanan mulai dari lot kecil. Silakan hubungi kami melalui formulir kontak.",
       },
+      {
+        question: "Apakah saya bisa menanyakan bahan baku yang tidak tercantum di situs web?",
+        answer: "Bisa. Beri tahu kami nama bahan baku, jumlah yang dibutuhkan, dan spesifikasi yang diinginkan (seperti kadar zat aktif atau asal), lalu kami akan memeriksa apakah kami dapat mengadakannya. Kami tidak dapat menjamin setiap permintaan terpenuhi, tetapi silakan bertanya.",
+      },
+      {
+        question: "Apakah dokumen mutu seperti COA bisa diperiksa sebelum membeli?",
+        answer: "Bisa. Anda dapat memeriksa dokumen dan ketentuan yang diperlukan, seperti kadar zat aktif, asal, metode produksi, dan sertifikat analisis (COA), sebelum memutuskan untuk menggunakan bahan baku.",
+      },
+      {
+        question: "Apakah saya bisa menghubungi Anda meskipun belum berencana membeli?",
+        answer: "Bisa. Kami menyambut pertanyaan di tahap awal, baik Anda hanya ingin mengetahui harga, memeriksa ketersediaan sampel, mengetahui apakah spesifikasi yang diinginkan bisa diadakan, maupun menyiapkan pemasok alternatif untuk masa depan.",
+      },
     ],
   },
   productsPage: {
@@ -343,6 +355,7 @@ const id: Dictionary = {
     body: "Halaman yang Anda cari tidak ada atau mungkin telah dipindahkan.",
     back: "Kembali ke beranda",
   },
+  faqTitle: "Pertanyaan yang Sering Diajukan",
   products: {
     "red-beet-powder": {
       category: "SUPPLEMENT INGREDIENT",
